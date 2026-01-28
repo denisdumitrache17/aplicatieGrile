@@ -1,77 +1,77 @@
 [
   {
     "id": 1,
-    "text": "Care dintre următoarele diagrame este clasificată ca fiind Dinamică (Comportamentală)?",
+    "text": "Care dintre următoarele diagrame UML este clasificată ca fiind Dinamică (Comportamentală)?",
     "options": [
-      "Diagrama de Pachete (Package Diagram)",
       "Diagrama de Structură Compozită",
       "Diagrama de Componente",
-      "Diagrama de Secvență"
-    ],
-    "correct_indices": [
-      3
-    ]
-  },
-  {
-    "id": 2,
-    "text": "Relația de \"Compoziție\" (relație puternică parte-întreg) într-o diagramă de clase este reprezentată prin:",
-    "options": [
-      "Un romb gol (alb)",
-      "O linie punctată cu săgeată deschisă",
-      "Un romb plin (negru)",
-      "O săgeată simplă continuă"
+      "Diagrama de Secvență",
+      "Diagrama de Pachete"
     ],
     "correct_indices": [
       2
     ]
   },
   {
-    "id": 3,
-    "text": "Ce reprezintă un \"Actor\" într-o diagramă Use Case?",
+    "id": 2,
+    "text": "Relația de \"Compoziție\" (relație puternică de tip parte-întreg) într-o diagramă de clase este reprezentată grafic prin:",
     "options": [
-      "Un modul software executabil din backend",
-      "Un angajat al departamentului IT care scrie codul",
-      "O funcție internă automatizată a sistemului",
-      "O persoană sau un sistem extern care interacționează cu sistemul"
-    ],
-    "correct_indices": [
-      3
-    ]
-  },
-  {
-    "id": 4,
-    "text": "Procesul de generare a codului sursă pornind de la modelul UML se numește:",
-    "options": [
-      "Inginerie Inversă (Reverse Engineering)",
-      "Inginerie Directă (Forward Engineering)",
-      "Refactorizare (Refactoring)",
-      "Depanare (Debugging)"
+      "Un romb gol (alb)",
+      "Un romb plin (negru)",
+      "O săgeată simplă",
+      "O linie punctată discontinuă"
     ],
     "correct_indices": [
       1
     ]
   },
   {
-    "id": 5,
-    "text": "Simbolul \"Fork\" (bară orizontală) într-o diagramă de activitate marchează:",
+    "id": 3,
+    "text": "Ce reprezintă un \"Actor\" într-o diagramă Use Case?",
     "options": [
-      "O decizie condițională (If/Else)",
-      "Sincronizarea fluxurilor (Join)",
-      "Începutul execuției paralele (concurente)",
-      "Finalizarea activității curente"
+      "Un modul software intern al aplicației",
+      "Baza de date a sistemului",
+      "O persoană sau un sistem extern care interacționează cu sistemul",
+      "Un angajat al departamentului IT care scrie codul"
     ],
     "correct_indices": [
       2
     ]
   },
   {
+    "id": 4,
+    "text": "Procesul de generare automată a codului sursă pornind de la modelul UML se numește:",
+    "options": [
+      "Inginerie Inversă (Reverse Engineering)",
+      "Depanare (Debugging)",
+      "Inginerie Directă (Forward Engineering)",
+      "Refactorizare (Refactoring)"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 5,
+    "text": "Simbolul \"Fork\" (bară orizontală) într-o diagramă de activitate marchează:",
+    "options": [
+      "Sincronizarea fluxurilor (Join)",
+      "Finalizarea activității",
+      "O decizie condițională (If/Else)",
+      "Începutul execuției paralele (concurente)"
+    ],
+    "correct_indices": [
+      3
+    ]
+  },
+  {
     "id": 6,
-    "text": "Într-o diagramă de secvență, timpul se scurge:",
+    "text": "Într-o diagramă de secvență, axa timpului se scurge:",
     "options": [
       "De la stânga la dreapta",
       "De sus în jos",
       "De jos în sus",
-      "Circular, revenind la obiectul inițial"
+      "Circular"
     ],
     "correct_indices": [
       1
@@ -79,50 +79,50 @@
   },
   {
     "id": 7,
-    "text": "Cerința \"Sistemul trebuie să răspundă la interogări în maxim 0.5 secunde\" este:",
+    "text": "Cerința \"Sistemul trebuie să răspundă la interogări în maxim 0.5 secunde\" este un exemplu de cerință:",
     "options": [
-      "Funcțională (ce face sistemul)",
-      "De securitate a datelor",
-      "De mentenanță preventivă",
-      "Non-funcțională (de performanță)"
+      "Funcțională",
+      "Organizațională",
+      "Non-funcțională (de performanță)",
+      "De mentenanță"
     ],
     "correct_indices": [
-      3
+      2
     ]
   },
   {
     "id": 8,
-    "text": "Ce reprezintă simbolul \"+\" (plus) în fața unui atribut într-o diagramă de clase?",
+    "text": "Ce reprezintă simbolul \"+\" (plus) poziționat în fața unui atribut într-o diagramă de clase?",
     "options": [
       "Vizibilitate privată",
+      "Atribut static",
       "Vizibilitate publică",
-      "Vizibilitate protejată",
-      "Atribut static (de clasă)"
+      "Vizibilitate protejată"
     ],
     "correct_indices": [
-      1
+      2
     ]
   },
   {
     "id": 9,
     "text": "Poarta BPMN care activează TOATE căile de ieșire simultan (fără condiții) este:",
     "options": [
-      "Poarta Paralelă (AND)",
       "Poarta Exclusivă (XOR)",
+      "Poarta Paralelă (AND)",
       "Poarta Incluzivă (OR)",
       "Poarta Complexă"
     ],
     "correct_indices": [
-      0
+      1
     ]
   },
   {
     "id": 10,
-    "text": "Care diagramă modelează configurația fizică a nodurilor hardware (servere, device-uri)?",
+    "text": "Care diagramă modelează configurația fizică a nodurilor hardware (servere, stații de lucru, dispozitive)?",
     "options": [
+      "Diagrama de Pachete",
       "Diagrama de Structură Compozită",
       "Diagrama de Componente",
-      "Diagrama de Pachete",
       "Diagrama de Desfășurare (Deployment)"
     ],
     "correct_indices": [
@@ -131,25 +131,25 @@
   },
   {
     "id": 11,
-    "text": "Cifra de control dintr-un cod (ex: CNP) are rolul de a:",
+    "text": "Cifra de control dintr-un cod (ex: CNP) are rolul principal de a:",
     "options": [
-      "Cripta datele pentru securitate",
-      "Identifica univoc persoana în baza de date",
+      "Cripta datele personale",
       "Detecta erorile de culegere/transmitere",
-      "Crește capacitatea de stocare a codului"
+      "Identifica genul persoanei",
+      "Crește lungimea codului pentru unicitate"
     ],
     "correct_indices": [
-      2
+      1
     ]
   },
   {
     "id": 12,
-    "text": "Relația <<include>> într-un Use Case înseamnă:",
+    "text": "Relația <<include>> într-un Use Case semnifică faptul că:",
     "options": [
-      "Funcționalitatea este opțională și condiționată",
-      "Funcționalitatea este depreciată (deprecated)",
+      "Funcționalitatea este opțională",
+      "Funcționalitatea este executată doar în caz de eroare",
       "Funcționalitatea este obligatorie (inclusă mereu)",
-      "Funcționalitatea este executată doar la eroare"
+      "Funcționalitatea este depreciată"
     ],
     "correct_indices": [
       2
@@ -160,35 +160,35 @@
     "text": "Un mesaj sincron într-o diagramă de secvență are vârful săgeții:",
     "options": [
       "Deschis (ca un V)",
-      "Rotund (cerc)",
+      "Plin (triunghi negru)",
       "Punctat",
-      "Plin (triunghi negru)"
-    ],
-    "correct_indices": [
-      3
-    ]
-  },
-  {
-    "id": 14,
-    "text": "Care este diferența dintre Sistemul Informatic (SI) și Sistemul Informațional (SInf)?",
-    "options": [
-      "SInf se referă doar la hardware, iar SI la software",
-      "SI este inclus în SInf și se ocupă de prelucrarea automată a datelor",
-      "Sunt termeni sinonimi interschimbabili",
-      "SI este manual, SInf este automat"
+      "Rotund"
     ],
     "correct_indices": [
       1
     ]
   },
   {
-    "id": 15,
-    "text": "Într-o diagramă de stare, tranziția este declanșată de:",
+    "id": 14,
+    "text": "Care este diferența corectă dintre Sistemul Informatic (SI) și Sistemul Informațional (SInf)?",
     "options": [
-      "Un atribut static",
+      "SI este manual, SInf este automat",
+      "Sunt termeni perfect sinonimi",
+      "SI este inclus în SInf și se ocupă de prelucrarea automată a datelor",
+      "SInf se referă doar la echipamentele hardware"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 15,
+    "text": "Într-o diagramă de stare, tranziția este declanșată de obicei de:",
+    "options": [
+      "Un atribut al clasei",
       "Un eveniment (trigger)",
-      "O clasă abstractă",
-      "O notă explicativă"
+      "O notă explicativă",
+      "O clasă abstractă"
     ],
     "correct_indices": [
       1
@@ -196,25 +196,25 @@
   },
   {
     "id": 16,
-    "text": "Metodologia \"Agile\" se caracterizează prin:",
+    "text": "Metodologia \"Agile\" se caracterizează în principal prin:",
     "options": [
-      "Planificare rigidă și documentație extensivă de la început",
+      "Documentație excesivă înainte de scrierea codului",
+      "Etape rigide de tip cascadă",
       "Dezvoltare iterativă și adaptabilitate la schimbări",
-      "Interzicerea testării unitare",
-      "Lipsa oricărei documentații"
+      "Absența completă a testării"
     ],
     "correct_indices": [
-      1
+      2
     ]
   },
   {
     "id": 17,
-    "text": "Ce reprezintă un \"Swimlane\" într-o diagramă de activitate?",
+    "text": "Ce reprezintă un \"Swimlane\" (culoar) într-o diagramă de activitate?",
     "options": [
-      "Durata temporală a activității",
-      "Tipul de date returnat de o funcție",
+      "Durata de timp a activității",
+      "O zonă de memorie tampon",
       "Responsabilitatea (cine execută acțiunile din acel culoar)",
-      "O piscină de date partajată"
+      "Tipul de date returnat"
     ],
     "correct_indices": [
       2
@@ -224,36 +224,36 @@
     "id": 18,
     "text": "\"Ingineria Inversă\" (Reverse Engineering) este utilă pentru:",
     "options": [
-      "A crea cod nou de la zero pentru un sistem nou",
-      "A angaja personal non-tehnic",
-      "A șterge definitiv baza de date veche",
-      "A înțelege un sistem vechi (legacy) prin generarea modelelor din codul său"
+      "A crea un sistem nou de la zero",
+      "A șterge datele redundante",
+      "A înțelege un sistem vechi (legacy) prin generarea modelelor din codul său",
+      "A angaja personal nou"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 19,
+    "text": "Într-o diagramă de clase, agregarea slabă (unde obiectele pot exista independent) se notează cu:",
+    "options": [
+      "Romb plin",
+      "Cerc",
+      "Pătrat",
+      "Romb gol"
     ],
     "correct_indices": [
       3
     ]
   },
   {
-    "id": 19,
-    "text": "Într-o diagramă de clase, agregarea slabă (obiectele pot exista independent) se notează cu:",
-    "options": [
-      "Romb plin",
-      "Romb gol",
-      "Săgeată dublă",
-      "Linie punctată"
-    ],
-    "correct_indices": [
-      1
-    ]
-  },
-  {
     "id": 20,
     "text": "Ce reprezintă un \"Pool\" în BPMN?",
     "options": [
-      "Un flux de mesaje secundar",
-      "Un depozit de date (Data Store)",
+      "O bază de date comună",
+      "Un flux de mesaje",
       "Un participant major (organizație/entitate) în proces",
-      "O activitate atomică de tip script"
+      "O activitate simplă"
     ],
     "correct_indices": [
       2
@@ -261,15 +261,15 @@
   },
   {
     "id": 21,
-    "text": "Care fază a ciclului de viață răspunde la întrebarea \"CE face sistemul?\"",
+    "text": "Care fază a ciclului de viață SDLC răspunde la întrebarea \"CE face sistemul?\"",
     "options": [
-      "Implementarea (Coding)",
-      "Proiectarea (Design)",
-      "Testarea (Testing)",
-      "Analiza cerințelor (Analysis)"
+      "Proiectarea",
+      "Analiza cerințelor",
+      "Implementarea",
+      "Testarea"
     ],
     "correct_indices": [
-      3
+      1
     ]
   },
   {
@@ -277,9 +277,9 @@
     "text": "Într-o diagramă de componente, \"interfața cerută\" (required) este simbolizată prin:",
     "options": [
       "Un cerc plin (\"lollipop\")",
-      "Un dreptunghi cu colțuri rotunjite",
+      "Un dreptunghi",
       "Un semicerc (\"socket\")",
-      "Un romb"
+      "O stea"
     ],
     "correct_indices": [
       2
@@ -287,103 +287,103 @@
   },
   {
     "id": 23,
-    "text": "Diagrama care pune accent pe ordinea temporală a mesajelor este:",
+    "text": "Diagrama UML care pune accent pe ordinea temporală a mesajelor este:",
     "options": [
-      "Diagrama de Structură Compusă",
-      "Diagrama de Secvență",
+      "Diagrama de Comunicare",
       "Diagrama de Pachete",
-      "Diagrama de Comunicare (Collaboration)"
-    ],
-    "correct_indices": [
-      1
-    ]
-  },
-  {
-    "id": 24,
-    "text": "Vizibilitatea privată (private) a unui atribut se notează cu:",
-    "options": [
-      "- (minus)",
-      "+ (plus)",
-      "# (diez)",
-      "~ (tildă)"
-    ],
-    "correct_indices": [
-      0
-    ]
-  },
-  {
-    "id": 25,
-    "text": "Un \"Fragment Combinat\" de tip alt într-o diagramă de secvență modelează:",
-    "options": [
-      "O buclă repetitivă (loop)",
-      "O decizie alternativă (if-else)",
-      "Execuția paralelă",
-      "O secvență critică atomică"
-    ],
-    "correct_indices": [
-      1
-    ]
-  },
-  {
-    "id": 26,
-    "text": "Relația de generalizare (moștenire) se reprezintă prin:",
-    "options": [
-      "Linie punctată cu săgeată",
-      "Linie continuă cu romb",
-      "Linie continuă cu triunghi gol în vârf",
-      "Linie groasă neagră"
-    ],
-    "correct_indices": [
-      2
-    ]
-  },
-  {
-    "id": 27,
-    "text": "Cerința \"Sistemul trebuie să permită plata cu cardul\" este:",
-    "options": [
-      "Non-funcțională",
-      "De fiabilitate",
-      "Funcțională",
-      "De constrângere tehnologică"
-    ],
-    "correct_indices": [
-      2
-    ]
-  },
-  {
-    "id": 28,
-    "text": "Un nod \"Join\" (bară groasă) într-o diagramă de activitate:",
-    "options": [
-      "Separă fluxurile pentru execuție paralelă",
-      "Generează o eroare de sincronizare",
-      "Termină procesul imediat",
-      "Sincronizează (așteaptă) fluxurile paralele să ajungă toate"
+      "Diagrama de Structură Compusă",
+      "Diagrama de Secvență"
     ],
     "correct_indices": [
       3
     ]
   },
   {
+    "id": 24,
+    "text": "Vizibilitatea privată (private) a unui atribut se notează în UML cu:",
+    "options": [
+      "+",
+      "#",
+      "-",
+      "~"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 25,
+    "text": "Un \"Fragment Combinat\" de tip alt într-o diagramă de secvență modelează:",
+    "options": [
+      "O buclă (loop)",
+      "Execuția paralelă",
+      "O decizie alternativă (if-else)",
+      "O secvență critică"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 26,
+    "text": "Relația de generalizare (moștenire) se reprezintă grafic prin:",
+    "options": [
+      "Linie continuă cu triunghi gol în vârf",
+      "Linie punctată",
+      "Linie cu romb",
+      "Linie groasă"
+    ],
+    "correct_indices": [
+      0
+    ]
+  },
+  {
+    "id": 27,
+    "text": "Cerința \"Sistemul trebuie să permită plata cu cardul\" este:",
+    "options": [
+      "Funcțională",
+      "Non-funcțională",
+      "De fiabilitate",
+      "De constrângere"
+    ],
+    "correct_indices": [
+      0
+    ]
+  },
+  {
+    "id": 28,
+    "text": "Un nod \"Join\" într-o diagramă de activitate:",
+    "options": [
+      "Separă fluxurile",
+      "Termină procesul imediat ce ajunge primul flux",
+      "Sincronizează (așteaptă) fluxurile paralele",
+      "Generează o eroare"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
     "id": 29,
     "text": "În BPMN, un cerc cu contur dublu reprezintă:",
     "options": [
-      "Un eveniment de sfârșit",
-      "Un eveniment intermediar",
       "Un eveniment de început",
-      "O poartă de decizie"
+      "Un eveniment de sfârșit",
+      "O poartă",
+      "Un eveniment intermediar"
     ],
     "correct_indices": [
-      1
+      3
     ]
   },
   {
     "id": 30,
-    "text": "Care diagramă este utilizată pentru a modela ciclul de viață (stările posibile) ale unui singur obiect?",
+    "text": "Care diagramă este utilizată pentru a modela ciclul de viață al unui singur obiect?",
     "options": [
       "Diagrama de Clase",
       "Diagrama de Use Case",
       "Diagrama de Obiecte",
-      "Diagrama de Stare (State Machine)"
+      "Diagrama de Stare"
     ],
     "correct_indices": [
       3
@@ -393,9 +393,9 @@
     "id": 31,
     "text": "\"Lower CASE\" tools sprijină etapele:",
     "options": [
-      "De început (Planificare strategică)",
+      "De început (Planificare)",
       "De analiză a cerințelor",
-      "De marketing și vânzări",
+      "De marketing",
       "De final (Implementare, Testare, Mentenanță)"
     ],
     "correct_indices": [
@@ -407,22 +407,22 @@
     "text": "Ce înseamnă multiplicitatea 0..1?",
     "options": [
       "Unu sau mai mulți",
-      "Exact unu",
       "Zero sau unu (opțional)",
+      "Exact unu",
       "Zero sau mai mulți"
     ],
     "correct_indices": [
-      2
+      1
     ]
   },
   {
     "id": 33,
     "text": "Un artefact într-o diagramă de desfășurare este:",
     "options": [
-      "Un concept abstract logic",
-      "Un actor uman care operează sistemul",
+      "Un concept abstract",
+      "Un actor uman",
       "Un element fizic (fișier, executabil, script)",
-      "O relație de asociere între clase"
+      "O relație logică"
     ],
     "correct_indices": [
       2
@@ -432,36 +432,36 @@
     "id": 34,
     "text": "Relația <<extend>> într-un Use Case înseamnă:",
     "options": [
-      "Cazul de utilizare extinde funcționalitatea doar în anumite condiții (opțional)",
       "Cazul de utilizare este inclus obligatoriu",
-      "Este o relație de generalizare strictă",
-      "Actorul trebuie să fie autentificat"
+      "Este o relație de moștenire",
+      "Cazul de utilizare extinde funcționalitatea doar în anumite condiții",
+      "Actorul este administrator"
     ],
     "correct_indices": [
-      0
+      2
     ]
   },
   {
     "id": 35,
     "text": "Codificarea mnemonică folosește:",
     "options": [
-      "Cifre generate aleatoriu",
-      "Coduri de bare standardizate",
-      "O secvență numerică simplă (1, 2, 3...)",
-      "Abrevieri sugestive derivate din denumirea obiectului"
+      "Cifre aleatoare",
+      "Doar litera \"A\"",
+      "Abrevieri sugestive din denumirea obiectului",
+      "Coduri de bare"
     ],
     "correct_indices": [
-      3
+      2
     ]
   },
   {
     "id": 36,
     "text": "În BPMN, fluxul de mesaje (Message Flow) dintre două Pool-uri se reprezintă prin:",
     "options": [
-      "Linie continuă neagră",
+      "Linie continuă",
       "Linie punctată cu săgeată deschisă",
-      "Linie groasă de asociere",
-      "Linie curbă roșie"
+      "Linie groasă",
+      "Linie curbă"
     ],
     "correct_indices": [
       1
@@ -471,75 +471,75 @@
     "id": 37,
     "text": "Un atribut protected (#) este vizibil:",
     "options": [
-      "Public, pentru orice clasă",
-      "În clasa curentă și subclase (clasele care moștenesc)",
       "Doar în clasa curentă",
-      "Doar în pachetul curent"
-    ],
-    "correct_indices": [
-      1
-    ]
-  },
-  {
-    "id": 38,
-    "text": "Diagrama de Pachete servește la:",
-    "options": [
-      "Definirea stărilor interne ale unui obiect",
-      "Organizarea logică a elementelor modelului în grupuri (namespace-uri)",
-      "Aranjarea serverelor fizice în rack",
-      "Stabilirea ordinii cronologice a mesajelor"
-    ],
-    "correct_indices": [
-      1
-    ]
-  },
-  {
-    "id": 39,
-    "text": "Într-o diagramă de secvență, dreptunghiul alungit de pe linia de viață se numește:",
-    "options": [
-      "Stare (State)",
-      "Clasă (Class)",
-      "Notă (Note)",
-      "Activare (Focus of Control)"
-    ],
-    "correct_indices": [
-      3
-    ]
-  },
-  {
-    "id": 40,
-    "text": "Poarta BPMN Exclusivă (XOR) se notează cu:",
-    "options": [
-      "Un semn plus (+)",
-      "Un cerc (O)",
-      "Un X (sau romb gol)",
-      "Un asterisc (*)"
+      "Public",
+      "În clasa curentă și subclase (clasele care moștenesc)",
+      "Doar în main()"
     ],
     "correct_indices": [
       2
     ]
   },
   {
-    "id": 41,
-    "text": "Care dintre următoarele este o cerință non-funcțională de securitate?",
+    "id": 38,
+    "text": "Diagrama de Pachete servește la:",
     "options": [
-      "\"Datele trebuie criptate la stocare folosind AES-256.\"",
-      "\"Sistemul trebuie să calculeze totalul facturii cu TVA.\"",
-      "\"Butonul de salvare trebuie să fie albastru.\"",
-      "\"Sistemul trebuie să permită adăugarea de noi utilizatori.\""
+      "Organizarea logică a elementelor modelului în grupuri",
+      "Aranjarea serverelor în rack",
+      "Stabilirea ordinii mesajelor",
+      "Definirea stărilor"
     ],
     "correct_indices": [
       0
     ]
   },
   {
+    "id": 39,
+    "text": "Într-o diagramă de secvență, dreptunghiul de pe linia de viață se numește:",
+    "options": [
+      "Stare",
+      "Activare (Focus of Control)",
+      "Clasă",
+      "Notă"
+    ],
+    "correct_indices": [
+      1
+    ]
+  },
+  {
+    "id": 40,
+    "text": "Poarta BPMN Exclusivă (XOR) se notează cu:",
+    "options": [
+      "+",
+      "O",
+      "*",
+      "X (sau gol)"
+    ],
+    "correct_indices": [
+      3
+    ]
+  },
+  {
+    "id": 41,
+    "text": "Care dintre următoarele este o cerință non-funcțională de securitate?",
+    "options": [
+      "\"Sistemul trebuie să calculeze totalul facturii.\"",
+      "\"Butonul de salvare trebuie să fie albastru.\"",
+      "\"Datele trebuie criptate folosind AES-256.\"",
+      "\"Sistemul trebuie să aibă 3 tipuri de utilizatori.\""
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
     "id": 42,
     "text": "Relația de dependență (linie punctată cu săgeată) indică:",
     "options": [
-      "O relație permanentă de tip parte-întreg",
-      "O relație de moștenire genetică",
-      "Agregare puternică (compoziție)",
-      "O relație temporară de utilizare (\"uses a\")"
+      "O relație permanentă",
+      "Moștenire",
+      "Agregare",
+      "O relație temporară (\"uses a\")"
     ],
     "correct_indices": [
       3
@@ -562,62 +562,62 @@
     "id": 44,
     "text": "Sistemul deschis este un sistem care:",
     "options": [
-      "Este oprit și nu funcționează",
+      "Nu interacționează cu mediul",
+      "Este oprit",
       "Interacționează cu mediul exterior (schimb de materie/energie/informație)",
-      "Nu interacționează cu mediul (izolat)",
-      "Nu are mecanism de feedback"
+      "Nu are feedback"
     ],
     "correct_indices": [
-      1
+      2
     ]
   },
   {
     "id": 45,
     "text": "\"Entropia\" într-un sistem informațional reprezintă:",
     "options": [
-      "Viteza de procesare a datelor",
-      "Gradul de organizare și structurare",
-      "Măsura dezordinii sau incertitudinii",
-      "Capacitatea de stocare a serverului"
-    ],
-    "correct_indices": [
-      2
-    ]
-  },
-  {
-    "id": 46,
-    "text": "Diagrama de Structură Compozită (Composite Structure) este o diagramă:",
-    "options": [
-      "De comportament (Behavioral)",
-      "De interacțiune",
-      "Structurală",
-      "Dinamică"
-    ],
-    "correct_indices": [
-      2
-    ]
-  },
-  {
-    "id": 47,
-    "text": "Într-o diagramă Use Case, chenarul care înconjoară cazurile de utilizare reprezintă:",
-    "options": [
-      "Internetul",
-      "Actorul principal",
-      "Baza de date SQL",
-      "Frontiera sistemului (System Boundary)"
+      "Gradul de organizare",
+      "Viteza de procesare",
+      "Capacitatea de stocare",
+      "Măsura dezordinii"
     ],
     "correct_indices": [
       3
     ]
   },
   {
+    "id": 46,
+    "text": "Diagrama de Structură Compozită (Composite Structure) este o diagramă:",
+    "options": [
+      "Dinamică",
+      "Structurală",
+      "De interacțiune",
+      "De comportament"
+    ],
+    "correct_indices": [
+      1
+    ]
+  },
+  {
+    "id": 47,
+    "text": "Într-o diagramă Use Case, chenarul care înconjoară cazurile de utilizare reprezintă:",
+    "options": [
+      "Actorul",
+      "Baza de date",
+      "Frontiera sistemului (System Boundary)",
+      "Internetul"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
     "id": 48,
     "text": "Un mesaj asincron trimis într-o diagramă de secvență înseamnă că:",
     "options": [
-      "Expeditorul așteaptă blocat răspunsul înainte de a continua",
-      "Mesajul este o eroare critică",
+      "Expeditorul așteaptă răspunsul înainte de a continua",
+      "Mesajul s-a pierdut",
       "Expeditorul NU așteaptă răspunsul și își continuă execuția",
-      "Mesajul se pierde pe rețea"
+      "Este un mesaj de eroare"
     ],
     "correct_indices": [
       2
@@ -627,22 +627,22 @@
     "id": 49,
     "text": "Evenimentul de tip \"Timer\" (Ceas) într-o diagramă de stare declanșează:",
     "options": [
-      "O tranziție după scurgerea unui interval de timp specificat",
-      "O eroare fatală de sistem",
-      "Crearea unui nou obiect",
-      "Ștergerea instanței curente"
+      "O eroare de sistem",
+      "O tranziție după scurgerea unui interval de timp",
+      "Ștergerea obiectului",
+      "Crearea unui nou obiect"
     ],
     "correct_indices": [
-      0
+      1
     ]
   },
   {
     "id": 50,
     "text": "Care diagramă este cea mai potrivită pentru a arăta dependențele dintre modulele software și bibliotecile externe?",
     "options": [
+      "Diagrama de Secvență",
       "Diagrama de Stare",
       "Diagrama de Activitate",
-      "Diagrama de Secvență",
       "Diagrama de Componente"
     ],
     "correct_indices": [
@@ -655,21 +655,21 @@
     "options": [
       "Byte",
       "Baud",
-      "Pixel",
-      "Bit"
+      "Bit",
+      "Pixel"
     ],
     "correct_indices": [
-      3
+      2
     ]
   },
   {
     "id": 52,
     "text": "Un cod \"Semnificativ\" (Mnemonic) are dezavantajul principal că:",
     "options": [
-      "Este greu de reținut pentru utilizatori",
-      "Nu poate fi introdus într-o bază de date",
+      "Este greu de reținut",
+      "Nu poate fi introdus în calculator",
       "Este rigid și greu de extins dacă apar categorii noi neprevăzute",
-      "Are o lungime prea mare"
+      "Este prea lung"
     ],
     "correct_indices": [
       2
@@ -680,21 +680,21 @@
     "text": "În teoria sistemelor, \"Feedback-ul negativ\" are rolul de a:",
     "options": [
       "Amplifica deviațiile sistemului (efect de avalanșă)",
-      "Opri sistemul definitiv",
       "Corecta deviațiile și a menține sistemul în starea de echilibru (homeostazie)",
-      "Șterge datele de intrare eronate"
+      "Opri sistemul definitiv",
+      "Șterge datele de intrare"
     ],
     "correct_indices": [
-      2
+      1
     ]
   },
   {
     "id": 54,
     "text": "Codul numeric personal (CNP) este un exemplu de cod:",
     "options": [
-      "Aleator (Random)",
-      "Secvențial simplu (Incremental)",
+      "Secvențial simplu",
       "Ierarhic",
+      "Aleator",
       "Juxtapus (format din segmente cu semnificație distinctă)"
     ],
     "correct_indices": [
@@ -705,13 +705,13 @@
     "id": 55,
     "text": "Entropia informațională este maximă atunci când:",
     "options": [
-      "Evenimentele sunt echiprobabile (incertitudinea este maximă)",
       "Evenimentul este sigur (probabilitate 1)",
-      "Nu există nicio informație",
+      "Nu există informație",
+      "Evenimentele sunt echiprobabile (incertitudinea este maximă)",
       "Sistemul este perfect organizat"
     ],
     "correct_indices": [
-      0
+      2
     ]
   },
   {
@@ -719,25 +719,25 @@
     "text": "Care dintre următoarele NU este o calitate a informației economice?",
     "options": [
       "Realismul",
-      "Dinamismul",
       "Redundanța excesivă",
-      "Oportunitatea (timpul util)"
+      "Oportunitatea (timpul util)",
+      "Dinamismul"
     ],
     "correct_indices": [
-      2
+      1
     ]
   },
   {
     "id": 57,
     "text": "Sistemul Cibernetic se caracterizează prin:",
     "options": [
-      "Liniaritate absolută",
-      "Existența buclei de reacție (feedback)",
       "Lipsa oricărei conexiuni cu mediul",
-      "Procesare exclusiv manuală"
+      "Procesare exclusiv manuală",
+      "Liniaritate absolută",
+      "Existența buclei de reacție (feedback)"
     ],
     "correct_indices": [
-      1
+      3
     ]
   },
   {
@@ -745,25 +745,25 @@
     "text": "Codificarea secvențială (ex: 1, 2, 3...) este recomandată pentru:",
     "options": [
       "Nomenclatoare stabile, cu puține modificări",
-      "Criptarea datelor sensibile",
-      "Gruparea obiectelor pe clase complexe",
-      "Liste dinamice, unde se adaugă frecvent elemente noi la final"
+      "Gruparea obiectelor pe clase",
+      "Liste dinamice, unde se adaugă frecvent elemente noi la final",
+      "Criptarea datelor"
     ],
     "correct_indices": [
-      3
+      2
     ]
   },
   {
     "id": 59,
     "text": "Ce este \"Sintaxa\" unei informații?",
     "options": [
+      "Înțelesul mesajului",
+      "Regulile de structurare a semnelor/simbolurilor",
       "Valoarea pentru decident",
-      "Înțelesul semantic al mesajului",
-      "Suportul fizic de stocare",
-      "Regulile de structurare a semnelor/simbolurilor"
+      "Suportul fizic"
     ],
     "correct_indices": [
-      3
+      1
     ]
   },
   {
@@ -771,9 +771,9 @@
     "text": "Redundanța într-un cod (ex: cifra de control) ajută la:",
     "options": [
       "Detectarea și corectarea erorilor",
-      "Ascunderea informației confidențiale",
       "Creșterea vitezei de transmisie",
-      "Comprimarea datelor"
+      "Comprimarea datelor",
+      "Ascunderea informației"
     ],
     "correct_indices": [
       0
@@ -784,25 +784,25 @@
     "text": "Sistemul \"Pilot\" în implementarea unui SI presupune:",
     "options": [
       "Implementarea în toată organizația simultan",
-      "Rularea vechiului și noului sistem în paralel",
       "Implementarea într-un singur compartiment reprezentativ pentru testare",
+      "Rularea vechiului și noului sistem în paralel",
       "Abandonarea sistemului vechi fără teste"
     ],
     "correct_indices": [
-      2
+      1
     ]
   },
   {
     "id": 62,
     "text": "Care este diferența dintre \"Dată\" și \"Informație\"?",
     "options": [
-      "Data este calitativă, Informația este cantitativă",
+      "Nu există diferență",
       "Informația este stocată pe HDD, Data este în RAM",
-      "Data este materia primă (brută), Informația este data prelucrată și interpretată",
-      "Nu există diferență, sunt sinonime"
+      "Data este calitativă, Informația este cantitativă",
+      "Data este materia primă (brută), Informația este data prelucrată și interpretată"
     ],
     "correct_indices": [
-      2
+      3
     ]
   },
   {
@@ -811,8 +811,8 @@
     "options": [
       "Algoritmul Modulo 10 (ponderi 1 și 3)",
       "Împărțire la 2",
-      "Logaritmare naturală",
-      "Adunare simplă a cifrelor"
+      "Logaritmare",
+      "Adunare simplă"
     ],
     "correct_indices": [
       0
@@ -822,10 +822,10 @@
     "id": 64,
     "text": "Un sistem deschis se caracterizează prin:",
     "options": [
-      "Funcționare perpetuă fără resurse",
-      "Izolare totală de mediul exterior",
+      "Entropie constantă zero",
+      "Izolare totală",
       "Schimb de substanță, energie și informație cu mediul",
-      "Entropie constantă zero"
+      "Funcționare perpetuă fără resurse"
     ],
     "correct_indices": [
       2
@@ -835,48 +835,48 @@
     "id": 65,
     "text": "Documentele de intrare în SI pot fi:",
     "options": [
-      "Doar electronice (PDF, XML)",
-      "Primare (externe/interne) și secundare",
+      "Doar electronice",
       "Doar pe hârtie",
-      "Doar rapoarte finale de sinteză"
+      "Primare (externe/interne) și secundare",
+      "Doar rapoarte finale"
     ],
     "correct_indices": [
-      1
+      2
     ]
   },
   {
     "id": 66,
     "text": "Modelul de ciclu de viață \"în V\" pune accent pe:",
     "options": [
-      "Lipsa documentației formale",
-      "Corespondența dintre fazele de dezvoltare și fazele de testare (ex: Cerințe <-> Testare de acceptanță)",
-      "Prototipare evolutivă rapidă",
-      "Programare extremă (XP)"
+      "Programare rapidă",
+      "Lipsa documentației",
+      "Corespondența dintre fazele de dezvoltare și fazele de testare",
+      "Prototipare evolutivă"
     ],
     "correct_indices": [
-      1
+      2
     ]
   },
   {
     "id": 67,
     "text": "Mentenanța Adaptivă se referă la:",
     "options": [
-      "Corectarea bug-urilor critice",
-      "Modificarea software-ului pentru a funcționa într-un mediu schimbat (ex: nou OS, nou hardware)",
-      "Rescrierea completă a codului pentru lizibilitate",
-      "Adăugarea de funcții noi cerute de utilizator"
+      "Corectarea bug-urilor",
+      "Adăugarea de funcții noi cerute de utilizator",
+      "Rescrierea codului pentru lizibilitate",
+      "Modificarea software-ului pentru a funcționa într-un mediu schimbat (ex: nou OS)"
     ],
     "correct_indices": [
-      1
+      3
     ]
   },
   {
     "id": 68,
     "text": "Studiul de Fezabilitate se realizează în etapa de:",
     "options": [
-      "Testare finală",
-      "Proiectare detaliată",
-      "Lansare în producție",
+      "Proiectare",
+      "Lansare",
+      "Testare",
       "Inițiere / Analiză preliminară"
     ],
     "correct_indices": [
@@ -887,10 +887,10 @@
     "id": 69,
     "text": "Instrumentele \"Integrated CASE\" (I-CASE):",
     "options": [
-      "Acoperă doar generarea automată de cod",
-      "Sunt folosite doar pentru desenarea diagramelor",
+      "Acoperă doar analiza",
+      "Acoperă doar generarea de cod",
       "Acoperă întregul ciclu de viață, combinând Upper și Lower CASE",
-      "Acoperă doar faza de analiză"
+      "Sunt folosite doar pentru desenat"
     ],
     "correct_indices": [
       2
@@ -900,39 +900,39 @@
     "id": 70,
     "text": "Prototiparea \"Throw-away\" (de aruncat) are scopul de a:",
     "options": [
-      "Reduce costurile de licențiere software",
-      "Deveni produsul final livrat clientului",
-      "Clarifica cerințele utilizatorului, după care prototipul este aruncat și sistemul reconstruit corect",
-      "Testa performanța hardware a serverului"
+      "Deveni produsul final",
+      "Clarifica cerințele utilizatorului, după care este reconstruit sistemul corect",
+      "Testa performanța hardware",
+      "Reduce costurile de licențiere"
     ],
     "correct_indices": [
-      2
+      1
     ]
   },
   {
     "id": 71,
     "text": "Cerințele \"SMART\" trebuie să fie:",
     "options": [
-      "Superioare, Medii, Accesibile, Rare, Tipice",
-      "Specifice, Măsurabile, Abordabile (Achievable), Relevante, Încadrate în Timp",
+      "Sigure, Mari, Atractive, Reale, Tehnice",
       "Simple, Manuale, Automate, Rapide, Totale",
-      "Sigure, Mari, Atractive, Reale, Tehnice"
+      "Superioare, Medii, Accesibile, Rare, Tipice",
+      "Specifice, Măsurabile, Abordabile, Relevante, Încadrate în Timp"
     ],
     "correct_indices": [
-      1
+      3
     ]
   },
   {
     "id": 72,
     "text": "Diagramele Data Flow (DFD) din metodologiile structurate (ex: SSADM) modelează:",
     "options": [
-      "Starea internă a obiectelor",
       "Fluxul logic al datelor prin sistem, procesele și depozitele de date",
-      "Structura claselor și moștenirea",
-      "Ordinea cronologică a mesajelor"
+      "Ordinea mesajelor în timp (ca la UML Sequence)",
+      "Structura claselor",
+      "Starea obiectelor"
     ],
     "correct_indices": [
-      1
+      0
     ]
   },
   {
@@ -940,86 +940,86 @@
     "text": "Testarea \"Black Box\" presupune:",
     "options": [
       "Verificarea codului sursă linie cu linie",
-      "Testarea structurii tabelelor din baza de date",
-      "Testarea funcționalității fără a cunoaște structura internă a codului (bazată pe intrări și ieșiri)",
-      "Testarea unitară de către dezvoltator"
+      "Testarea funcționalității fără a cunoaște structura internă a codului",
+      "Testarea de către dezvoltator",
+      "Testarea structurii bazei de date"
     ],
     "correct_indices": [
-      2
+      1
     ]
   },
   {
     "id": 74,
     "text": "Testarea de Regresie verifică:",
     "options": [
-      "Dacă baza de date este goală",
-      "Dacă interfața grafică este estetică",
-      "Dacă sistemul este suficient de rapid",
-      "Dacă noile modificări au stricat funcționalități care funcționau corect anterior"
-    ],
-    "correct_indices": [
-      3
-    ]
-  },
-  {
-    "id": 75,
-    "text": "Repository-ul central într-un instrument CASE are rolul de a:",
-    "options": [
-      "Trimite emailuri automate echipei",
-      "Stoca codul sursă compilat (binar)",
-      "Asigura integritatea și consistența definițiilor și diagramelor partajate între membrii echipei",
-      "Genera desene artistice"
-    ],
-    "correct_indices": [
-      2
-    ]
-  },
-  {
-    "id": 76,
-    "text": "Modelul \"Spirala\" (Boehm) introduce ca element distinctiv:",
-    "options": [
-      "O singură livrare finală 'Big Bang'",
-      "Interzicerea prototipurilor",
-      "Analiza riscului în fiecare iterație",
-      "Programarea în perechi (Pair Programming)"
-    ],
-    "correct_indices": [
-      2
-    ]
-  },
-  {
-    "id": 77,
-    "text": "\"Scrum Master\" în metodologia Agile este:",
-    "options": [
-      "Clientul principal care plătește proiectul",
-      "Șeful de proiect tradițional care dă ordine",
-      "Programatorul șef (Lead Developer)",
-      "Un facilitator care elimină obstacolele echipei și asigură respectarea procesului"
-    ],
-    "correct_indices": [
-      3
-    ]
-  },
-  {
-    "id": 78,
-    "text": "Sistemele ERP (Enterprise Resource Planning) sunt:",
-    "options": [
-      "Sisteme integrate care gestionează toate resursele organizației (Financiar, HR, Producție, Vânzări)",
-      "Editoare de text avansate",
-      "Sisteme izolate de contabilitate primară",
-      "Programe antivirus pentru rețea"
+      "Dacă noile modificări au stricat funcționalități care mergeau înainte",
+      "Dacă sistemul este rapid",
+      "Dacă interfața este frumoasă",
+      "Dacă baza de date este goală"
     ],
     "correct_indices": [
       0
     ]
   },
   {
+    "id": 75,
+    "text": "Repository-ul central într-un instrument CASE are rolul de a:",
+    "options": [
+      "Stoca codul sursă compilat",
+      "Asigura integritatea și consistența definițiilor și diagramelor partajate",
+      "Trimite emailuri",
+      "Desena automat"
+    ],
+    "correct_indices": [
+      1
+    ]
+  },
+  {
+    "id": 76,
+    "text": "Modelul \"Spirala\" (Boehm) introduce ca element distinctiv:",
+    "options": [
+      "Programarea în perechi",
+      "Interzicerea prototipurilor",
+      "O singură livrare finală",
+      "Analiza riscului în fiecare iterație"
+    ],
+    "correct_indices": [
+      3
+    ]
+  },
+  {
+    "id": 77,
+    "text": "\"Scrum Master\" în metodologia Agile este:",
+    "options": [
+      "Șeful de proiect care dă ordine",
+      "Un facilitator care elimină obstacolele echipei și asigură respectarea procesului",
+      "Clientul principal",
+      "Programatorul șef"
+    ],
+    "correct_indices": [
+      1
+    ]
+  },
+  {
+    "id": 78,
+    "text": "Sistemele ERP (Enterprise Resource Planning) sunt:",
+    "options": [
+      "Sisteme izolate de contabilitate",
+      "Programe antivirus",
+      "Editoare de text",
+      "Sisteme integrate care gestionează toate resursele organizației"
+    ],
+    "correct_indices": [
+      3
+    ]
+  },
+  {
     "id": 79,
     "text": "UML (Unified Modeling Language) este:",
     "options": [
-      "Un limbaj de programare executabil",
-      "Un sistem de operare pentru servere",
-      "O metodologie de dezvoltare rigidă",
+      "O metodologie de dezvoltare",
+      "Un limbaj de programare",
+      "Un sistem de operare",
       "Un limbaj standardizat de modelare vizuală"
     ],
     "correct_indices": [
@@ -1043,52 +1043,52 @@
     "id": 81,
     "text": "Vizibilitatea \"Protected\" (notată cu #) permite accesul:",
     "options": [
-      "Oricărei clase (Public)",
+      "Oricărei clase",
+      "Doar clasei curente",
       "Clasei curente și subclaselor (indiferent de pachet)",
-      "Doar clasei curente (Private)",
-      "Doar claselor din același pachet (Package)"
-    ],
-    "correct_indices": [
-      1
-    ]
-  },
-  {
-    "id": 82,
-    "text": "Vizibilitatea \"Package\" (notată cu ~) permite accesul:",
-    "options": [
-      "Nimănui",
-      "Oricui (public)",
-      "Tuturor claselor din același pachet, dar nu și subclaselor din alte pachete",
-      "Doar în clasa curentă"
+      "Doar claselor din același pachet"
     ],
     "correct_indices": [
       2
     ]
   },
   {
+    "id": 82,
+    "text": "Vizibilitatea \"Package\" (notată cu ~) permite accesul:",
+    "options": [
+      "Doar în clasa curentă",
+      "Oricui (public)",
+      "Nimănui",
+      "Tuturor claselor din același pachet, dar nu și subclaselor din alte pachete"
+    ],
+    "correct_indices": [
+      3
+    ]
+  },
+  {
     "id": 83,
     "text": "O metodă statică (de clasă) se subliniază în diagrama de clase. Aceasta înseamnă că:",
     "options": [
-      "Metoda aparține clasei, nu instanțelor (poate fi apelată fără a crea un obiect)",
-      "Metoda este abstractă",
+      "Metoda nu poate fi modificată",
       "Metoda este privată",
-      "Metoda nu poate fi modificată"
+      "Metoda este abstractă",
+      "Metoda aparține clasei, nu instanțelor (poate fi apelată fără a crea un obiect)"
     ],
     "correct_indices": [
-      0
+      3
     ]
   },
   {
     "id": 84,
     "text": "Numele unei clase abstracte în UML se scrie:",
     "options": [
-      "Între ghilimele",
-      "Subliniat",
       "Îngroșat (Bold)",
-      "Înclinat (Italic)"
+      "Înclinat (Italic)",
+      "Subliniat",
+      "Între ghilimele"
     ],
     "correct_indices": [
-      3
+      1
     ]
   },
   {
@@ -1097,8 +1097,8 @@
     "options": [
       "Două clase obișnuite",
       "O clasă și o interfață pe care o implementează",
-      "Două pachete",
-      "Un actor și un Use Case"
+      "Un actor și un Use Case",
+      "Două pachete"
     ],
     "correct_indices": [
       1
@@ -1108,13 +1108,13 @@
     "id": 86,
     "text": "O clasă de asociere (Association Class) este necesară când:",
     "options": [
-      "Avem o relație 1 la 1",
-      "Relația dintre două clase are propriile atribute (ex: nota unui student la un curs)",
+      "Avem moștenire multiplă",
       "Vrem să legăm trei clase",
-      "Avem moștenire multiplă"
+      "Avem o relație 1 la 1",
+      "Relația dintre două clase are propriile atribute (ex: nota unui student la un curs)"
     ],
     "correct_indices": [
-      1
+      3
     ]
   },
   {
@@ -1122,25 +1122,25 @@
     "text": "Multiplicitatea 1..* se citește:",
     "options": [
       "Zero sau mai mulți",
-      "Unu sau necunoscut",
+      "Unu sau mai mulți",
       "Exact unu",
-      "Unu sau mai mulți"
+      "Unu sau necunoscut"
     ],
     "correct_indices": [
-      3
+      1
     ]
   },
   {
     "id": 88,
     "text": "Rombul plin la o clasă \"Universitate\" legată de clasa \"Facultate\" înseamnă:",
     "options": [
-      "Facultatea folosește Universitatea temporar",
       "Dacă Universitatea se desființează, Facultățile continuă să existe",
+      "Dacă Universitatea se desființează, Facultățile sunt și ele distruse (Compoziție)",
       "Universitatea moștenește Facultatea",
-      "Dacă Universitatea se desființează, Facultățile sunt și ele distruse (Compoziție)"
+      "Facultatea folosește Universitatea"
     ],
     "correct_indices": [
-      3
+      1
     ]
   },
   {
@@ -1148,25 +1148,25 @@
     "text": "Într-o diagramă de Componente, un \"Port\" este:",
     "options": [
       "O gaură fizică în calculator",
-      "O adresă IP",
       "Un punct de interacțiune specific prin care o componentă comunică cu exteriorul",
+      "O adresă IP",
       "Un fișier log"
     ],
     "correct_indices": [
-      2
+      1
     ]
   },
   {
     "id": 90,
     "text": "Dependența de tip <<usage>> indică faptul că:",
     "options": [
-      "O clasă este părintele celeilalte",
       "O clasă are nevoie de alta pentru a funcționa corect (o folosește)",
       "O clasă o compilează pe cealaltă",
+      "O clasă este părintele celeilalte",
       "O clasă este o copie a celeilalte"
     ],
     "correct_indices": [
-      1
+      0
     ]
   },
   {
@@ -1186,39 +1186,39 @@
     "id": 92,
     "text": "Relația de generalizare se citește ca:",
     "options": [
-      "\"Este un\" (Is-a)",
       "\"Are un\" (Has-a)",
       "\"Folosește un\" (Uses-a)",
-      "\"Face parte din\" (Part-of)"
+      "\"Face parte din\" (Part-of)",
+      "\"Este un\" (Is-a)"
     ],
     "correct_indices": [
-      0
+      3
     ]
   },
   {
     "id": 93,
     "text": "Constrângerea {xor} între două asocieri înseamnă că:",
     "options": [
+      "Ambele asocieri sunt obligatorii",
       "O instanță poate participa doar la una dintre asocieri la un moment dat, nu la ambele",
       "Asocierile sunt greșite",
-      "Ambele asocieri sunt obligatorii simultan",
       "Asocierile sunt paralele"
     ],
     "correct_indices": [
-      0
+      1
     ]
   },
   {
     "id": 94,
     "text": "Ce este un \"Nod\" (Node) în diagrama de desfășurare?",
     "options": [
-      "O clasă Java",
-      "Un punct de oprire în cod",
       "O resursă hardware (procesor, memorie) sau un mediu de execuție pe care rulează artefacte",
-      "O intersecție de linii"
+      "Un punct de oprire în cod",
+      "O intersecție de linii",
+      "O clasă Java"
     ],
     "correct_indices": [
-      2
+      0
     ]
   },
   {
@@ -1227,8 +1227,8 @@
     "options": [
       "O relație de moștenire",
       "Conectarea (\"wiring\") dintre o interfață cerută și una oferită",
-      "Un port bidirecțional",
-      "O eroare de proiectare"
+      "O eroare de proiectare",
+      "Un port bidirecțional"
     ],
     "correct_indices": [
       1
@@ -1238,75 +1238,75 @@
     "id": 96,
     "text": "Stereotipul <<enumeration>> definește:",
     "options": [
-      "O bază de date",
-      "O clasă infinită",
       "O listă de literali (valori fixe numite)",
-      "Un numărător automat"
+      "O clasă infinită",
+      "Un numărător automat",
+      "O bază de date"
     ],
     "correct_indices": [
-      2
+      0
     ]
   },
   {
     "id": 97,
     "text": "Agregarea (romb gol) se mai numește și:",
     "options": [
-      "Agregare prin valoare",
       "Agregare prin referință (partajată)",
+      "Agregare prin valoare",
       "Compoziție strictă",
       "Moștenire"
     ],
     "correct_indices": [
-      1
+      0
     ]
   },
   {
     "id": 98,
     "text": "Un \"Communication Path\" în diagrama de desfășurare (linie continuă) arată:",
     "options": [
-      "Că un nod îl moștenește pe celălalt",
       "Că două noduri schimbă informații (ex: prin cablu, HTTP)",
+      "Că un nod îl moștenește pe celălalt",
       "Că nodurile sunt identice",
       "Că un nod este în interiorul celuilalt"
     ],
     "correct_indices": [
-      1
+      0
     ]
   },
   {
     "id": 99,
     "text": "Pachetele (Packages) în UML sunt folosite pentru:",
     "options": [
+      "A grupa elemente semantice înrudite și a gestiona spațiile de nume",
       "A livra produse fizice",
       "A comprima fișiere",
-      "A grupa elemente semantice înrudite și a gestiona spațiile de nume",
       "A desena dreptunghiuri"
     ],
     "correct_indices": [
-      2
+      0
     ]
   },
   {
     "id": 100,
     "text": "O interfață în UML conține:",
     "options": [
-      "Constructori publici",
       "Implementarea completă a metodelor",
+      "Doar semnăturile operațiilor (fără implementare)",
       "Atribute private",
-      "Doar semnăturile operațiilor (fără implementare)"
+      "Constructori"
     ],
     "correct_indices": [
-      3
+      1
     ]
   },
   {
     "id": 101,
     "text": "Diferența dintre Atribut Derivat (notat cu /) și unul normal:",
     "options": [
-      "Atributul derivat nu este stocat, ci calculat din alte atribute (ex: vârsta din data nașterii)",
-      "Nu există nicio diferență",
+      "Atributul derivat nu este stocat, ci calculat din alte atribute",
+      "Atributul derivat este privat",
       "Atributul derivat este static",
-      "Atributul derivat este privat"
+      "Nu există nicio diferență"
     ],
     "correct_indices": [
       0
@@ -1316,26 +1316,26 @@
     "id": 102,
     "text": "Relația recursivă (asociere reflexivă) apare când:",
     "options": [
+      "O clasă este asociată cu ea însăși (ex: Angajat este șeful altui Angajat)",
+      "O clasă are o eroare",
       "O clasă moștenește din ea însăși",
-      "O clasă nu are atribute",
-      "O clasă are o eroare de compilare",
-      "O clasă este asociată cu ea însăși (ex: Angajat este șeful altui Angajat)"
+      "O clasă nu are atribute"
     ],
     "correct_indices": [
-      3
+      0
     ]
   },
   {
     "id": 103,
     "text": "Stereotipul <<device>> se aplică:",
     "options": [
-      "Unei interfețe grafice",
-      "Unei activități umane",
       "Unui nod care reprezintă o resursă fizică de calcul (PC, Server, Senzor)",
-      "Unui fișier software"
+      "Unui fișier software",
+      "Unei interfețe",
+      "Unei activități"
     ],
     "correct_indices": [
-      2
+      0
     ]
   },
   {
@@ -1344,8 +1344,8 @@
     "options": [
       "Unui nod care găzduiește software (ex: OS, JVM, Web Server)",
       "Unui cablu de rețea",
-      "Unui actor uman",
-      "Unei clase abstracte"
+      "Unei clase abstracte",
+      "Unui actor"
     ],
     "correct_indices": [
       0
@@ -1355,13 +1355,13 @@
     "id": 105,
     "text": "Multiplicitatea * este prescurtarea pentru:",
     "options": [
-      "1..*",
       "1..1",
-      "Infinit",
-      "0..* (zero la mulți)"
+      "0..* (zero la mulți)",
+      "1..*",
+      "Infinit"
     ],
     "correct_indices": [
-      3
+      1
     ]
   },
   {
@@ -1369,22 +1369,22 @@
     "text": "Într-un Use Case, Actorul secundar este cel care:",
     "options": [
       "Inițiază cazul de utilizare",
-      "Nu are importanță în sistem",
       "Doar primește un rezultat sau oferă un serviciu sistemului (reacționează)",
+      "Nu are importanță",
       "Este administratorul sistemului"
     ],
     "correct_indices": [
-      2
+      1
     ]
   },
   {
     "id": 107,
     "text": "Descrierea textuală a unui Use Case include:",
     "options": [
-      "Codul sursă în Java/C#",
+      "Codul sursă",
       "Precondiții, Fluxul principal, Fluxuri alternative, Postcondiții",
-      "Schema bazei de date",
-      "Diagrama de clase detaliată"
+      "Diagrama de clase",
+      "Baza de date"
     ],
     "correct_indices": [
       1
@@ -1394,13 +1394,13 @@
     "id": 108,
     "text": "Într-o Diagramă de Secvență, fragmentul opt (Option) se execută:",
     "options": [
-      "Întotdeauna",
       "Doar dacă garda (condiția) este adevărată",
-      "Niciodată",
-      "În buclă infinită"
+      "Întotdeauna",
+      "În buclă",
+      "Niciodată"
     ],
     "correct_indices": [
-      1
+      0
     ]
   },
   {
@@ -1408,22 +1408,22 @@
     "text": "Fragmentul loop într-o diagramă de secvență specifică:",
     "options": [
       "O execuție unică",
-      "O eroare de logică",
+      "O execuție repetitivă (min, max, condiție)",
       "O execuție paralelă",
-      "O execuție repetitivă (min, max, condiție)"
+      "O eroare"
     ],
     "correct_indices": [
-      3
+      1
     ]
   },
   {
     "id": 110,
     "text": "Mesajul de tip \"Create\" într-o diagramă de secvență:",
     "options": [
-      "Termină linia de viață a obiectului",
+      "Termină linia de viață",
       "Țintește capul (\"head\") liniei de viață a obiectului creat (nu linia verticală)",
       "Este un mesaj de retur",
-      "Este interzis în UML 2.0"
+      "Este interzis"
     ],
     "correct_indices": [
       1
@@ -1433,23 +1433,23 @@
     "id": 111,
     "text": "\"Linia de viață\" (Lifeline) reprezintă:",
     "options": [
-      "Fluxul de date prin rețea",
-      "Cablul de alimentare",
+      "Durata execuției proiectului",
       "Existența unui participant individual într-o interacțiune de-a lungul timpului",
-      "Durata totală a proiectului"
+      "Cablul de rețea",
+      "Fluxul de date"
     ],
     "correct_indices": [
-      2
+      1
     ]
   },
   {
     "id": 112,
     "text": "Mesajul \"Lost\" (Pierdut) într-o diagramă de secvență:",
     "options": [
-      "Pleacă de la un obiect dar nu ajunge la destinație (ex: termină într-un cerc negru mic)",
-      "Este un mesaj greșit sintactic",
+      "Pleacă de la un obiect dar nu ajunge la destinație",
       "Vine din afara diagramei",
-      "Este un mesaj de retur standard"
+      "Este un mesaj greșit",
+      "Este un mesaj de retur"
     ],
     "correct_indices": [
       0
@@ -1460,9 +1460,9 @@
     "text": "Mesajul \"Found\" (Găsit) într-o diagramă de secvență:",
     "options": [
       "Pleacă de la un cerc negru plin (sursă necunoscută/externă) și ajunge la un obiect",
-      "Se pierde pe parcurs",
-      "Este un mesaj de creare",
-      "Este un mesaj sincron simplu"
+      "Se pierde",
+      "Este un mesaj sincron",
+      "Este un mesaj de creare"
     ],
     "correct_indices": [
       0
@@ -1474,8 +1474,8 @@
     "options": [
       "Că obiectul este inactiv",
       "Perioada în care obiectul execută o acțiune (este activ/procesează)",
-      "Că obiectul este o clasă abstractă",
-      "Că obiectul a fost distrus"
+      "Că obiectul a fost distrus",
+      "Că obiectul este o clasă abstractă"
     ],
     "correct_indices": [
       1
@@ -1486,12 +1486,12 @@
     "text": "Fragmentul par (Parallel) indică:",
     "options": [
       "Că mesajele din operanzi se execută secvențial",
-      "O alegere exclusivă (XOR)",
       "Că mesajele din operanzi se pot executa intercalat (concurent/simultan)",
-      "O pauză în execuție"
+      "O alegere exclusivă",
+      "O pauză"
     ],
     "correct_indices": [
-      2
+      1
     ]
   },
   {
@@ -1500,8 +1500,8 @@
     "options": [
       "Când se părăsește starea",
       "Imediat ce se intră în stare",
-      "Niciodată",
-      "Continuu cât timp se stă în stare"
+      "Continuu cât timp se stă în stare",
+      "Niciodată"
     ],
     "correct_indices": [
       1
@@ -1512,9 +1512,9 @@
     "text": "\"Do Activity\" într-o diagramă de stare:",
     "options": [
       "Este o activitate de lungă durată care se execută cât timp obiectul este în acea stare",
-      "Este instantanee (atomică)",
-      "Blochează tranzițiile de ieșire",
-      "Se execută la ieșirea din stare"
+      "Este instantanee",
+      "Se execută la ieșire",
+      "Blochează tranzițiile"
     ],
     "correct_indices": [
       0
@@ -1524,23 +1524,23 @@
     "id": 118,
     "text": "Pseudostarea \"History\" (H) într-o stare compusă înseamnă:",
     "options": [
+      "Că se șterge istoricul",
+      "Că la reintrarea în starea compusă, se revine la ultima substare activă",
       "Că se merge la starea inițială mereu",
-      "Că starea este finală",
-      "Că se șterge istoricul tranzițiilor",
-      "Că la reintrarea în starea compusă, se revine la ultima substare activă (se ține minte unde a rămas)"
+      "Că starea este finală"
     ],
     "correct_indices": [
-      3
+      1
     ]
   },
   {
     "id": 119,
     "text": "Evenimentul de schimbare (Change Event), notat cu when(condiție), declanșează tranziția:",
     "options": [
-      "La un timp fix (Time Event)",
-      "Imediat ce condiția devine adevărată (monitorizare continuă)",
       "Când condiția devine falsă",
-      "La apăsarea unui buton fizic"
+      "Imediat ce condiția devine adevărată (monitorizare continuă)",
+      "La apăsarea unui buton",
+      "La un timp fix"
     ],
     "correct_indices": [
       1
@@ -1550,23 +1550,23 @@
     "id": 120,
     "text": "Tranziția de finalizare (fără trigger/eveniment explicit) are loc:",
     "options": [
+      "Niciodată",
       "Imediat ce activitatea din starea sursă s-a terminat",
       "Doar la eroare",
-      "Niciodată automat",
-      "Doar prin intervenție manuală"
+      "Doar manual"
     ],
     "correct_indices": [
-      0
+      1
     ]
   },
   {
     "id": 121,
     "text": "Într-o Diagramă de Activitate, \"Object Node\" (dreptunghi) reprezintă:",
     "options": [
-      "O acțiune de procesare",
+      "O acțiune",
       "Un obiect/dată disponibil la un moment dat în flux (produs sau consumat de acțiuni)",
-      "Un comentariu text",
-      "Un actor uman"
+      "Un actor",
+      "Un comentariu"
     ],
     "correct_indices": [
       1
@@ -1576,13 +1576,13 @@
     "id": 122,
     "text": "\"Pin\"-urile (pătrățele pe marginea activității) sunt folosite pentru:",
     "options": [
-      "A bloca acțiunea",
-      "A conecta actori externi",
+      "A decora diagrama",
       "A specifica parametrii de intrare și ieșire (fluxul de obiecte) ai unei acțiuni",
-      "A decora diagrama estetic"
+      "A bloca acțiunea",
+      "A conecta actori"
     ],
     "correct_indices": [
-      2
+      1
     ]
   },
   {
@@ -1590,100 +1590,100 @@
     "text": "Zona de expansiune (Expansion Region) în diagrama de activitate modelează:",
     "options": [
       "O acțiune care se execută o singură dată pentru o colecție",
-      "O eroare de sistem",
-      "Un comentariu extins",
-      "O acțiune care se execută pentru fiecare element dintr-o colecție (input collection)"
+      "O acțiune care se execută pentru fiecare element dintr-o colecție (input collection)",
+      "O eroare",
+      "Un comentariu mare"
     ],
     "correct_indices": [
-      3
+      1
     ]
   },
   {
     "id": 124,
-    "text": "Care este diferența dintre Fluxul final (cerc cu X) și Nodul final (bullseye)?",
+    "text": "Fluxul final (cerc cu X) vs. Nodul final (bullseye):",
     "options": [
-      "Sunt identice funcțional",
-      "Fluxul final este doar pentru erori",
-      "Fluxul final oprește doar ramura curentă; Nodul final oprește toată activitatea (toate firele)",
-      "Fluxul final oprește toată activitatea; Nodul final oprește doar ramura"
+      "Sunt identice",
+      "Fluxul final oprește doar ramura curentă; Nodul final oprește toată activitatea",
+      "Fluxul final oprește toată activitatea; Nodul final oprește doar ramura",
+      "Fluxul final este pentru erori"
     ],
     "correct_indices": [
-      2
+      1
     ]
   },
   {
     "id": 125,
     "text": "Conectorul (cerc mic cu literă) se folosește pentru:",
     "options": [
-      "A defini variabile globale",
-      "A termina diagrama brusc",
-      "A sări de la o parte a diagramei la alta (fără a trage linii lungi/încâlcite)",
-      "A începe diagrama"
+      "A sări de la o parte a diagramei la alta (fără a trage linii lungi)",
+      "A termina diagrama",
+      "A începe diagrama",
+      "A defini variabile"
     ],
     "correct_indices": [
-      2
+      0
     ]
   },
   {
     "id": 126,
     "text": "Într-o diagramă de secvență, fragmentul break:",
     "options": [
-      "Este un comentariu ignorat la execuție",
-      "Este o opțiune de execuție paralelă",
       "Este o buclă infinită",
-      "Execută conținutul și apoi iese imediat din fragmentul care îl conține (întrerupe fluxul normal)"
+      "Execută conținutul și apoi iese imediat din fragmentul care îl conține",
+      "Este un comentariu",
+      "Este o opțiune paralelă"
     ],
     "correct_indices": [
-      3
+      1
     ]
   },
   {
     "id": 127,
     "text": "Semnificația critical region într-o diagramă de secvență:",
     "options": [
-      "Secvența este lentă și trebuie optimizată",
-      "Secvența este opțională",
       "Secvența nu poate fi întreruptă de alte procese intercalate (este atomică)",
-      "Secvența conține erori de logică"
+      "Secvența este opțională",
+      "Secvența conține erori",
+      "Secvența este lentă"
     ],
     "correct_indices": [
-      2
+      0
     ]
   },
   {
     "id": 128,
     "text": "Generalizarea Actorilor (Actor A -> Actor B) înseamnă:",
     "options": [
-      "A și B sunt entități rivale",
-      "A și B nu au nicio legătură logică",
       "A îl moștenește pe B (A poate face tot ce face B, plus altele)",
-      "B îl moștenește pe A"
+      "B îl moștenește pe A",
+      "A și B sunt dușmani",
+      "A și B nu au legătură"
     ],
     "correct_indices": [
-      2
+      0
     ]
   },
   {
     "id": 129,
     "text": "O precondiție într-un Use Case înseamnă:",
     "options": [
-      "O eroare de sistem",
-      "Un pas intermediar opțional",
       "Ce trebuie să fie adevărat după execuție",
-      "Ce trebuie să fie adevărat înainte ca Use Case-ul să poată începe"
+      "Ce trebuie să fie adevărat înainte ca Use Case-ul să poată începe",
+      "O eroare",
+      "Un pas intermediar"
     ],
     "correct_indices": [
-      3
+      1
     ]
   },
   {
     "id": 130,
     "text": "O \"Stare Compozită\" (Composite State) conține:",
     "options": [
-      "Doar metode publice",
+      "Doar atribute",
       "Alte stări și tranziții (substări)",
-      "Doar atribute private",
-      "Nimic, este o stare goală"
+      "Doar metode",
+      "Nimic"
     ],
     "correct_indices": [
       1
@@ -1693,36 +1693,36 @@
     "id": 131,
     "text": "Săgeata întoarsă spre ea însăși pe o linie de viață (Self-Message) înseamnă:",
     "options": [
-      "Obiectul trimite mesaj altui obiect necunoscut",
       "Obiectul apelează o metodă a sa (propriile funcții)",
-      "Obiectul se autodistruge",
-      "O eroare de buclă infinită"
+      "Obiectul se sinucide",
+      "Obiectul trimite mesaj altui obiect",
+      "Eroare de buclă"
     ],
     "correct_indices": [
-      1
+      0
     ]
   },
   {
     "id": 132,
     "text": "Diferența dintre \"Signal\" (simbol convex) și \"Accept Event\" (simbol concav) în diagrama de activitate:",
     "options": [
-      "Signal este final; Accept este inițial",
+      "Signal trimite un semnal; Accept așteaptă primirea unui semnal",
       "Signal primește; Accept trimite",
-      "Sunt simboluri identice",
-      "Signal trimite un semnal; Accept așteaptă primirea unui semnal"
+      "Sunt identice",
+      "Signal este final; Accept este inițial"
     ],
     "correct_indices": [
-      3
+      0
     ]
   },
   {
     "id": 133,
     "text": "Un \"Interruptible Activity Region\" (chenar punctat cu fulger) permite:",
     "options": [
-      "Ca fluxul din interior să fie oprit brusc dacă apare un eveniment de întrerupere (săgeata fulger)",
-      "Execuția mai rapidă a proceselor",
-      "Execuția paralelă necondiționată",
-      "Validarea automată a datelor"
+      "Ca fluxul din interior să fie oprit brusc dacă apare un eveniment de întrerupere",
+      "Execuția mai rapidă",
+      "Execuția paralelă",
+      "Validarea datelor"
     ],
     "correct_indices": [
       0
@@ -1732,23 +1732,23 @@
     "id": 134,
     "text": "Într-o diagramă Use Case, un chenar simplu în jurul cazurilor reprezintă:",
     "options": [
-      "O clasă principală",
-      "Un pachet software",
-      "Limita sistemului (System Boundary) - separă ce e în sistem de ce e în afara lui (actori)",
-      "Un ecran de interfață"
+      "Actorul",
+      "Limita sistemului (System Boundary)",
+      "Baza de date",
+      "Internetul"
     ],
     "correct_indices": [
-      2
+      1
     ]
   },
   {
     "id": 135,
     "text": "Mesajul de retur (reply) se reprezintă cu:",
     "options": [
-      "Linie groasă continuă",
-      "Linie punctată, vârf deschis",
       "Linie continuă, vârf plin",
-      "Nu se reprezintă grafic"
+      "Linie punctată, vârf deschis",
+      "Linie groasă",
+      "Nu se reprezintă"
     ],
     "correct_indices": [
       1
@@ -1759,74 +1759,74 @@
     "text": "În BPMN, un eveniment \"Start\" cu un plic (Message Start Event) înseamnă:",
     "options": [
       "Procesul începe manual",
+      "Procesul este declanșat de primirea unui mesaj",
       "Procesul trimite un mesaj la început",
-      "Procesul este oprit forțat",
-      "Procesul este declanșat de primirea unui mesaj"
+      "Procesul este oprit"
     ],
     "correct_indices": [
-      3
+      1
     ]
   },
   {
     "id": 137,
     "text": "Un \"Timer Intermediate Event\" (Ceas) pe fluxul normal înseamnă:",
     "options": [
-      "Măsurarea performanței sistemului",
-      "O eroare de timp (Time Out)",
-      "Terminarea procesului",
-      "O pauză/așteptare până la scurgerea timpului sau atingerea orei"
+      "O pauză/așteptare până la scurgerea timpului sau atingerea orei",
+      "Măsurarea performanței",
+      "O eroare de timp",
+      "Terminarea procesului"
     ],
     "correct_indices": [
-      3
+      0
     ]
   },
   {
     "id": 138,
     "text": "O activitate de tip \"User Task\" (omuleț în colț) indică:",
     "options": [
-      "O acțiune executată de un sistem software automat",
-      "O decizie de business",
+      "O acțiune executată de un sistem software",
       "O acțiune executată de un om cu ajutorul unei aplicații software",
-      "O acțiune manuală fără calculator"
+      "O acțiune manuală fără calculator",
+      "O decizie"
     ],
     "correct_indices": [
-      2
+      1
     ]
   },
   {
     "id": 139,
     "text": "O activitate de tip \"Service Task\" (roți dințate) indică:",
     "options": [
-      "O livrare de marfă fizică",
-      "O întâlnire de afaceri",
       "O acțiune automată executată de sistem (backend, web service)",
-      "O acțiune umană de mentenanță"
+      "O acțiune umană",
+      "O livrare de marfă",
+      "O întâlnire"
     ],
     "correct_indices": [
-      2
+      0
     ]
   },
   {
     "id": 140,
     "text": "\"Data Object\" (foaie îndoită) conectat cu linie punctată la o activitate reprezintă:",
     "options": [
-      "Un mesaj către alt participant",
-      "O eroare de procesare",
+      "Fluxul de control",
       "Documente sau date citite/produse de activitate",
-      "Fluxul principal de control"
+      "Un mesaj către alt participant",
+      "O eroare"
     ],
     "correct_indices": [
-      2
+      1
     ]
   },
   {
     "id": 141,
     "text": "O poartă \"Event-Based\" (simbol hexagon cu cerc în mijloc) alege calea în funcție de:",
     "options": [
-      "Preferința aleatorie a utilizatorului",
+      "Date (valori ale variabilelor)",
       "Care eveniment se întâmplă primul (mesaj primit, timp scurs etc.)",
-      "Valoarea unei variabile (ex: suma > 100)",
-      "O selecție random a sistemului"
+      "Preferința utilizatorului",
+      "Random"
     ],
     "correct_indices": [
       1
@@ -1836,52 +1836,52 @@
     "id": 142,
     "text": "Diferența dintre \"Sequence Flow\" (linie continuă) și \"Message Flow\" (linie punctată) în BPMN:",
     "options": [
-      "Sunt identice, doar stilul diferă",
-      "Sequence Flow este între Pool-uri; Message Flow este în interior",
       "Sequence Flow este în interiorul unui Pool; Message Flow este între Pool-uri diferite",
+      "Sequence Flow este între Pool-uri; Message Flow este în interior",
+      "Sunt identice",
       "Sequence Flow este pentru date; Message Flow pentru control"
     ],
     "correct_indices": [
-      2
+      0
     ]
   },
   {
     "id": 143,
     "text": "Un \"Sub-proces\" (activitate cu +) este:",
     "options": [
+      "O activitate simplă",
       "O activitate compusă care ascunde detalii (se poate extinde într-o altă diagramă)",
-      "O activitate simplă atomică",
-      "O eroare de modelare",
-      "Un eveniment complex"
+      "O eroare",
+      "Un eveniment"
     ],
     "correct_indices": [
-      0
+      1
     ]
   },
   {
     "id": 144,
     "text": "\"Text Annotation\" (paranteză deschisă) se folosește pentru:",
     "options": [
-      "A defini variabile globale de proces",
-      "A conecta baze de date",
-      "A schimba fluxul de execuție",
-      "A adăuga comentarii explicative care nu afectează fluxul"
+      "A adăuga comentarii explicative care nu afectează fluxul",
+      "A schimba fluxul",
+      "A defini variabile",
+      "A conecta baze de date"
     ],
     "correct_indices": [
-      3
+      0
     ]
   },
   {
     "id": 145,
     "text": "Un eveniment de tip \"Error\" (fulger) atașat pe marginea unui sub-proces (Boundary) servește la:",
     "options": [
-      "Captarea erorilor (excepțiilor) aruncate din interiorul sub-procesului și devierea fluxului",
-      "Semnalarea succesului operațiunii",
-      "Măsurarea timpului de execuție",
-      "Oprirea totală a calculatorului"
+      "Oprirea calculatorului",
+      "Captarea erorilor din interiorul sub-procesului și devierea fluxului",
+      "Semnalarea succesului",
+      "Măsurarea timpului"
     ],
     "correct_indices": [
-      0
+      1
     ]
   },
   {
@@ -1901,26 +1901,26 @@
     "id": 147,
     "text": "Legea lui Moore se referă la:",
     "options": [
-      "Scăderea prețurilor componentelor la jumătate anual",
-      "Creșterea complexității software exponential",
-      "Viteza internetului se dublează anual",
-      "Dublarea puterii de calcul (număr tranzistori) la aproximativ 18-24 luni"
+      "Creșterea complexității software",
+      "Dublarea puterii de calcul (număr tranzistori) la aproximativ 18-24 luni",
+      "Scăderea prețurilor la jumătate",
+      "Viteza internetului"
     ],
     "correct_indices": [
-      3
+      1
     ]
   },
   {
     "id": 148,
     "text": "Un \"Stakeholder\" în proiectarea SI este:",
     "options": [
-      "Doar cel care plătește proiectul",
-      "Doar programatorul senior",
-      "Serverul principal de baze de date",
-      "Orice persoană sau grup care are un interes în sistem (utilizatori, manageri, dezvoltatori, clienți)"
+      "Doar cel care plătește",
+      "Orice persoană sau grup care are un interes în sistem",
+      "Doar programatorul",
+      "Serverul principal"
     ],
     "correct_indices": [
-      3
+      1
     ]
   },
   {
@@ -1928,9 +1928,9 @@
     "text": "Coemziunea (Cohesion) ridicată într-un modul software este:",
     "options": [
       "De dorit (modulul face un singur lucru bine definit)",
-      "De evitat (modulul face prea multe lucruri)",
-      "Irelevantă pentru calitatea codului",
-      "Un semn de cod prost structurat"
+      "De evitat (modulul face prea multe)",
+      "Irelevantă",
+      "Un semn de cod prost"
     ],
     "correct_indices": [
       0
@@ -1941,9 +1941,9 @@
     "text": "Cuplarea (Coupling) redusă între module este:",
     "options": [
       "De dorit (modulele sunt independente, schimbările nu se propagă)",
-      "De evitat (modulele nu comunică deloc)",
-      "Semn de eroare de proiectare",
-      "Imposibilă în practică"
+      "De evitat (modulele nu comunică)",
+      "Semn de eroare",
+      "Imposibilă"
     ],
     "correct_indices": [
       0
@@ -4021,4 +4021,5 @@
   }
 
 ]
+
 
