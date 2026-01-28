@@ -1950,7 +1950,991 @@
     ]
   },
   {
-    "id": 151,
+    "text": "Conform metodologiei SSADM, modelul logic al sistemului proiectat se obtine pe baza:",
+    "options": [
+      "cerintelor functionale si a modelului logic al sistemului existent;",
+      "catalogului cerintelor;",
+      "modelului fizic al sistemului existent;",
+      "modelului logic al sistemului existent;",
+      "cerintelor nefunctionale si a modelului logic al sistemului existent;"
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 151
+  },
+  {
+    "text": "Reprezinta un obiectiv al sistemelor informatice pentru management ce afecteaza activitatile de baza din cadrul organizatiilor economice:",
+    "options": [
+      "cresterea vitezei de raspuns a sistemului la solicitarile beneficiarilor",
+      "cresterea exactitatii in procesul de prelucrare a datelor",
+      "cresterea preciziei in procesul de prelucrare a datelor",
+      "cresterea volumului in productie"
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 152
+  },
+  {
+    "text": "Obiectivul principal urmărit prin introducerea unui sistem informatic îl constituie:",
+    "options": [
+      "asigurarea conducerii cu informaţii reale şi în timp util necesare fundamentării şi elaborării operative a deciziilor;",
+      "asigurarea funcţionării normale si optime a activităţilor;",
+      "creşterea productivităţii muncii;",
+      "creşterea profitului;",
+      "îmbunătăţirea imaginii unităţii economice."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 153
+  },
+  {
+    "text": "Sistemele informatice economice pot fi împărţite după modul de organizare a datelor în:",
+    "options": [
+      "sisteme imagine;",
+      "sisteme bazate pe tehnica bazelor de date (ierarhice, reţea, relaţionale, orienatate-obiect);",
+      "sisteme bazate pe algoritmi fundamentali;",
+      "sisteme bazate pe fişiere."
+    ],
+    "correct_indices": [
+      1
+    ],
+    "id": 154
+  },
+  {
+    "text": "Reprezintă modul unitar sau manieră comună în care analiştii de sisteme, programatorii şi alte categorii de persoane implicate realizează procesul de analiza a sistemului informaţional-decizional existent, proiectarea şi introducerea sistemului informatic:",
+    "options": [
+      "metodele utilizate în proiectarea sistemelor informatice;",
+      "procedurile utilizate în proiectarea sistemelor informatice;",
+      "tehnicile de lucru utilizate în proiectarea sistemelor informatice;",
+      "instrumentele utilizate în proiectarea sistemelor informatice."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 155
+  },
+  {
+    "text": "Definirea caracteristicilor generale ale sistemului economic implică:",
+    "options": [
+      "cunoaşterea profilului, obiectivelor agentului economic;",
+      "cunoaşterea locului în sfera serviciilor şi sfera producţiei;",
+      "cunoaşterea relaţiilor de cooperare cu alţi agenţi economici;",
+      "cunoaşterea specificului activităţii de bază ( producţie, servicii)."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 156
+  },
+  {
+    "text": "Care din urmatoarele criterii nu stau la baza evaluarii sistemului existent:",
+    "options": [
+      "gradul de asigurare cu informatii necesare si suficiente a factorilor de decizie;",
+      "capacitatea sistemului informational de a sesiza tendintele in evolutia activitatii;",
+      "gradul de automatizare a operatiilor de culegere, prelucrare si transmitere a datelor;",
+      "evaluarea resurselor materiale, umane si financiare necesare realizarii sistemului informatic;",
+      "posibilitatile de control si de efectuare de corectii ale sistemului."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 157
+  },
+  {
+    "text": "În faza de întreţinere a fişierelor există mai multe activităţi, dintre care amintim:",
+    "options": [
+      "memorarea(stocarea) datelor în vederea utilizării lor viitoare;",
+      "actualizarea datelor memorate astfel încât să surprindă cele mai recente evenimente;",
+      "crearea datelor;",
+      "indexarea datelor pentru a înlesni o uşoară regăsire a lor;",
+      "protecţia datelor memorate, care cuprinde o mare varietate de proceduri şi tehnici pentru prevenirea distrugerii lor sau a accesului neautorizat."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 158
+  },
+  {
+    "text": "Care din afirmaţiile următoare sunt corecte:",
+    "options": [
+      "Metoda top-down are ca obiectiv principal realizarea modularizării sistemului de sus în jos.",
+      "Metoda top-down constă în agregarea modulelor de jos în sus.",
+      "Metoda top-down nu are la bază principiul abordării sistemice."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 159
+  },
+  {
+    "text": "Obiectivul principal al instrumentelor CASE este:",
+    "options": [
+      "Punerea în practică a produselor-program de proiectare şi realizare a softului cu ajutorul calculatorului.",
+      "Simplificarea activităţilor de proiectare şi realizare a sistemelor/ aplicaţiilor.",
+      "Aducerea în faţa analistului a problemelor supuse analizei.",
+      "Folosirea depozitelor modularizate."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 160
+  },
+  {
+    "text": "Următoarele afirmaţii sunt corecte:",
+    "options": [
+      "Un studiu de fezabilitate are rolul de a asigura informaţiile obiective necesare pentru a cunoaşte dacă un proiect poate fi demarat sau nu, sau dacă un proiect deja început mai poate fi continuat;",
+      "Studiul de fezabilitate face parte din etapa de întreţinere a sistemelor;",
+      "Diagrama Gantt este o modalitate de reprezentare grafică a proiectului."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 161
+  },
+  {
+    "text": "Studiul sistemului de conducere se referă la identificarea:",
+    "options": [
+      "caracteristicilor rezultate din statutul de funcţionare a societăţii, tipuri de decizii, modul de luare a deciziilor;",
+      "principalilor algoritmi, reguli de calcul şi de control;",
+      "mijloacelor tehnice existente în dotarea unităţii economice;",
+      "modului de organizare a producţiei."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 162
+  },
+  {
+    "text": "Identificaţi afirmaţia falsă:",
+    "options": [
+      "Diagrama de context scoate în evidenţă aria de întindere a sistemului analizat;",
+      "Diagrama fluxului de date ale nivelului logic curent, independentă de tehnologie, reliefează funcţiile de prelucrare a datelor executate de către sistemul informaţional curent;",
+      "Diagrama de flux de date ale sistemului logic nou va prezenta circuitul datelor, structura lor şi cerinţele funcţionale ale noului sistem;",
+      "Diagrama fluxului de date prezintă modelarea conceptuală a datelor."
+    ],
+    "correct_indices": [
+      3
+    ],
+    "id": 163
+  },
+  {
+    "text": "Construirea sistemului informatic presupune: (CURS 1  pag: 21-22)",
+    "options": [
+      "identificarea cerintelor SI",
+      "analiza si poriectarea cerintelor sistemului",
+      "analiza si testarea programului",
+      "conducerea procesului de dezvoltare"
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 164
+  },
+  {
+    "text": "Sistemul informatic este un ansamblu de:",
+    "options": [
+      "elemente intercorelate functional pentru obtinerea manuala a informatiilor necesare fundamentarii deciziilor;",
+      "functii elementare pentru fundamentarea deciziilor;",
+      "elemente necesare functionarii sistemului decizional;",
+      "elemente intercorelate functional functional pentru automatizarea procesului de obtinere a informatiilor necesare fundamentarii deciziilor;",
+      "resurse necesare fundamentarii deciziilor."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 165
+  },
+  {
+    "text": "Sistemul informatic urmareste in principal:",
+    "options": [
+      "cresterea exactitatii si preciziei informatiilor;",
+      "asigurarea conducerii cu informatii reale si in timp util, necesare fundamentarii si elaborarii operative a deciziilor;",
+      "cresterea gradului de incarcare a capacitatilor existente si reducerea duratei ciclului de fabricatie;",
+      "reducerea costului informatiei;",
+      "cresterea calitatii informatiilor."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 166
+  },
+  {
+    "text": "Cerintele de mentenanta pot fi desprinse pe parcursul :",
+    "options": [
+      "analizei si proiectarii sistemului",
+      "codificarii si testarii sistemului",
+      "implementarii si exploatarii curente a sistemului",
+      "identificarii cerintelor si analizei sistemului"
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 167
+  },
+  {
+    "text": "Un sistem informatic este:",
+    "options": [
+      "un sistem destinat conducerii unei organizaţii:",
+      "un sistem utilizator-calculator integrat, care furnizează informaţii pentru a sprijini activităţile de la nivel operaţional şi activităţile de management într-o organizaţie, utilizând echipamente hardware şi produse software, proceduri manuale, o bază de date şi modele matematice pentru analiză, planificare, control şi luarea deciziilor:",
+      "un ansamblu structurat de elemente intercorelate funcţional pentru automatizarea procesului de obţinere a informaţiilor şi pentru fundamentarea deciziilor."
+    ],
+    "correct_indices": [
+      1
+    ],
+    "id": 168
+  },
+  {
+    "text": "Identificaţi afirmaţia falsă:",
+    "options": [
+      "Sistemul informaţional este subordonat sistemului de conducere.",
+      "Sistemul informaţional face legătura între sistemul condus şi sistemul de conducere.",
+      "Sistemul informatic este inclus în sistemul informaţional.",
+      "Sistemul condus este subordonat sistemului informaţional."
+    ],
+    "correct_indices": [
+      3
+    ],
+    "id": 169
+  },
+  {
+    "text": "După domeniul de utilizare, sistemele informatice se clasifică în:",
+    "options": [
+      "Sisteme informatice pentru conducerea activităţilor economico-sociale;",
+      "Sisteme informatice pentru conducerea proceselor tehnice;",
+      "Sisteme informatice şi expert;",
+      "Sisteme informatice pentru activităţi speciale."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 170
+  },
+  {
+    "text": "Metodologiile de realizare a sistemelor informatice cuprind:",
+    "options": [
+      "reguli de formalizare a datelor;",
+      "instrumente pentru concepţia, realizarea şi elaborarea documentaţiei;",
+      "modalităţile de administrare a proiectului;",
+      "instrucţiuni pentru luarea deciziilor;",
+      "modalitatea de abordare a sistemelor."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 171
+  },
+  {
+    "text": "Nu sunt corecte următoarele afirmaţii:",
+    "options": [
+      "CASE reprezintă Proiectarea Sistemelor Asistată de Calculator;",
+      "Instrumentele CASE implică utilizarea calculatorului ca un mijloc de susţinere a activităţilor deplanificare, definire, proiectare şi realizare a softului.",
+      "CASE reprezintă Proiectarea Sistemelor cu Ajutorul Calculatorului;",
+      "CASE reprezintă Componente Asamblate ale Sistemelor Economice."
+    ],
+    "correct_indices": [
+      3
+    ],
+    "id": 172
+  },
+  {
+    "text": "Selecţia proiectelor de dezvoltare a sistemelor informaţionale, urmăreşte:",
+    "options": [
+      "atingerea obiectivelor organizaţiei;",
+      "bunul mers a informaţiei;",
+      "creşterea duratei de implementare."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 173
+  },
+  {
+    "text": "Studiile de fezabilitate trebuie să conţină:",
+    "options": [
+      "Definirea problemei (o scurtă descriere a proiectului şi explicarea a ceea ce-şi propune el să realizeze);",
+      "Descrierea cerinţelor sistemului;",
+      "Explicaţia critică a motivării studiului întreprins;",
+      "Cuantificarea tuturor costurilor materiale şi beneficiilor aferente."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 174
+  },
+  {
+    "text": "Principalele elemente ale documentaţiei elaborate pentru modelarea logicii proceselor sunt:",
+    "options": [
+      "reprezentarea în engleza structurată;",
+      "reprezentarea logicii proceselor prin tabele de decizie;",
+      "reprezentarea prin diagrame entitate-relaţie;",
+      "reprezentarea logicii proceselor prin arbori de decizie;",
+      "tabelul sau diagrama stărilor de tranziţie."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 175
+  },
+  {
+    "text": "În procesul de modelare logică a datelor sunt paşi esenţiali:",
+    "options": [
+      "Realizarea unui model logic al datelor din perspectiva utilizatorului (formulare şi rapoarte) privind aplicaţia, folosindu-se principiile normalizări;",
+      "Implementarea modelului logic al datelor.",
+      "Transformarea modelului conceptual al datelor (entitate-relaţie), realizat fără să se ţină cont de perspectiva utilizatorului, într-un set de relaţii normalizate;"
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 176
+  },
+  {
+    "text": "Proiectarea fizică a sistemelor informatice implică:",
+    "options": [
+      "proiectarea fizică a bazelor de date şi a fişierelor.",
+      "proiectarea structurii sistemului şi a programelor.",
+      "proiectarea documentaţiei sistemului analizat.",
+      "proiectarea strategiilor de prelucrare distribuită."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 177
+  },
+  {
+    "text": "Principalele module de proiectare a sistemelor de prelucrare distribuită a datelor sunt:",
+    "options": [
+      "proiectarea nodurilor;",
+      "proiectarea diagramelor;",
+      "proiectarea reţelei de comunicaţii."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 178
+  },
+  {
+    "text": "In limbajul BMPN, un eveniment: (CURS 7  pag: 8, 11)",
+    "options": [
+      "reprezinta un obiect de conectare",
+      "afecteaza fluxul unui model",
+      "este atomic sau non-atomic",
+      "poate fi inclusiv sau exclusiv"
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 179
+  },
+  {
+    "text": "Baza informationala din cadrul unui sistem informatic include:",
+    "options": [
+      "programul cu ajutorul carora functioneaza sistemul",
+      "datele supuse prelucrarii",
+      "regulamentul de organizare si functionare",
+      "echipamente si tehnologii de comunicatie"
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 180
+  },
+  {
+    "text": "Cifra de control din cod este folosita pentru:",
+    "options": [
+      "verificarea corectitudinii codului si corectia automata a acestuia in procesul de culegere si transmitere a datelor;",
+      "verificarea datelor in procesul de culegere, transmitere, prelucrare si editare;",
+      "verificarea corectitudinii codului in procesul de culegere, transmitere si prelucrare a datelor;",
+      "sortarea, interclasarea si prelucrarea datelor cu formare de grupe;",
+      "jonctiunea si inchiderea tranzitiva a datelor."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 181
+  },
+  {
+    "text": "Sunt componente principale ale unui sistem informatic:",
+    "options": [
+      "Baza informaţională;",
+      "Manager general;",
+      "Baza tehnică;",
+      "Baza ştiinţifică metodologică;",
+      "Sistemul de programe."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 182
+  },
+  {
+    "text": "Ciclul prelucrării datelor pentru sistemul informatic cuprinde următoarele faze:",
+    "options": [
+      "culegerea datelor;",
+      "pregătirea datelor;",
+      "prelucrarea datelor;",
+      "ştergerea datelor."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 183
+  },
+  {
+    "text": "Nu sunt faze ale ciclului de viaţă al dezvoltării sistemelor:",
+    "options": [
+      "microanaliza;",
+      "analiza;",
+      "colectarea;",
+      "proiectarea logică;",
+      "proiectarea fizică;",
+      "implementarea;",
+      "întreţinerea."
+    ],
+    "correct_indices": [
+      2
+    ],
+    "id": 184
+  },
+  {
+    "text": "Avantajele sistemelor CASE sunt:",
+    "options": [
+      "exploatarea sistemului;",
+      "creşterea vitezei de realizare a sistemelor;",
+      "realizarea succesivă a componentelor unui sistem;",
+      "simplificarea activităţilor de proiectare şi realizare a sistemelor/aplicaţiilor."
+    ],
+    "correct_indices": [
+      1
+    ],
+    "id": 185
+  },
+  {
+    "text": "Domeniile către care se orientează Upper CASE-ul, sunt:",
+    "options": [
+      "analiza cerinţelor sistemului;",
+      "proiectarea şi modelarea funcţională şi procedurală;",
+      "modelarea datelor şi proiectarea bazei de date;",
+      "generarea codurilor."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 186
+  },
+  {
+    "text": "Care nu sunt activităţile efectuate în faza iniţierii proiectului:",
+    "options": [
+      "stabilirea echipei de iniţiere a proiectului;",
+      "stabilirea bunelor relaţii cu beneficiarii;",
+      "stabilirea planului iniţierii proiectului;",
+      "stabilirea procedurilor manageriale;",
+      "stabilirea cerinţelor sistemului."
+    ],
+    "correct_indices": [
+      4
+    ],
+    "id": 187
+  },
+  {
+    "text": "Diagramele Gantt se utilizează pentru:",
+    "options": [
+      "reprezentarea ordinii activităţilor desfăşurate pentru realizarea proiectului;",
+      "reprezentarea grafică a proiectului;",
+      "descrierea proiectelor simple sau a unor componente ale proiectelor mari;",
+      "monitorizarea stadiului realizării activităţilor planificate."
+    ],
+    "correct_indices": [
+      1
+    ],
+    "id": 188
+  },
+  {
+    "text": "Studiul sistemului existent constă în:",
+    "options": [
+      "studiul activităţilor de bază desfăşurate de sistem;",
+      "identificarea metodelor si mijloacelor tehnice;",
+      "definirea caracteristicilor generale ale sistemului;",
+      "definirea direcţiilor de perfecţionare ale actualului sistem;",
+      "studiul sistemului de conducere."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 189
+  },
+  {
+    "text": "Metodele tradiţionale de determinare a cerinţelor sistemelor sunt:",
+    "options": [
+      "interviul;",
+      "prototipizarea;",
+      "Joint Application Design (JAD);",
+      "chestionarul."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 190
+  },
+  {
+    "text": "Paşii prototipizării sunt:",
+    "options": [
+      "Identificarea cerinţelor principale ale sistemului;",
+      "Realizarea prototipului iniţial;",
+      "Proces iterativ de adaptare a sistemului la cerinţele utilizatorului;",
+      "Folosirea sistemului aprobat de utilizatori."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 191
+  },
+  {
+    "text": "Scopul diagramelor de date DFD este de a scoate în relief, într-o manieră cât mai sugestivă,următoarele aspecte:",
+    "options": [
+      "sursa datelor de prelucrare;",
+      "macheta datelor de prelucrare;",
+      "destinaţia datelor prelucrate;",
+      "legătura existentă între prelucrări şi activitatea de stocare a datelor."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 192
+  },
+  {
+    "text": "Care din afirmaţiile următoare sunt adevărate:",
+    "options": [
+      "O cheie-primară este o cheie-candidat care a fost selectată pentru a servi ca identificator de cazuri în cadrul unui tip de entitate.",
+      "Entităţile sunt obiecte sau evenimente (fenomene sau procese economice, în cazul nostru).",
+      "Un atribut este o proprietate sau o caracteristică a unei entităţi care prezintă interes pentru organizaţie."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 193
+  },
+  {
+    "text": "Afirmaţiile următoare nu sunt corecte:",
+    "options": [
+      "Fiecare Format/formular de intrare va fi asociat unui flux al datelor de intrare într-un proces al DFD;",
+      "Un proces al DFD va fi asociat cu o macheta de ecran;",
+      "Rapoartele se pot regăsi într-un flux al datelor generate de un proces al DFD."
+    ],
+    "correct_indices": [
+      1
+    ],
+    "id": 194
+  },
+  {
+    "text": "Detaliile şi indicaţiile tehnice de realizare a machetei imprimantei se referă la:",
+    "options": [
+      "volumul datelor de ieşire;",
+      "intensitatea datelor;",
+      "contrast."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 195
+  },
+  {
+    "text": "Activităţile parcurse la realizarea unui sistem de coduri sunt:",
+    "options": [
+      "analiza elementelor care urmează a fi codificate;",
+      "analiza sistemului decizional;",
+      "uniformizarea datelor de intrare;",
+      "alegerea tipurilor de coduri."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 196
+  },
+  {
+    "text": "La proiectarea intrărilor este necesar să se realizeze, în principal următoarele activităţi:",
+    "options": [
+      "alegerea colecţiilor de date;",
+      "proiectarea machetelor documentelor de intrare;",
+      "alegerea regulilor de control şi validare a datelor;",
+      "proiectarea formularelor (videoformatului) de intrare."
+    ],
+    "correct_indices": [
+      1
+    ],
+    "id": 197
+  },
+  {
+    "text": "Echipamentele necesare interacţiunii cu sistemul sunt:",
+    "options": [
+      "eyescreen;",
+      "keyboard;",
+      "mouse."
+    ],
+    "correct_indices": [
+      1
+    ],
+    "id": 198
+  },
+  {
+    "text": "Proiectarea fizică a sistemelor informatice înseamnă:",
+    "options": [
+      "o abordare detaliată a sistemului;",
+      "o abordare de ansamblu a sistemului",
+      "o abordare generală a sistemului;"
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 199
+  },
+  {
+    "text": "Proiectarea fizică a bazelor de date şi a fişierelor îşi propune să asigure:",
+    "options": [
+      "trecerea de la descrierea logică a datelor la una tehnică, de stocare a datelor;",
+      "structura globală de organizare a datelor;",
+      "descrierea logică a datelor."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 200
+  },
+  {
+    "text": "Nu sunt componente de bază ale tehnologiei client/server:",
+    "options": [
+      "clientul;",
+      "administratorul de sistem;",
+      "serverul;",
+      "reţeaua care conectează clientul la server."
+    ],
+    "correct_indices": [
+      1
+    ],
+    "id": 201
+  },
+  {
+    "text": "Tipurile activităţilor executate în cadrul planificării proiectului cuprind:",
+    "options": [
+      "Descrierea ariei de întindere, a variantelor şi fezabilităţii proiectului;",
+      "Descompunerea proiectului în activităţi uşor executabile şi controlabile;",
+      "Crearea bazei de date;",
+      "Crearea unui buget preliminar;",
+      "Implementarea proiectului."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 202
+  },
+  {
+    "text": "Cea mai cunoscută formă utilizată pentru modelarea conceptuală a datelor este:",
+    "options": [
+      "diagrama entitate-relaţie (DER);",
+      "diagrama fluxului de date (DFD);",
+      "diagrama stărilor de tranziţie."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 203
+  },
+  {
+    "text": "În DER pentru fiecare entitate reprezentată se apelează la simbolul:",
+    "options": [
+      "cerc;",
+      "săgeată;",
+      "romb;",
+      "dreptunghi."
+    ],
+    "correct_indices": [
+      3
+    ],
+    "id": 204
+  },
+  {
+    "text": "Alegerea tipului de suport fizic de ieşire (imprimanta, display, etc.) se face în funcţie de:",
+    "options": [
+      "sursa de energie;",
+      "calitatea datelor;",
+      "costul suportului."
+    ],
+    "correct_indices": [
+      2
+    ],
+    "id": 205
+  },
+  {
+    "text": "Construirea prototipului secvenţei de derulare a dialogurilor se poate face cu ajutorul:",
+    "options": [
+      "instrucţiunilor repetitive;",
+      "produselor CASE;",
+      "mediile de dezvoltare grafică."
+    ],
+    "correct_indices": [
+      1
+    ],
+    "id": 206
+  },
+  {
+    "text": "Paşii parcurşi în procesul de transformare a diagramelor entitate-relaţie în relaţii sunt:",
+    "options": [
+      "Reprezentarea entităţilor;",
+      "Reprezentarea legăturilor;",
+      "Normalizarea relaţiilor."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 207
+  },
+  {
+    "text": "Modelul conceptual pune în evidenţă:",
+    "options": [
+      "modul de stocare a datelor pe suportul de memorare;",
+      "reprezentarea logică, detaliată a entităţilor, asocierilor (legăturilor) şi datelor elementare ale unei organizaţii;",
+      "structura globală de organizare a datelor."
+    ],
+    "correct_indices": [
+      1
+    ],
+    "id": 208
+  },
+  {
+    "text": "Normalizarea unei relaţii constă în:",
+    "options": [
+      "Descrierea relaţiei în limbajul de descriere a datelor;",
+      "Identificarea dependenţelor între atributele relaţiei;",
+      "Descompunerea relaţiei în relaţii echivalente urmărind eliminarea redundanţei datelor şi anomaliilor la efectuarea operaţiilor de adaugare, actualizare şi ştergere în baza de date."
+    ],
+    "correct_indices": [
+      2
+    ],
+    "id": 209
+  },
+  {
+    "text": "Nu sunt metode de programare:",
+    "options": [
+      "metoda programării clasice;",
+      "metoda programării structurate;",
+      "metoda programării orientate-obiect;",
+      "metoda programării iterative."
+    ],
+    "correct_indices": [
+      3
+    ],
+    "id": 210
+  },
+  {
+    "text": "Realizarea modulară a programelor corespunde principiilor:",
+    "options": [
+      "programării clasice;",
+      "programării structurate;",
+      "bazelor de cunoştinţe;"
+    ],
+    "correct_indices": [
+      1
+    ],
+    "id": 211
+  },
+  {
+    "text": "Caracteristicile mediilor moderne de tip CASE sunt:",
+    "options": [
+      "integrarea;",
+      "aranjarea;",
+      "descompunerea;",
+      "exploatarea."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 212
+  },
+  {
+    "text": "Propunerile pentru identificarea proiectelor de dezvoltare sunt făcute de:",
+    "options": [
+      "top-managerii;",
+      "personalul auxiliar;",
+      "muncitori;",
+      "departamentul utilizatorilor."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 213
+  },
+  {
+    "text": "Prezentarea informaţiile din formulare/formate şi rapoarte pot fi oferite:",
+    "options": [
+      "sub formă de text;",
+      "sub formă de sfaturi;",
+      "sub formă de grafice;",
+      "sub formă de tabele."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 214
+  },
+  {
+    "text": "Macheta documentului de intrare conţine:",
+    "options": [
+      "antetul documentului;",
+      "diagrama fluxului de date;",
+      "denumirea documentului."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 215
+  },
+  {
+    "text": "Nu sunt metode de interacţiune om – maşină:",
+    "options": [
+      "interacţiunea permanentă,",
+      "interacţiunea prin meniuri,",
+      "interacţiunea bazată pe obiecte icons,",
+      "interacţiunea prin limbaj natural."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 216
+  },
+  {
+    "text": "Nu sunt elemente de bază ale structurii relaţionale a datelor:",
+    "options": [
+      "Relaţia;",
+      "Atributul;",
+      "Fişierul;",
+      "Domeniul;",
+      "Tuplul."
+    ],
+    "correct_indices": [
+      2
+    ],
+    "id": 217
+  },
+  {
+    "text": "Sunt structuri de control fundamentale în realizarea programelor:",
+    "options": [
+      "structura secvenţială;",
+      "structură funcţională;",
+      "structura alternativă;",
+      "structura organizaţională:",
+      "structura repetitivă."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 218
+  },
+  {
+    "text": "Funcţia unui modul constă în:",
+    "options": [
+      "transformarea datelor prin procesul de execuţie a acestuia.",
+      "descrierea prelucrărilor care au loc în interiorul acestuia.",
+      "legătura cu alte module."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 219
+  },
+  {
+    "text": "Care dintre următoarele instrucţiuni nu sunt decizionale ?",
+    "options": [
+      "WHILE ... WEND ;",
+      "IF...END IF;",
+      "IF...ELSE...END IF;",
+      "IF...THEN...ELSE IF... ... ...END IF ;",
+      "SELECT CASE...CASE... ... ...END SELECT."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 220
+  },
+  {
+    "text": "Care dintre următoarele instrucţiuni repetitive sunt condiţionate posterior ?",
+    "options": [
+      "FOR...NEXT ;",
+      "WHILE...WEND ;",
+      "DO WHILE...LOOP;",
+      "DO UNTIL...LOOP;",
+      "DO...LOOP WHILE."
+    ],
+    "correct_indices": [
+      4
+    ],
+    "id": 221
+  },
+  {
+    "text": "Proiectarea fizică a bazei de date are în vedere:",
+    "options": [
+      "modul de stocare a datelor pe suportul de memorare;",
+      "trecerea de la descrierea logică a datelor la una tehnică, de stocare a datelor;",
+      "structura globală de organizare a datelor."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 222
+  },
+  {
+    "text": "Instrumentele CASE se bazează pe:",
+    "options": [
+      "o funcţie fundamentală;",
+      "două funcţii fundamentale;",
+      "mai multe funcţii fundamentale."
+    ],
+    "correct_indices": [
+      1
+    ],
+    "id": 223
+  },
+  {
+    "text": "Macheta imprimantei cuprinde:",
+    "options": [
+      "antet;",
+      "titlu;",
+      "date elementare ce se imprima rând de rând;",
+      "totalurile."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 224
+  },
+  {
+    "text": "Structura repetitivă condiţionată anterior este:",
+    "options": [
+      "de tip WHILE-DO;",
+      "de tip DO UNTIL;",
+      "de tip DO FOR."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 225
+  },
+  {
+    "text": "Un modul are componente de bază:",
+    "options": [
+      "funcţia;",
+      "schema;",
+      "logica;",
+      "interfeţele."
+    ],
+    "correct_indices": [
+      0
+    ],
+    "id": 226
+  },
+  {
+    "id": 227,
     "text": "O diagramă de componente prezintă:",
     "options": [
       "modul în care interacţionează şi comunică obiectele",
@@ -1963,7 +2947,7 @@
     ]
   },
   {
-    "id": 152,
+    "id": 228,
     "text": "Care dintre următoarele afirmații referitoare la proiectarea interfețelor este adevărată? 1. hărți cu structura ecranului sunt utilizate pentru a descrie fluxul aplicației urmând principalele moduri de utilizare 2. modelarea unei interfețe se face cu ajutorul diagramei specifice UML 3. așteptările actorilor cu privire la interfețe sunt aflate prin completarea de chestionare 4. proictarea interfețelor nu trebuie să țină cont de obiectivele actorului în interacțiunea cu sistemul",
     "options": [
       "1+2+3",
@@ -1976,7 +2960,7 @@
     ]
   },
   {
-    "id": 153,
+    "id": 229,
     "text": "Termenul de ‘arhitectură tehnică’ se referă la:",
     "options": [
       "totalitate codurilor, intrărilor și ieșirilor identificate în proiectarea aplicației",
@@ -1989,20 +2973,21 @@
     ]
   },
   {
-    "id": 154,
-    "text": "Cum modelați următoarea situație într-o diagramă UML de cazuri de utilizare: Un mecanic efectuează verificarea unui mașini. În timpul acelei verificări, poate fi necesară schimbarea unei piese.",
+    "id": 230,
+    "text": "Cifra de control din cod este folosita pentru:",
     "options": [
-      "1+2+3",
-      "2+3+4",
-      "1+3+4",
-      "1+2+4"
+      "verificarea corectitudinii codului si corectia automata a acestuia in procesul de culegere si transmitere a datelor;",
+      "verificarea datelor in procesul de culegere, transmitere, prelucrare si editare; ",
+      "verificarea corectitudinii codului in procesul de culegere, transmitere si prelucrare a datelor; ",
+      "sortarea, interclasarea si prelucrarea datelor cu formare de grupe; ",
+      "jonctiunea si inchiderea tranzitiva a datelor."
     ],
     "correct_indices": [
       2
     ]
   },
   {
-    "id": 155,
+    "id": 231,
     "text": "Evenimentele în limbajul BPMN desemnează:",
     "options": [
       "ceva ce descrie ordinea elementelor din flux",
@@ -2015,7 +3000,7 @@
     ]
   },
   {
-    "id": 156,
+    "id": 232,
     "text": "Diagrama de secvențe",
     "options": [
       "are rolul de a valida diagram de clase",
@@ -2028,7 +3013,7 @@
     ]
   },
   {
-    "id": 157,
+    "id": 233,
     "text": "O diagramă de clase descrie:",
     "options": [
       "Perspectiva practică asupra unui sistem",
@@ -2041,7 +3026,7 @@
     ]
   },
   {
-    "id": 158,
+    "id": 234,
     "text": "Specificațiile descriptive ale unui sistem informatic: 1. pot fi negociate sau schimbate 2. nu pot fi negociate sau schimbate 3. sunt generate de legi ale naturii 4. sunt generate de constrângeri fizice",
     "options": [
       "1+2+3",
@@ -2054,20 +3039,21 @@
     ]
   },
   {
-    "id": 159,
-    "text": "A → B → C 2. A → C → B 3. A → B 4. A → C",
+    "id": 235,
+    "text": "Capacitatea unui sistem de coduri reprezinta:",
     "options": [
-      "1+3",
-      "3+4",
-      "1+2",
-      "1+2+3"
+      "totalitatea simbolurilor distincte utilizate;",
+      "totalitatea combinatiilor distincte posibil de realizat din simbolurile ce compun codul;",
+      "numarul de simboluri elementare din cod;",
+      "forma finala a codului cu precizarea clara a numarului de pozitii utilizate;",
+      "numarul de caractere utilizate pentru cifra de control."
     ],
     "correct_indices": [
       1
     ]
   },
   {
-    "id": 160,
+    "id": 236,
     "text": "În porțile bazate pe evenimente din limbajul BPMN: 1. nu se iau decizii 2. decizia este luată de către un alt participant 3. deciziile se bazează pe producerea unor evenimente 4. deciziile se bazează pe date",
     "options": [
       "2+3",
@@ -2080,7 +3066,7 @@
     ]
   },
   {
-    "id": 161,
+    "id": 237,
     "text": "O relație de generalizare între o subclasă și o superclasă are următoarele proprietăți: 1. subclasa moștenește proprietățile superclasei 2. subclasă poate moșteni de la o singură superclasă 3. subclasa nu poate avea mai multe atribute și operații decât superclasa 4. superclasa nu poate să fie abstractă",
     "options": [
       "1+2+3",
@@ -2093,33 +3079,35 @@
     ]
   },
   {
-    "id": 162,
-    "text": "Pornind de la diagrama din imagine, care dintre următoarele afirmații este adevărată? 1. Un obiect al clasei A poate avea asociat un obiect al clasei B 2. Dacă o instanță a lui B este ștearsă, atunci sunt șterse și toate instanțele lui A 3. Rombul de lângă A poartă numele de compunere 4. Un obiect al lui B este inclus într-un sigur un obiect al lui A",
+    "id": 238,
+    "text": "Schema functionala a fiecarui subsistem aplicatie informatica se elaboreaza in etapa:",
     "options": [
-      "a → b → c → d",
-      "a → c → b → d",
-      "b → d → a → c",
-      "a → b → d → c"
+      "studiul si analiza sistemului existent;",
+      "proiectarea de ansamblu;",
+      "proiectarea de detaliu; ",
+      "elaborarea programelor; ",
+      "implementarea sistemului informatic"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 239,
+    "text": "Alegerea tipurilor de modele matematice ce urmeaza a fi utilizate de sistemul informatic se face in etapa:",
+    "options": [
+      "studiul si analiza sistemului existent;",
+      "proiectarea de ansamblu;",
+      "proiectarea de detaliu;",
+      "elaborarea programelor;",
+      "implementarea sistemului informatic"
     ],
     "correct_indices": [
       1
     ]
   },
   {
-    "id": 163,
-    "text": "Cum modelați următoarea situație într-o diagramă de clase UML: O comandă este plasată cu ajutorul unui chelner, un chelner se ocupă de mai multe comenzi.",
-    "options": [
-      "1+2",
-      "1+4",
-      "2+3",
-      "1+3"
-    ],
-    "correct_indices": [
-      0
-    ]
-  },
-  {
-    "id": 164,
+    "id": 240,
     "text": "În exemplul din figură subprocesul Achiziție:",
     "options": [
       "dispozitive și medii de execuție",
@@ -2132,20 +3120,21 @@
     ]
   },
   {
-    "id": 165,
-    "text": "A → C 2. A → B → D 3. A → B → D → C 4. A → B → C",
+    "id": 241,
+    "text": "Prin 'iesirile' unui sistem informatic se intelege totalitatea:",
     "options": [
-      "4",
-      "1+3",
-      "3",
-      "1+2"
+      "fisierelor din sistem; ",
+      "datelor interne si externe;",
+      "imprimantelor si monitoarelor; ",
+      "informatiilor furnizate de sistem beneficiarilor interni si externi; ",
+      "informatiilor necesare actualizarii bazei de date."
     ],
     "correct_indices": [
       3
     ]
   },
   {
-    "id": 166,
+    "id": 242,
     "text": "Cerințele non-funcționale sunt legate de:",
     "options": [
       "operaționalitatea sistemului",
@@ -2158,7 +3147,7 @@
     ]
   },
   {
-    "id": 167,
+    "id": 243,
     "text": "Pentru diagrama de secvență din figură, care dintre următoarele afirmații este adevărată",
     "options": [
       "Secvența de mesaje din cadrul fragmentului break se va executa după prima introducere greșită a parolei",
@@ -2171,33 +3160,34 @@
     ]
   },
   {
-    "id": 168,
-    "text": "Vi se oferă următoarea diagramă de stare. Starea B este definitiv părăsită dacă: 1. evenimentul e1 are loc. 2. cele două regiuni ortogonale au ajuns la stările finale. 3. eveniment e2 are loc. 4. una dintre cele două stări finale este atinsă.",
+    "id": 244,
+    "text": "Intr-un nod decisional din diagram de activitate:",
     "options": [
-      "2+3",
-      "1+3+4",
-      "1+2",
-      "1+2+4"
-    ],
-    "correct_indices": [
-      2
-    ]
-  },
-  {
-    "id": 169,
-    "text": "A → B → C → D 2. A → B → D → C 3. A → C → B → D 4. A → B → D 5. A → C",
-    "options": [
-      "1+2+3",
-      "4+5",
-      "1+2+3+4",
-      "1+2+4"
+      "fluxurile de iesire au conditii mutual exclusive",
+      "intra mai multe fluxuri si iese unul singur",
+      "intra mai multe fluxuri si ies mai multe",
+      "se poate simula structura de control “DO-UNTIL” din programare"
     ],
     "correct_indices": [
       0
     ]
   },
   {
-    "id": 170,
+    "id": 245,
+    "text": "Ciclul de viata al sistemului informatic:",
+    "options": [
+      "incepe cu decizia de realizare a sistemului informatic si se incheie cu decizia de abandonare a acestuia in forma existenta si inlocuirea lui cu un nou sistem",
+      "incepe cu etapa de elaborare a propunerilor de realizare si se incheie cu etapa de implementare",
+      "incepe cu etapa de studiu si se incheie odata cu decizia de abandonare a sistemului informatic in forma existenta si inlocuirea lui cu un nou sistem",
+      "incepe cu etapa de proiectare si se incheie cu etapa de implementare a sistemului",
+      "incepe cu decizia de realizare a sistemului informatic si se incheie cu etapa de implementare a sistemului"
+    ],
+    "correct_indices": [
+      0
+    ]
+  },
+  {
+    "id": 246,
     "text": "Care dintre următoarele afirmații referitoare la maparea obiectelor in tabele ale unui SGBDR sunt false?",
     "options": [
       "o relație de moștenire între două clase poate fi transformată prin maparea în tabele separate atât pentru clasa părinte, cât și pentru copii",
@@ -2210,7 +3200,7 @@
     ]
   },
   {
-    "id": 171,
+    "id": 247,
     "text": "Care dintre următoarele afirmații despre diagramele mașinii de stare sunt adevărate?",
     "options": [
       "o tranziție poate avea un eveniment declanșator, o condiție și o stare.",
@@ -2223,7 +3213,7 @@
     ]
   },
   {
-    "id": 172,
+    "id": 248,
     "text": "Care dintre următoarele afirmații despre diagramele mașinii de stare sunt adevărate? 1. O condiție este evaluată numai atunci când are loc evenimentul corespunzător. 2. Starea inițială are exact un flux de ieșire și orice număr de fluxuri de intrare. 3. Când are loc un eveniment care declanșează trecerea la o altă stare, activitatea do este abandonată. 4. Evenimentele declanșează tranziții. 5. Activitățile declanșează tranzițiile.",
     "options": [
       "1+3+5",
@@ -2236,7 +3226,7 @@
     ]
   },
   {
-    "id": 173,
+    "id": 249,
     "text": "Care dintre următoarele declarații referitoare la diagrama de activitate este adevărată? 1. o acțiune este formată din mai multe activități 2. acțiunile sunt atomice 3. acțiunile nu pot fi întrerupte 4. acțiunile pot manipula obiecte și valorile acestora",
     "options": [
       "2+4",
@@ -2249,7 +3239,7 @@
     ]
   },
   {
-    "id": 174,
+    "id": 250,
     "text": "Care dintre următoarele cazuri de utilizare este un caz de utilizare corect dacă vrem să realizăm o diagramă de cazuri de utilizare pentru un magazin online de cărți? 1. Caută o carte 2. Comandă o carte 3. Nu comandă o carte 4. Anulează o comandă 5. Login 6. Introduce nume carte",
     "options": [
       "1+3+4",
@@ -2262,7 +3252,7 @@
     ]
   },
   {
-    "id": 175,
+    "id": 251,
     "text": "Între cazurile de utilizare pot exista relații de tipul: 1. Asociere 2. Includere 3. Specializare 4. Extindere 5. Generalizare",
     "options": [
       "1+2+3",
@@ -2275,7 +3265,7 @@
     ]
   },
   {
-    "id": 176,
+    "id": 252,
     "text": "Identificați enunțul fals referitor la limbajele formale:",
     "options": [
       "Conditii si rezultate",
@@ -2288,20 +3278,20 @@
     ]
   },
   {
-    "id": 177,
-    "text": "Întrebare cu flag Textul întrebării Care dintre următoarele enunțuri este adevărat referitor la diagrama de stare?",
+    "id": 253,
+    "text": "Care dintre următoarele enunțuri este adevărat referitor la diagrama de stare?",
     "options": [
       "Starea inițială este o pseudo-stare",
       "Starea finală este o pseudo-stare",
       "Activitățile declanșează tranzițiile",
-      "Descrie un flux de lucru 60 | P a g e"
+      "Descrie un flux de lucru"
     ],
     "correct_indices": [
       0
     ]
   },
   {
-    "id": 178,
+    "id": 254,
     "text": "Întrebare cu flag Textul întrebării Identificați enunțul fals referitor la un culoar (lane) din limbajul BPMN.",
     "options": [
       "Pot include activități umane",
@@ -2314,34 +3304,34 @@
     ]
   },
   {
-    "id": 179,
-    "text": "Întrebare cu flag Textul întrebării Printre criteriile care vor fi avute în vedere la stabilirea ordinii de prioritate în proiectarea structurilor sistemului informatic, nu se numără:",
+    "id": 255,
+    "text": "Printre criteriile care vor fi avute în vedere la stabilirea ordinii de prioritate în proiectarea structurilor sistemului informatic, nu se numără:",
     "options": [
       "Abilitatea de a combina serviciile pentru crearea de noi aplicaţii compozite",
       "Nivelul de dotare cu tehnică de calcul existent în etapa de concepere şi cel prevăzut a fi atins în timp",
       "Prioritatea obiectivelor componente",
-      "Disponibilitatea resurselor (limita fondurilor ce pot fi alocate în timp pentru realizarea sistemului informatic 61 | P a g e"
+      "Disponibilitatea resurselor (limita fondurilor ce pot fi alocate în timp pentru realizarea sistemului informatic"
     ],
     "correct_indices": [
       0
     ]
   },
   {
-    "id": 180,
-    "text": "activitate? 1. A->B->C->D 2. A->B->C 3. A->D 4. A->B->D->C 5. A->B->D",
+    "id": 256,
+    "text": "Diagramele de activitate:",
     "options": [
-      "2+4",
-      "2+3+5",
-      "1+2+3",
-      "1+4+5"
+      "Contin o descriere a vietii obiectelor unei clase",
+      "Reprezinta comportamentul intern al unui caz de utilizare",
+      "Descrie interactiunile dintre diverse obiecte ale unui sistem => diagram de obiecte",
+      "Pot fi folosite pentru a descrie procesare paralela"
     ],
     "correct_indices": [
       1
     ]
   },
   {
-    "id": 181,
-    "text": "Întrebare cu flag Textul întrebării Printre elemente din cadrul unei diagrame de componente întâlnim: 1. componente 2. interfețe 3. porturi",
+    "id": 257,
+    "text": "Printre elemente din cadrul unei diagrame de componente întâlnim: 1. componente 2. interfețe 3. porturi",
     "options": [
       "2+3",
       "1",
@@ -2353,8 +3343,8 @@
     ]
   },
   {
-    "id": 182,
-    "text": "Întrebare cu flag Textul întrebării Metodologiile Extreme Programming (XP) și SCRUM se încadrează în categoria metodologiilor:",
+    "id": 258,
+    "text": "Metodologiile Extreme Programming (XP) și SCRUM se încadrează în categoria metodologiilor:",
     "options": [
       "Cu abordare structurată",
       "Cu abordare orientata obiect",
@@ -2366,228 +3356,7 @@
     ]
   },
   {
-    "id": 183,
-    "text": "Întrebare cu flag Textul întrebării Care dintre următoarele enunțuri este adevărat referitor la digrama de clase?",
-    "options": [
-      "Numele de rol pe care îl joacă clasele dintr-o relație se poate specifica la capetele asocierilor",
-      "Nu pot exista relații între clase abstracte și clase concrete",
-      "O clasă nu poate să fie într-o relație cu ea însăși",
-      "Numele de rol pe care îl joacă clasele dintr-o relație se poate specifica în colțul stânga sus al numelui unei clase"
-    ],
-    "correct_indices": [
-      0
-    ]
-  },
-  {
-    "id": 184,
-    "text": "Care dintre următoarele reprezintă o secvență corectă de mesaje?",
-    "options": [
-      "b->a->c",
-      "c->a->b",
-      "c->b->a",
-      "b->c->a"
-    ],
-    "correct_indices": [
-      1
-    ]
-  },
-  {
-    "id": 185,
-    "text": "Întrebare cu flag Textul întrebării UML este un limbaj semi-formal deoarece:",
-    "options": [
-      "Are reguli de sintaxă și de semantică",
-      "Are reguli de sintaxă, dar nu și de semantică",
-      "Este un standard",
-      "Are reguli de semantică, dar nu și de sintaxă"
-    ],
-    "correct_indices": [
-      1
-    ]
-  },
-  {
-    "id": 186,
-    "text": "Întrebare cu flag Textul întrebării Fluxurile de mesaj sunt folosite în BPMN pentru a arăta:",
-    "options": [
-      "Comunicarea între doi participanți",
-      "Fluxul de date transmise în cadrul procesului",
-      "Căile de execuție condiționale 71 | P a g e",
-      "Ordinea elementelor din flux"
-    ],
-    "correct_indices": [
-      0
-    ]
-  },
-  {
-    "id": 187,
-    "text": "activitate? 1. A->C 2. A->B->C 3. B->A->C 4. B->C",
-    "options": [
-      "2+3",
-      "2+4",
-      "1+3",
-      "1+2+3+4"
-    ],
-    "correct_indices": [
-      0
-    ]
-  },
-  {
-    "id": 188,
-    "text": "Întrebare cu flag Textul întrebării Care dintre următoarele noduri sunt elemente ale unei diagrame de activitate?",
-    "options": [
-      "Nod de distribuție",
-      "Nod de bifurcație",
-      "Nod de stare",
-      "Nod de comunicare"
-    ],
-    "correct_indices": [
-      1
-    ]
-  },
-  {
-    "id": 189,
-    "text": "Întrebare cu flag Textul întrebării Ciclul de dezvoltare a unui sistem informatic: 1. Include ciclul de viață a sistemului informatic 2. Este inclus în ciclul de viață a sistemului informatic 3. Include identificarea cerințelor 4. Include înlocuirea sistemului informatic",
-    "options": [
-      "1+3+4",
-      "2+4",
-      "2+3",
-      "1+3"
-    ],
-    "correct_indices": [
-      2
-    ]
-  },
-  {
-    "id": 190,
-    "text": "Întrebare cu flag Textul întrebării Termenul de ‘arhitectură tehnică’ se referă la:",
-    "options": [
-      "Modelele de analiză și proiectare elaborate",
-      "Totalitatea datelor, intrărilor și ieșirilor identificate în proiectarea aplicației",
-      "Toate tehnologiile necesare pentru a sustine aplicatia software",
-      "Arhitectura orientată pe servicii"
-    ],
-    "correct_indices": [
-      2
-    ]
-  },
-  {
-    "id": 191,
-    "text": "Întrebare cu flag Textul întrebării Un actor din diagrama cazurilor de utilizare:",
-    "options": [
-      "Interacționează cu alți actori sub forma relațiilor de tip <<extend>>",
-      "Reprezintă roluri ale utilizatorilor sistemului",
-      "Interacționează cu sistemul sub forma relațiilor de tip <<include>>",
-      "Descrie funcțiile sistemului"
-    ],
-    "correct_indices": [
-      1
-    ]
-  },
-  {
-    "id": 192,
-    "text": "Selectați combinația corectă de variante.",
-    "options": [
-      "2+4",
-      "1+2+4",
-      "1+3+4",
-      "1+4"
-    ],
-    "correct_indices": [
-      3
-    ]
-  },
-  {
-    "id": 193,
-    "text": "Dacă o instanță a lui B este ștearsă, atunci sunt șterse și toate instanțele lui A 3. Rombul de lângă A poartă numele de compunere 4. Un obiect al lui B este inclus într-un sigur un obiect al lui A",
-    "options": [
-      "modul în care interacţionează şi comunică obiectele",
-      "natura statică a componentelor, punând in evidentă atributele, operațiile şi asocierile",
-      "dependenţele existente între diverse componente software ce compun un sistem informatic",
-      "configuraţia elementelor de procesare din timpul execuţiei şi componentele, procesele şi obiectele care le conţin"
-    ],
-    "correct_indices": [
-      2
-    ]
-  },
-  {
-    "id": 194,
-    "text": "Întrebare cu flag Textul întrebării Care dintre următoarele enunțuri este adevărat referitor la diagrama de stare?",
-    "options": [
-      "Starea inițială este o pseudo-stare",
-      "Starea finală este o pseudo-stare",
-      "Activitățile declanșează tranzițiile",
-      "Descrie un flux de lucru"
-    ],
-    "correct_indices": [
-      0
-    ]
-  },
-  {
-    "id": 195,
-    "text": "Întrebare cu flag Textul întrebării Printre criteriile care vor fi avute în vedere la stabilirea ordinii de prioritate în proiectarea structurilor sistemului informatic, nu se numără:",
-    "options": [
-      "Abilitatea de a combina serviciile pentru crearea de noi aplicaţii compozite",
-      "Nivelul de dotare cu tehnică de calcul existent în etapa de concepere şi cel prevăzut a fi atins în timp",
-      "Prioritatea obiectivelor componente",
-      "Disponibilitatea resurselor (limita fondurilor ce pot fi alocate în timp pentru realizarea sistemului informatic"
-    ],
-    "correct_indices": [
-      0
-    ]
-  },
-  {
-    "id": 196,
-    "text": "Întrebare cu flag Textul întrebării Fluxurile de mesaj sunt folosite în BPMN pentru a arăta:",
-    "options": [
-      "Comunicarea între doi participanți",
-      "Fluxul de date transmise în cadrul procesului",
-      "Căile de execuție condiționale",
-      "Ordinea elementelor din flux"
-    ],
-    "correct_indices": [
-      0
-    ]
-  },
-  {
-    "id": 197,
-    "text": "Care dintre următoarele afirmații referitoare la proiectarea interfețelor este adevărată? 1. hărți cu structura ecranului sunt utilizate pentru a descrie fluxul aplicației urmând principalele moduri de utilizare 2. modelarea unei interfețe se face cu ajutorul diagramei specifice UML 3. așteptările actorilor cu privire la interfețe sunt aflate prin completarea de chestionare 4. proictarea interfețelor nu trebuie să țină cont de obiectivele actorului în interacțiunea cu sistemul",
-    "options": [
-      "Abilitatea de a combina serviciile pentru crearea de noi aplicaţii compozite",
-      "Nivelul de dotare cu tehnică de calcul existent în etapa de concepere şi cel prevăzut a fi atins în timp",
-      "Prioritatea obiectivelor componente",
-      "Disponibilitatea resurselor (limita fondurilor ce pot fi alocate în timp pentru realizarea sistemului informatic"
-    ],
-    "correct_indices": [
-      0
-    ]
-  },
-  {
-    "id": 198,
-    "text": "de activitate? 1. A->C 2. A->B->C 3. B->A->C 4. B->C",
-    "options": [
-      "2+3",
-      "1+3",
-      "2+4",
-      "1+2+3+4"
-    ],
-    "correct_indices": [
-      0
-    ]
-  },
-  {
-    "id": 199,
-    "text": "Printre elemente din cadrul unei diagrame de componente întâlnim: 1. componente 2. interfețe 3. porturi",
-    "options": [
-      "2+3",
-      "1+2+3",
-      "1",
-      "1+3"
-    ],
-    "correct_indices": [
-      1
-    ]
-  },
-  {
-    "id": 200,
+    "id": 259,
     "text": "Care dintre următoarele enunțuri este adevărat referitor la digrama de clase?",
     "options": [
       "Numele de rol pe care îl joacă clasele dintr-o relație se poate specifica la capetele asocierilor",
@@ -2600,7 +3369,228 @@
     ]
   },
   {
-    "id": 201,
+    "id": 260,
+    "text": "Arhitectura orientate pe model:",
+    "options": [
+      "Descrie modele independente si dependente de platforma",
+      "Propune cinci viziuni asupra unui sistem informatics",
+      "Are la baza transformari ale modelelor",
+      "Solicita construirea unor modele UML cat mai complete"
+    ],
+    "correct_indices": [
+      1
+    ]
+  },
+  {
+    "id": 261,
+    "text": "UML este un limbaj semi-formal deoarece:",
+    "options": [
+      "Are reguli de sintaxă și de semantică",
+      "Are reguli de sintaxă, dar nu și de semantică",
+      "Este un standard",
+      "Are reguli de semantică, dar nu și de sintaxă"
+    ],
+    "correct_indices": [
+      1
+    ]
+  },
+  {
+    "id": 262,
+    "text": "Întrebare cu flag Textul întrebării Fluxurile de mesaj sunt folosite în BPMN pentru a arăta:",
+    "options": [
+      "Comunicarea între doi participanți",
+      "Fluxul de date transmise în cadrul procesului",
+      "Căile de execuție condiționale 71 | P a g e",
+      "Ordinea elementelor din flux"
+    ],
+    "correct_indices": [
+      0
+    ]
+  },
+  {
+    "id": 263,
+    "text": "Diagramele de stare din UML",
+    "options": [
+      "Modeleaza aspectele functionale ale unui system",
+      "Descriu chronologic interactiunea dintre obiecte",
+      "Modeleaza starea dinamica a unui obiect specific",
+      "Contin linii de viata si stari compuse"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 264,
+    "text": "Care dintre următoarele noduri sunt elemente ale unei diagrame de activitate?",
+    "options": [
+      "Nod de distribuție",
+      "Nod de bifurcație",
+      "Nod de stare",
+      "Nod de comunicare"
+    ],
+    "correct_indices": [
+      1
+    ]
+  },
+  {
+    "id": 265,
+    "text": "Ciclul de dezvoltare a unui sistem informatic: 1. Include ciclul de viață a sistemului informatic 2. Este inclus în ciclul de viață a sistemului informatic 3. Include identificarea cerințelor 4. Include înlocuirea sistemului informatic",
+    "options": [
+      "1+3+4",
+      "2+4",
+      "2+3",
+      "1+3"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 266,
+    "text": "Termenul de ‘arhitectură tehnică’ se referă la:",
+    "options": [
+      "Modelele de analiză și proiectare elaborate",
+      "Totalitatea datelor, intrărilor și ieșirilor identificate în proiectarea aplicației",
+      "Toate tehnologiile necesare pentru a sustine aplicatia software",
+      "Arhitectura orientată pe servicii"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 267,
+    "text": "Un actor din diagrama cazurilor de utilizare:",
+    "options": [
+      "Interacționează cu alți actori sub forma relațiilor de tip <<extend>>",
+      "Reprezintă roluri ale utilizatorilor sistemului",
+      "Interacționează cu sistemul sub forma relațiilor de tip <<include>>",
+      "Descrie funcțiile sistemului"
+    ],
+    "correct_indices": [
+      1
+    ]
+  },
+  {
+    "id": 268,
+    "text": "Mentenanta corectiva se refera la:",
+    "options": [
+      "Efectuarea de modificari in cadrul sistemului cu scopul de a repara si inlatura defecte sau erori",
+      "Efectuarea de schimbari in cadrul sistemului informatics pentru a spori functionalitatea acestuia",
+      "Implementarea de noi cerinte de system functionale sau nonfunctionale",
+      "Schimbari facute sistemului pentru a reduce sau inlatura riscul caderii sistemului"
+    ],
+    "correct_indices": [
+      3
+    ]
+  },
+  {
+    "id": 269,
+    "text": "Dacă o instanță a lui B este ștearsă, atunci sunt șterse și toate instanțele lui A 3. Rombul de lângă A poartă numele de compunere 4. Un obiect al lui B este inclus într-un sigur un obiect al lui A",
+    "options": [
+      "modul în care interacţionează şi comunică obiectele",
+      "natura statică a componentelor, punând in evidentă atributele, operațiile şi asocierile",
+      "dependenţele existente între diverse componente software ce compun un sistem informatic",
+      "configuraţia elementelor de procesare din timpul execuţiei şi componentele, procesele şi obiectele care le conţin"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 270,
+    "text": "Care dintre următoarele enunțuri este adevărat referitor la diagrama de stare?",
+    "options": [
+      "Starea inițială este o pseudo-stare",
+      "Starea finală este o pseudo-stare",
+      "Activitățile declanșează tranzițiile",
+      "Descrie un flux de lucru"
+    ],
+    "correct_indices": [
+      0
+    ]
+  },
+  {
+    "id": 271,
+    "text": "Printre criteriile care vor fi avute în vedere la stabilirea ordinii de prioritate în proiectarea structurilor sistemului informatic, nu se numără:",
+    "options": [
+      "Abilitatea de a combina serviciile pentru crearea de noi aplicaţii compozite",
+      "Nivelul de dotare cu tehnică de calcul existent în etapa de concepere şi cel prevăzut a fi atins în timp",
+      "Prioritatea obiectivelor componente",
+      "Disponibilitatea resurselor (limita fondurilor ce pot fi alocate în timp pentru realizarea sistemului informatic"
+    ],
+    "correct_indices": [
+      0
+    ]
+  },
+  {
+    "id": 272,
+    "text": "Fluxurile de mesaj sunt folosite în BPMN pentru a arăta:",
+    "options": [
+      "Comunicarea între doi participanți",
+      "Fluxul de date transmise în cadrul procesului",
+      "Căile de execuție condiționale",
+      "Ordinea elementelor din flux"
+    ],
+    "correct_indices": [
+      0
+    ]
+  },
+  {
+    "id": 273,
+    "text": "Care dintre următoarele afirmații referitoare la proiectarea interfețelor este adevărată? 1. hărți cu structura ecranului sunt utilizate pentru a descrie fluxul aplicației urmând principalele moduri de utilizare 2. modelarea unei interfețe se face cu ajutorul diagramei specifice UML 3. așteptările actorilor cu privire la interfețe sunt aflate prin completarea de chestionare 4. proictarea interfețelor nu trebuie să țină cont de obiectivele actorului în interacțiunea cu sistemul",
+    "options": [
+      "Abilitatea de a combina serviciile pentru crearea de noi aplicaţii compozite",
+      "Nivelul de dotare cu tehnică de calcul existent în etapa de concepere şi cel prevăzut a fi atins în timp",
+      "Prioritatea obiectivelor componente",
+      "Disponibilitatea resurselor (limita fondurilor ce pot fi alocate în timp pentru realizarea sistemului informatic"
+    ],
+    "correct_indices": [
+      0
+    ]
+  },
+  {
+    "id": 274,
+    "text": "Termenul de ‘arhitectură tehnică’ se referă la:",
+    "options": [
+      "Modelele de analiză și proiectare elaborate",
+      "Totalitatea datelor, intrărilor și ieșirilor identificate în proiectarea aplicației",
+      "Toate tehnologiile necesare pentru a sustine aplicatia software",
+      "Arhitectura orientată pe servicii"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 275,
+    "text": "Printre elemente din cadrul unei diagrame de componente întâlnim: 1. componente 2. interfețe 3. porturi",
+    "options": [
+      "2+3",
+      "1+2+3",
+      "1",
+      "1+3"
+    ],
+    "correct_indices": [
+      1
+    ]
+  },
+  {
+    "id": 276,
+    "text": "Care dintre următoarele enunțuri este adevărat referitor la digrama de clase?",
+    "options": [
+      "Numele de rol pe care îl joacă clasele dintr-o relație se poate specifica la capetele asocierilor",
+      "Nu pot exista relații între clase abstracte și clase concrete",
+      "O clasă nu poate să fie într-o relație cu ea însăși",
+      "Numele de rol pe care îl joacă clasele dintr-o relație se poate specifica în colțul stânga sus al numelui unei clase"
+    ],
+    "correct_indices": [
+      0
+    ]
+  },
+  {
+    "id": 278,
     "text": "Fluxurile de mesaj sunt folosite în BPMN pentru a arăta:",
     "options": [
       "Ordinea elementelor din flux",
@@ -2613,7 +3603,7 @@
     ]
   },
   {
-    "id": 202,
+    "id": 279,
     "text": "Identificați enunțul fals referitor la identificarea cerințelor unui sistem informatic.",
     "options": [
       "Se recomandă implicare activă a beneficiarului",
@@ -2626,7 +3616,7 @@
     ]
   },
   {
-    "id": 203,
+    "id": 280,
     "text": "Care dintre următoarele enunțuri este adevărat referitor la diagrama de secvență?",
     "options": [
       "Assign, ignore și consider sunt fragmente combinate",
@@ -2639,7 +3629,7 @@
     ]
   },
   {
-    "id": 204,
+    "id": 281,
     "text": "Un actor din diagrama cazurilor de utilizare:",
     "options": [
       "Interacționează cu sistemul sub forma relațiilor de tip <<include>>",
@@ -2652,7 +3642,7 @@
     ]
   },
   {
-    "id": 205,
+    "id": 282,
     "text": "Identificați enunțul fals referitor la un culoar (lane) din limbajul BPMN.",
     "options": [
       "Fluxurile de mesaj pot traversa granițele unui culoar",
@@ -2665,7 +3655,7 @@
     ]
   },
   {
-    "id": 206,
+    "id": 283,
     "text": "Care dintre următoarele noduri sunt elemente ale unei diagrame de activitate?",
     "options": [
       "Nod de stare",
@@ -2678,7 +3668,7 @@
     ]
   },
   {
-    "id": 207,
+    "id": 284,
     "text": "UML este un limbaj semi-formal deoarece:",
     "options": [
       "Este un standard",
@@ -2691,7 +3681,7 @@
     ]
   },
   {
-    "id": 208,
+    "id": 285,
     "text": "Ce elemente pot fi specificate la modelarea unei tranziții?",
     "options": [
       "Un eveniment care trebuie executat după tranziție",
@@ -2704,7 +3694,7 @@
     ]
   },
   {
-    "id": 209,
+    "id": 286,
     "text": "Ciclul de dezvoltare a unui sistem informatic: 1. Include ciclul de viață a sistemului informatic 2. Este inclus în ciclul de viață a sistemului informatic 3. Include identificarea cerințelor 4. Include înlocuirea sistemului informatic",
     "options": [
       "2+3",
@@ -2717,20 +3707,20 @@
     ]
   },
   {
-    "id": 210,
-    "text": "de activitate?",
+    "id": 287,
+    "text": "Agregarea partajata are urmatoarele caracteristici:",
     "options": [
-      "A->D->C",
-      "A->D",
-      "A->B->C->D",
-      "A->B->D"
+      "Este o forma puternica de agregare",
+      "Se reprezinta sub forma unui romb plin",
+      "Este o forma slaba de agregare",
+      "Reprezinta o relatie de tip parinte/copil"
     ],
     "correct_indices": [
       2
     ]
   },
   {
-    "id": 211,
+    "id": 288,
     "text": "Termenul de ‘arhitectură tehnică’ se referă la:",
     "options": [
       "Modelele de analiză și proiectare elaborate",
@@ -2743,7 +3733,7 @@
     ]
   },
   {
-    "id": 212,
+    "id": 289,
     "text": "Selectați combinația corectă de variante.",
     "options": [
       "1+2+4",
@@ -2756,7 +3746,7 @@
     ]
   },
   {
-    "id": 213,
+    "id": 290,
     "text": "Care dintre următoarele enunțuri este adevărat referitor la diagrama de stare?",
     "options": [
       "Descrie un flux de lucru",
@@ -2769,7 +3759,7 @@
     ]
   },
   {
-    "id": 214,
+    "id": 291,
     "text": "În cadrul unei digrame de secvență",
     "options": [
       "Se modelează comportmentul unui obiect",
@@ -2782,8 +3772,8 @@
     ]
   },
   {
-    "id": 215,
-    "text": "Întrebare cu flag Textul întrebării Ciclul de dezvoltare a unui sistem informatic: 1. Include ciclul de viață a sistemului informatic 2. Este inclus în ciclul de viață a sistemului informatic 3. Include identificarea cerințelor 4. Include înlocuirea sistemului informatic",
+    "id": 292,
+    "text": "Ciclul de dezvoltare a unui sistem informatic: 1. Include ciclul de viață a sistemului informatic 2. Este inclus în ciclul de viață a sistemului informatic 3. Include identificarea cerințelor 4. Include înlocuirea sistemului informatic",
     "options": [
       "2+3",
       "1+3",
@@ -2795,8 +3785,8 @@
     ]
   },
   {
-    "id": 216,
-    "text": "Întrebare cu flag Textul întrebării Identificați enunțul fals referitor la identificarea cerințelor unui sistem informatic.",
+    "id": 293,
+    "text": "Identificați enunțul fals referitor la identificarea cerințelor unui sistem informatic.",
     "options": [
       "Artefactele pot oferi doar informații despre funcționarea sistemului informatic existent",
       "Analistul joacă un rol important în această etapă",
@@ -2808,21 +3798,21 @@
     ]
   },
   {
-    "id": 217,
-    "text": "activitate?",
+    "id": 294,
+    "text": "In limbajul BPMN portile paralele:",
     "options": [
-      "A->D",
-      "A->B->D",
-      "A->D->C",
-      "A->B->C->D"
+      "Sunt cunoscute sub denumirea de decizii",
+      "Arata ca numai una din caile de iesire va fi urmata",
+      "Verifica o conditie care sa duca la declansarea iesirilor",
+      "Nu verifica nicio conditie care sa duca la declansarea iesirilor"
     ],
     "correct_indices": [
       3
     ]
   },
   {
-    "id": 218,
-    "text": "Întrebare cu flag Textul întrebării UML este un limbaj semi-formal deoarece:",
+    "id": 295,
+    "text": "UML este un limbaj semi-formal deoarece:",
     "options": [
       "Are reguli de sintaxă, dar nu și de semantică",
       "Este un standard",
@@ -2834,8 +3824,8 @@
     ]
   },
   {
-    "id": 219,
-    "text": "Întrebare cu flag Textul întrebării Fluxurile de mesaj sunt folosite în BPMN pentru a arăta:",
+    "id": 296,
+    "text": "Fluxurile de mesaj sunt folosite în BPMN pentru a arăta:",
     "options": [
       "Fluxul de date transmise în cadrul procesului",
       "Ordinea elementelor din flux",
@@ -2847,8 +3837,8 @@
     ]
   },
   {
-    "id": 220,
-    "text": "Întrebare cu flag Textul întrebării Printre criteriile care vor fi avute în vedere la stabilirea ordinii de prioritate în proiectarea structurilor sistemului informatic, nu se numără:",
+    "id": 297,
+    "text": "Printre criteriile care vor fi avute în vedere la stabilirea ordinii de prioritate în proiectarea structurilor sistemului informatic, nu se numără:",
     "options": [
       "Disponibilitatea resurselor (limita fondurilor ce pot fi alocate în timp pentru realizarea sistemului informatic",
       "Nivelul de dotare cu tehnică de calcul existent în etapa de concepere şi cel prevăzut a fi atins în timp",
@@ -2860,8 +3850,8 @@
     ]
   },
   {
-    "id": 221,
-    "text": "Întrebare cu flag Textul întrebării Care dintre următoarele enunțuri este adevărat referitor la digrama de clase?",
+    "id": 298,
+    "text": "Care dintre următoarele enunțuri este adevărat referitor la digrama de clase?",
     "options": [
       "Numele de rol pe care îl joacă clasele dintr-o relație se poate specifica în colțul stânga sus al numelui unei clase",
       "Nu pot exista relații între clase abstracte și clase concrete",
@@ -2873,8 +3863,8 @@
     ]
   },
   {
-    "id": 222,
-    "text": "Întrebare cu flag Textul întrebării Care dintre următoarele enunțuri este adevărat referitor la diagrama de stare?",
+    "id": 299,
+    "text": "Care dintre următoarele enunțuri este adevărat referitor la diagrama de stare?",
     "options": [
       "Descrie un flux de lucru",
       "Starea inițială este o pseudo-stare",
@@ -2886,21 +3876,21 @@
     ]
   },
   {
-    "id": 223,
-    "text": "activitate? 1. A->C 2. A->B->C 3. B->A->C 4. B->C",
+    "id": 300,
+    "text": "Cerintele care definesc functiile unui sistem informatics sau ale componentelor acestora se numesc:",
     "options": [
-      "1+2+3+4",
-      "1+3",
-      "2+3",
-      "2+4"
+      "Cerinte de performanta",
+      "Cerinte de securitate",
+      "Cerinte functionale",
+      "Cerinte de utilizare"
     ],
     "correct_indices": [
       2
     ]
   },
   {
-    "id": 224,
-    "text": "Întrebare cu flag Textul întrebării Metodologiile Extreme Programming (XP) și SCRUM se încadrează în categoria metodologiilor:",
+    "id": 301,
+    "text": "Metodologiile Extreme Programming (XP) și SCRUM se încadrează în categoria metodologiilor:",
     "options": [
       "Bazate pe dezvoltare Agilă",
       "Cu abordare structurată",
@@ -2912,8 +3902,8 @@
     ]
   },
   {
-    "id": 225,
-    "text": "Întrebare cu flag Textul întrebării În cadrul unei digrame de secvență",
+    "id": 302,
+    "text": "În cadrul unei digrame de secvență",
     "options": [
       "Se modelează comportmentul unui obiect",
       "Se pot integra alte diagrame de secvență",
@@ -2925,8 +3915,8 @@
     ]
   },
   {
-    "id": 226,
-    "text": "Întrebare cu flag Textul întrebării Printre elemente din cadrul unei diagrame de componente întâlnim: 1. componente 2. interfețe 3. porturi",
+    "id": 303,
+    "text": "Printre elemente din cadrul unei diagrame de componente întâlnim: 1. componente 2. interfețe 3. porturi",
     "options": [
       "1+3",
       "2+3",
@@ -2938,8 +3928,8 @@
     ]
   },
   {
-    "id": 227,
-    "text": "Întrebare cu flag Textul întrebării Ce elemente pot fi specificate la modelarea unei tranziții?",
+    "id": 304,
+    "text": "Ce elemente pot fi specificate la modelarea unei tranziții?",
     "options": [
       "Un eveniment care trebuie executat după tranziție",
       "O activitate care este executată în timpul tranziției",
@@ -2951,21 +3941,22 @@
     ]
   },
   {
-    "id": 228,
-    "text": "Selectați combinația corectă de variante.",
+    "id": 305,
+    "text": "In etapa de proiectare detaliata a sistemelor informatice se realizeaza documentatia pentru:",
     "options": [
-      "2+4",
-      "1+4",
-      "1+3+4",
-      "1+2+4"
+      "proiectul logic si fizic de ansamblu;",
+      "proiectul logic si de ansamblu;",
+      "proiectul logic si tehnic de detaliu;",
+      "documentatia de sistem;",
+      "manualul de prezentare al sistemului."
     ],
     "correct_indices": [
-      1
+      2
     ]
   },
   {
-    "id": 229,
-    "text": "Întrebare cu flag Textul întrebării Care dintre următoarele noduri sunt elemente ale unei diagrame de activitate?",
+    "id": 306,
+    "text": "Care dintre următoarele noduri sunt elemente ale unei diagrame de activitate?",
     "options": [
       "Nod de bifurcație",
       "Nod de distribuție",
@@ -2977,8 +3968,8 @@
     ]
   },
   {
-    "id": 230,
-    "text": "Întrebare cu flag Textul întrebării Un actor din diagrama cazurilor de utilizare:",
+    "id": 307,
+    "text": "Un actor din diagrama cazurilor de utilizare:",
     "options": [
       "Descrie funcțiile sistemului",
       "Reprezintă roluri ale utilizatorilor sistemului",
@@ -2990,34 +3981,34 @@
     ]
   },
   {
-    "id": 231,
-    "text": "activitate? 1. A->B->C->D 2. A->B->C 3. A->D 4. A->B->D->C 5. A->B->D",
+    "id": 308,
+    "text": "O metodolgie de realizare a unui system informatics trebuie sa cuprinda:",
     "options": [
-      "1+2+3",
-      "2+3+5",
-      "1+4+5",
-      "2+4"
+      "Detalii privind tehnologiile de implementare a sistemului informatics",
+      "Limbajele de programare utilizate",
+      "Modalitatea de derulare a ciclului de viata a sistemului informatics",
+      "Instrumente specifice scrierii de cod sursa"
     ],
     "correct_indices": [
-      1
+      2
     ]
   },
   {
-    "id": 232,
-    "text": "Care dintre următoarele reprezintă o secvență corectă de mesaje?",
+    "id": 309,
+    "text": "Printre componentele unui system informatics nu se numara:",
     "options": [
-      "c->a->b",
-      "b->a->c",
-      "b->c->a",
-      "c->b->a"
+      "Sistemul informational",
+      "Comunicatiile",
+      "Software-ul",
+      "Utilizatorii"
     ],
     "correct_indices": [
       0
     ]
   },
   {
-    "id": 233,
-    "text": "Întrebare cu flag Textul întrebării Termenul de ‘arhitectură tehnică’ se referă la:",
+    "id": 310,
+    "text": "Termenul de ‘arhitectură tehnică’ se referă la:",
     "options": [
       "Modelele de analiză și proiectare elaborate",
       "Totalitatea datelor, intrărilor și ieșirilor identificate în proiectarea aplicației",
@@ -3029,4 +4020,3 @@
     ]
   }
 ]
-
