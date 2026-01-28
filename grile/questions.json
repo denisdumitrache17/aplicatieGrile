@@ -3487,15 +3487,15 @@
   },
   {
     "id": 269,
-    "text": "Dacă o instanță a lui B este ștearsă, atunci sunt șterse și toate instanțele lui A 3. Rombul de lângă A poartă numele de compunere 4. Un obiect al lui B este inclus într-un sigur un obiect al lui A",
+    "text": "Cerintele care definesc functiile unui SI sau ale componentelor acestuia se numesc ",
     "options": [
-      "modul în care interacţionează şi comunică obiectele",
-      "natura statică a componentelor, punând in evidentă atributele, operațiile şi asocierile",
-      "dependenţele existente între diverse componente software ce compun un sistem informatic",
-      "configuraţia elementelor de procesare din timpul execuţiei şi componentele, procesele şi obiectele care le conţin"
+      "cerinte functionale",
+      "cerinte arhitecturale",
+      "cerinte de calitate",
+      "cerinte de dezvoltare"
     ],
     "correct_indices": [
-      2
+      0
     ]
   },
   {
@@ -4021,3 +4021,4 @@
   }
 
 ]
+
