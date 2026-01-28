@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grile Simulator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .start-container {
+            background: white;
+            padding: 60px 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .start-container h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .start-container p {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .quiz-container {
+            display: none;
+        }
+
+        .quiz-info {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .quiz-info span {
+            font-size: 1.1rem;
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .questions-list {
+            margin-bottom: 20px;
+        }
+
+        .question-card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .question-card.correct {
+            background-color: #d4edda;
+            border-color: #28a745;
+        }
+
+        .question-card.incorrect {
+            background-color: #f8d7da;
+            border-color: #dc3545;
+        }
+
+        .question-text {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .question-number {
+            color: #667eea;
+            margin-right: 8px;
+        }
+
+        .options-list {
+            list-style: none;
+        }
+
+        .option-item {
+            margin-bottom: 12px;
+        }
+
+        .option-label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 12px;
+            border-radius: 8px;
+            transition: background-color 0.2s ease;
+            font-size: 1rem;
+        }
+
+        .option-label:hover {
+            background-color: #f8f9fa;
+        }
+
+        .option-label input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+            cursor: pointer;
+            accent-color: #667eea;
+        }
+
+        /* Highlight correct answers after verification */
+        .option-label.was-correct {
+            background-color: #d1f2eb;
+            border: 2px solid #28a745;
+            font-weight: 600;
+        }
+
+        .correct-answer-note {
+            background-color: #d1f2eb;
+            border-left: 4px solid #28a745;
+            padding: 12px;
+            margin-top: 15px;
+            border-radius: 5px;
+            font-size: 0.95rem;
+            color: #155724;
+        }
+
+        .correct-answer-note strong {
+            color: #28a745;
+        }
+
+        .additional-correct-note {
+            background-color: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            padding: 12px;
+            margin-top: 15px;
+            border-radius: 5px;
+            font-size: 0.95rem;
+            color: #0c5460;
+        }
+
+        .additional-correct-note strong {
+            color: #17a2b8;
+        }
+
+        .option-label.correct-answer {
+            background-color: #d1f2eb;
+            border: 2px solid #28a745;
+            font-weight: 600;
+        }
+
+        .correct-answer-indicator {
+            background-color: #28a745;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            margin-top: 15px;
+            display: inline-block;
+            font-weight: 600;
+        }
+
+        .check-button-container {
+            text-align: center;
+            position: sticky;
+            bottom: 20px;
+            padding: 20px 0;
+        }
+
+        .btn-verify {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            box-shadow: 0 4px 15px rgba(17, 153, 142, 0.4);
+        }
+
+        .btn-verify:hover {
+            box-shadow: 0 6px 20px rgba(17, 153, 142, 0.6);
+        }
+
+        .btn-restart {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            box-shadow: 0 4px 15px rgba(245, 87, 108, 0.4);
+            margin-left: 15px;
+        }
+
+        .btn-restart:hover {
+            box-shadow: 0 6px 20px rgba(245, 87, 108, 0.6);
+        }
+
+        .loading {
+            text-align: center;
+            color: white;
+            font-size: 1.3rem;
+            padding: 40px;
+        }
+
+        .result-summary {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .result-summary h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .result-stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .stat-value.correct {
+            color: #28a745;
+        }
+
+        .stat-value.incorrect {
+            color: #dc3545;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .question-card {
+                padding: 20px;
+            }
+
+            .btn {
+                padding: 12px 30px;
+                font-size: 1rem;
+            }
+
+            .result-stats {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎓 Grile Simulator</h1>
+            <p>Test Your IT Knowledge</p>
+        </div>
+
+        <!-- Start Screen -->
+        <div id="startScreen" class="start-container">
+            <h2>Bine ai venit!</h2>
+            <p>Alege numărul de întrebări (1-150) și apasă butonul pentru a începe testul.</p>
+
+            <div style="margin: 25px 0;">
+                <label for="questionCount"
+                    style="display: block; color: #667eea; font-weight: 600; margin-bottom: 10px; font-size: 1.1rem;">
+                    Număr întrebări (1-150):
+                </label>
+                <input type="number" id="questionCount" min="1" max="150" value="15"
+                    style="width: 120px; padding: 12px; font-size: 1.1rem; border: 2px solid #667eea; border-radius: 8px; text-align: center; outline: none; transition: border-color 0.3s;"
+                    onkeypress="if(event.key === 'Enter') startQuiz()" />
+            </div>
+
+            <button class="btn" onclick="startQuiz()">Start Test</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quizScreen" class="quiz-container">
+            <div class="quiz-info">
+                <span id="questionCountDisplay">Total întrebări: 0</span>
+                <span id="timer"></span>
+            </div>
+
+            <div id="resultSummary" class="result-summary" style="display: none;"></div>
+
+            <div id="questionsList" class="questions-list"></div>
+
+            <div class="check-button-container">
+                <button id="verifyBtn" class="btn btn-verify" onclick="checkAnswers()">Verifică</button>
+                <button class="btn btn-restart" onclick="restartQuiz()">Test Nou</button>
+            </div>
+        </div>
+
+        <!-- Loading Screen -->
+        <div id="loadingScreen" class="loading" style="display: none;">
+            Încărcare întrebări...
+        </div>
+    </div>
+
+    <script>
+        let currentQuestions = [];
+        let userAnswers = {};
+        let quizChecked = false;
+
+        async function startQuiz() {
+            // Get the selected question count
+            const questionCountInput = document.getElementById('questionCount');
+            const questionCount = parseInt(questionCountInput.value);
+
+            // Validate input
+            if (isNaN(questionCount) || questionCount < 1 || questionCount > 150) {
+                alert('Te rog alege un număr între 1 și 150!');
+                questionCountInput.focus();
+                return;
+            }
+
+            // Hide start screen, show loading
+            document.getElementById('startScreen').style.display = 'none';
+            document.getElementById('loadingScreen').style.display = 'block';
+
+            try {
+                const response = await fetch(`/api/get-quiz?count=${questionCount}`);
+                const questions = await response.json();
+
+                currentQuestions = questions;
+                userAnswers = {};
+                quizChecked = false;
+
+                renderQuiz();
+
+                // Hide loading, show quiz
+                document.getElementById('loadingScreen').style.display = 'none';
+                document.getElementById('quizScreen').style.display = 'block';
+            } catch (error) {
+                console.error('Error fetching quiz:', error);
+                alert('Eroare la încărcarea testului. Vă rugăm să încercați din nou.');
+                document.getElementById('loadingScreen').style.display = 'none';
+                document.getElementById('startScreen').style.display = 'block';
+            }
+        }
+
+        function renderQuiz() {
+            const questionsList = document.getElementById('questionsList');
+            const questionCountDisplay = document.getElementById('questionCountDisplay');
+
+            questionCountDisplay.textContent = `Total întrebări: ${currentQuestions.length}`;
+
+            questionsList.innerHTML = '';
+
+            currentQuestions.forEach((question, index) => {
+                const questionCard = document.createElement('div');
+                questionCard.className = 'question-card';
+                questionCard.id = `question-${question.id}`;
+
+                const questionText = document.createElement('div');
+                questionText.className = 'question-text';
+                questionText.innerHTML = `<span class="question-number">${index + 1}.</span>${question.text}`;
+
+                const optionsList = document.createElement('ul');
+                optionsList.className = 'options-list';
+
+                question.options.forEach((option, optionIndex) => {
+                    const optionItem = document.createElement('li');
+                    optionItem.className = 'option-item';
+
+                    const optionLabel = document.createElement('label');
+                    optionLabel.className = 'option-label';
+
+                    const checkbox = document.createElement('input');
+                    checkbox.type = 'checkbox';
+                    checkbox.name = `question-${question.id}`;
+                    checkbox.value = optionIndex;
+                    checkbox.onchange = () => handleCheckboxChange(question.id, optionIndex, checkbox.checked);
+
+                    const optionText = document.createElement('span');
+                    optionText.textContent = option;
+
+                    optionLabel.appendChild(checkbox);
+                    optionLabel.appendChild(optionText);
+                    optionItem.appendChild(optionLabel);
+                    optionsList.appendChild(optionItem);
+                });
+
+                questionCard.appendChild(questionText);
+                questionCard.appendChild(optionsList);
+                questionsList.appendChild(questionCard);
+            });
+
+            // Hide result summary when rendering new quiz
+            document.getElementById('resultSummary').style.display = 'none';
+        }
+
+        function handleCheckboxChange(questionId, optionIndex, checked) {
+            if (quizChecked) return; // Disable changes after verification
+
+            if (!userAnswers[questionId]) {
+                userAnswers[questionId] = [];
+            }
+
+            if (checked) {
+                if (!userAnswers[questionId].includes(optionIndex)) {
+                    userAnswers[questionId].push(optionIndex);
+                }
+            } else {
+                userAnswers[questionId] = userAnswers[questionId].filter(idx => idx !== optionIndex);
+            }
+        }
+
+        function checkAnswers() {
+            if (quizChecked) {
+                alert('Răspunsurile au fost deja verificate!');
+                return;
+            }
+
+            quizChecked = true;
+            let correctCount = 0;
+            let incorrectCount = 0;
+
+            currentQuestions.forEach(question => {
+                const questionCard = document.getElementById(`question-${question.id}`);
+                const userAnswer = userAnswers[question.id] || [];
+                const correctAnswer = question.correct_indices;
+
+                // New logic: Check if user selected at least ONE correct answer
+                // Answer is correct if ANY of the selected options is in the correct_indices
+                let hasCorrectAnswer = false;
+                for (let selectedIndex of userAnswer) {
+                    if (correctAnswer.includes(selectedIndex)) {
+                        hasCorrectAnswer = true;
+                        break;
+                    }
+                }
+
+                if (hasCorrectAnswer && userAnswer.length > 0) {
+                    questionCard.classList.add('correct');
+                    correctCount++;
+
+                    // Check if there are unselected correct answers
+                    const unselectedCorrect = correctAnswer.filter(idx => !userAnswer.includes(idx));
+                    if (unselectedCorrect.length > 0) {
+                        showAdditionalCorrectAnswers(questionCard, question, unselectedCorrect);
+                    }
+                } else {
+                    questionCard.classList.add('incorrect');
+                    incorrectCount++;
+
+                    // Show correct answers for incorrect questions
+                    showCorrectAnswers(questionCard, question, correctAnswer);
+                }
+            });
+
+            // Display results
+            showResults(correctCount, incorrectCount);
+
+            // Disable all checkboxes
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(cb => cb.disabled = true);
+
+            // Disable verify button
+            document.getElementById('verifyBtn').disabled = true;
+
+            // Scroll to results
+            document.getElementById('resultSummary').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function showCorrectAnswers(questionCard, question, correctIndices) {
+            // Highlight correct option labels
+            const optionLabels = questionCard.querySelectorAll('.option-label');
+            correctIndices.forEach(correctIdx => {
+                optionLabels[correctIdx].classList.add('was-correct');
+            });
+
+            // Add a note showing which answers were correct
+            const correctAnswersList = correctIndices.map(idx => question.options[idx]);
+            const noteDiv = document.createElement('div');
+            noteDiv.className = 'correct-answer-note';
+            noteDiv.innerHTML = `<strong>✓ Răspuns corect:</strong> ${correctAnswersList.join(', ')}`;
+
+            questionCard.appendChild(noteDiv);
+        }
+
+        function showAdditionalCorrectAnswers(questionCard, question, unselectedIndices) {
+            // Highlight ALL correct option labels (both selected and unselected)
+            const optionLabels = questionCard.querySelectorAll('.option-label');
+            const allCorrectIndices = question.correct_indices;
+
+            allCorrectIndices.forEach(correctIdx => {
+                optionLabels[correctIdx].classList.add('was-correct');
+            });
+
+            // Add an informational note showing only the UNselected correct answers
+            if (unselectedIndices.length > 0) {
+                const additionalAnswersList = unselectedIndices.map(idx => question.options[idx]);
+                const noteDiv = document.createElement('div');
+                noteDiv.className = 'additional-correct-note';
+                noteDiv.innerHTML = `<strong>ℹ️ Alte răspunsuri corecte:</strong> ${additionalAnswersList.join(', ')}`;
+
+                questionCard.appendChild(noteDiv);
+            }
+        }
+
+        function showResults(correctCount, incorrectCount) {
+            const resultSummary = document.getElementById('resultSummary');
+            const totalQuestions = currentQuestions.length;
+            const percentage = ((correctCount / totalQuestions) * 100).toFixed(1);
+
+            resultSummary.innerHTML = `
+                <h3>📊 Rezultate Test</h3>
+                <div class="result-stats">
+                    <div class="stat">
+                        <div class="stat-value correct">${correctCount}</div>
+                        <div class="stat-label">Corecte</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value incorrect">${incorrectCount}</div>
+                        <div class="stat-label">Greșite</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value" style="color: #667eea">${percentage}%</div>
+                        <div class="stat-label">Scor Total</div>
+                    </div>
+                </div>
+            `;
+            resultSummary.style.display = 'block';
+        }
+
+        function restartQuiz() {
+            // Reset all states
+            currentQuestions = [];
+            userAnswers = {};
+            quizChecked = false;
+
+            // Hide quiz screen
+            document.getElementById('quizScreen').style.display = 'none';
+
+            // Show start screen
+            document.getElementById('startScreen').style.display = 'block';
+
+            // Re-enable verify button
+            document.getElementById('verifyBtn').disabled = false;
+        }
+    </script>
+</body>
+
+</html>
