@@ -2229,9 +2229,9 @@
   {
     "text": "Nu sunt corecte următoarele afirmaţii:",
     "options": [
-      "CASE reprezintă Proiectarea Sistemelor Asistată de Calculator;",
+      "Instrumentele CASE ofera suport proiectantului in realizarea unui produs informatic",
       "Instrumentele CASE implică utilizarea calculatorului ca un mijloc de susţinere a activităţilor deplanificare, definire, proiectare şi realizare a softului.",
-      "CASE reprezintă Proiectarea Sistemelor cu Ajutorul Calculatorului;",
+      "Instrumentele de tip CASE pun accentul pe analiza si proiectare;",
       "CASE reprezintă Componente Asamblate ale Sistemelor Economice."
     ],
     "correct_indices": [
@@ -2316,7 +2316,7 @@
     "id": 178
   },
   {
-    "text": "In limbajul BMPN, un eveniment: (CURS 7  pag: 8, 11)",
+    "text": "In limbajul BMPN, un eveniment:",
     "options": [
       "reprezinta un obiect de conectare",
       "afecteaza fluxul unui model",
@@ -3539,15 +3539,15 @@
   },
   {
     "id": 273,
-    "text": "Care dintre următoarele afirmații referitoare la proiectarea interfețelor este adevărată? 1. hărți cu structura ecranului sunt utilizate pentru a descrie fluxul aplicației urmând principalele moduri de utilizare 2. modelarea unei interfețe se face cu ajutorul diagramei specifice UML 3. așteptările actorilor cu privire la interfețe sunt aflate prin completarea de chestionare 4. proictarea interfețelor nu trebuie să țină cont de obiectivele actorului în interacțiunea cu sistemul",
+    "text": "In etapa de proiectare detaliata a sistemelor informatice se realizeaza documentatia pentru:",
     "options": [
-      "Abilitatea de a combina serviciile pentru crearea de noi aplicaţii compozite",
-      "Nivelul de dotare cu tehnică de calcul existent în etapa de concepere şi cel prevăzut a fi atins în timp",
-      "Prioritatea obiectivelor componente",
-      "Disponibilitatea resurselor (limita fondurilor ce pot fi alocate în timp pentru realizarea sistemului informatic"
+      "proiectul logic si fizic de ansamblu",
+      "proiectul logic si de ansamblu",
+      "proiectul logic si tehnic de detaliu",
+      "documentatia de sistem"
     ],
     "correct_indices": [
-      0
+      2
     ]
   },
   {
@@ -3734,12 +3734,12 @@
   },
   {
     "id": 289,
-    "text": "Selectați combinația corectă de variante.",
+    "text": "Studiul si analiza sistemului existent are ca obiectiv principal:",
     "options": [
-      "1+2+4",
-      "2+4",
-      "1+3+4",
-      "1+4"
+      "stabilirea cerintelor informationale ale conducerii",
+      "cunoasterea sistemului decizional",
+      "cunoasterea sistemului de productie",
+      "studiul fluxurilor tehnologice"
     ],
     "correct_indices": [
       3
@@ -4019,4 +4019,5 @@
       3
     ]
   }
+
 ]
