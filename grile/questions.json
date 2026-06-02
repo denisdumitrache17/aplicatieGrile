@@ -1027,5 +1027,785 @@
       "instanţa este statică"
     ],
     "correct_indices": [3]
+  },
+  {
+    "id": 141,
+    "text": "Care dintre urmatoarele Design Patterns incalca Dependency Inversion Principle?",
+    "options": [
+      "Command",
+      "Observer",
+      "Strategy",
+      "Simple Factory",
+      "Decorator",
+      "Factory Method",
+      "State"
+    ],
+    "correct_indices": [3]
+  },
+  {
+    "id": 142,
+    "text": "Care dintre aceste fragmente de cod este cel mai lizibil, conform convențiilor Clean Code in Java?",
+    "options": [
+      "public static void printDigits(){ System.out.println(\"Digit: \" + 0); ... }",
+      "public static void printDigits(){ for(int i=0; i<10; i++) { System.out.println(\"Digit: \" + i); } }",
+      "public static void printDigits(){ for(int i=0; i<10; i++) System.out.println(\"Digit: \" + i); }",
+      "public static void printDigits(){ for(int i=0; i<=9; i++) { System.out.println(\"Digit: \" + i); } }"
+    ],
+    "correct_indices": [1]
+  },
+  {
+    "id": 143,
+    "text": "O metoda ce realizeaza un back-up al bazei de date trebuie executata in fiecare noapte la ora 02:00. Doriti sa scrieti un test unitar ce verifica daca metoda chiar este apelata la acea ora. Acest test este de tip:",
+    "options": [
+      "Right",
+      "Performance",
+      "Time",
+      "Error condition",
+      "Cardinality"
+    ],
+    "correct_indices": [2]
+  },
+  {
+    "id": 144,
+    "text": "Pentru metoda public boolean metoda(List<Integer> listaNota) ce returneaza true daca lista contine cel putin 2 note de trecere, care este numarul minim de testari de tipul Cardinality care trebuie realizate pentru a acoperi toate cazurile posibile?",
+    "options": [
+      "4",
+      "1",
+      "3",
+      "2",
+      "5"
+    ],
+    "correct_indices": [2]
+  },
+  {
+    "id": 145,
+    "text": "Pentru metoda oMetoda() ce este corect implementata care dintre următoarele valori pot fi folosite pentru teste de tip Boundary (selectați unul sau mai multe răspunsuri) ? \nint oMetoda (int valoare) throws Exception { int rez = 0; switch (valoare) { case 1: rez = 10; break; case 5: rez = 20; break; case 10: rez = 30; break; default: throw new Exception(\"Valoare gresita\"); } return rez; }",
+    "options": [
+      "5",
+      "10",
+      "20",
+      "Metoda nu poate fi testată prin teste Boundary, deoarece generează o excepție",
+      "30",
+      "1",
+      "0"
+    ],
+    "correct_indices": [0, 1, 5]
+  },
+  {
+    "id": 146,
+    "text": "Implementezi pentru clasa Student metoda setAge(int value) care initializeaza varsta studentului cu valoarea primita. Conform specificatiilor, varsta este cuprinsa in intervalul [18, 90]. Considerand urmatoarea implementare a metodei, indicati care enunt este adevarat (toate testele sunt scrise corect)\nvoid setAge(int value){ if(value > 18 && value < 90) { this.age = value; } else throw new Exception(); }",
+    "options": [
+      "Un test de tip Boundary pentru valoarea 18 va esua",
+      "Un test de tip Right pentru valoarea 18 va trece cu succes",
+      "Un test de tip Right pentru valoarea 17 va trece cu succes",
+      "Un test de tip Boundary pentru valoarea 18 va trece cu succes",
+      "Un test de tip Error Condition pentru valoarea 18 va esua"
+    ],
+    "correct_indices": [0]
+  },
+  {
+    "id": 147,
+    "text": "Dezvolți o aplicație software pentru un restaurant. Restaurantul are mai mulți Şefi de sală care au în subordine ospătari. Ospătarii nu au nicio persoană în subordine. Se doreşte implementarea unui modul pentru reprezentarea diagramei organizaționale a ospătarilor şi a şefilor de sală. În cadrul restaurantului există un singur Chef care gătește toate felurile de mâncare. Trebuie implementată clasa Chef, astfel încât să existe unul singur în restaurant la un moment dat, și care să primească toate feluri de mâncare de gătit. În cazul în care sunt mai mulți clienți la un moment dat în restaurant, toate felurile de mâncare pe care trebuie să le gătească Chef, vor fi ordonate într-o coadă de așteptare. Care sunt cele 3 design patternuri care rezolvă optim aceste probleme?",
+    "options": [
+      "Prototype",
+      "Proxy",
+      "Adapter",
+      "Memento",
+      "Flyweight",
+      "Observer",
+      "State",
+      "Composite",
+      "Strategy",
+      "Decorator",
+      "Chain of Responsability",
+      "Factory (simple sau method)",
+      "Singleton",
+      "Builder",
+      "Template",
+      "Command"
+    ],
+    "correct_indices": [7, 12, 15]
+  },
+  {
+    "id": 148,
+    "text": "Dezvolți o soluție software bazata pe 2 microservicii ce au rolul de a gestiona repartizarea locurilor in camin pentru o universitate cu foarte multi studenti. Solutia trebuie sa proceseze un numar mare de solicitari intr-un timp scurt si din acest motiv se implementeaza un mecanism asincron de prelucrare a solicitarilor stundentilor. Un microserviciu are rolul de a valida si inregistra cererile studentilor, ele urmand a fi stocate si procesate printr-un mecanism de tip FIFO. Deoarece volumul mare de cereri nu permite procesarea lor pe acelasi microserviciu, detaliile cererilor sunt incapsulate si transferate pe un alt microserviciu unde sunt si executate. Care sunt cele 2 design patternuri care rezolva optim aceste 2 probleme?",
+    "options": [
+      "Adapter",
+      "Decorator",
+      "Command",
+      "Prototype",
+      "Singleton",
+      "Memento",
+      "Composite",
+      "Proxy",
+      "Strategy",
+      "State",
+      "Factory (simple sau method)",
+      "Template",
+      "Chain of Responsability",
+      "Observer",
+      "Flyweight",
+      "Builder"
+    ],
+    "correct_indices": [2, 5]
+  },
+  {
+    "id": 149,
+    "text": "Ce Design Pattern este implementat corect si complet in clasa de mai jos?\npublic class DesignPattern implements Cloneable { private static DesignPattern field; public static DesignPattern getField() { if(field == null) { field = new DesignPattern(); } return field; } @Override public Object clone() throws CloneNotSupportedException { return field; } }",
+    "options": [
+      "niciunul",
+      "Singleton",
+      "Simple Factory",
+      "Flyweight",
+      "Factory Method",
+      "Builder",
+      "Prototype"
+    ],
+    "correct_indices": [0]
+  },
+  {
+    "id": 150,
+    "text": "Dezvolți o soluție software pentru o companie de închirieri maşini. Compania deține o flotă de maşini DACIA din diferite categorii: Break, Berlină sau SUV. Atunci când un client dorește să închirieze o mașină specifică tipul dorit, iar aplicația furnizează un obiect mașină de tipul dorit. Trebuie implementat modulul care creează acest obiect. Plata pentru închiriere se face de către client în momentul prezentării la ghişeu. Modul de plată poate fi cash în lei, cash în valuta, sau cu cardul. Modul de plată îl decide clientul în momentul efectuării plății. Trebuie implementat modulul care permite efectuarea plății. Care sunt cele 2 design patternuri care rezolvă optim aceste 2 probleme?",
+    "options": [
+      "Proxy",
+      "Factory (simple sau method)",
+      "Chain of Responsability",
+      "Adapter",
+      "Prototype",
+      "Singleton",
+      "Composite",
+      "Memento",
+      "Template",
+      "Flyweight",
+      "State",
+      "Strategy"
+    ],
+    "correct_indices": [1, 11]
+  },
+  {
+    "id": 151,
+    "text": "Pentru urmatoare implementare a unui pattern de tip Builder, indicati una sau mai multe greseli de implementare\npublic class Tesla { ... } public static class TeslaConfigurator { ... public Tesla build() { return new Tesla(); } }",
+    "options": [
+      "Clasa Tesla nu contine metode \"set\" publice pentru atributele din clasa",
+      "Clasa builder, TeslaConfigurator, este definita printr-o clasa statica interna clasei Tesla",
+      "Clasa Tesla defineste atributele private si din acest motiv clasa Builder nu le poate accesa",
+      "Constructorul default din clasa Tesla este definit public",
+      "Clasa builder, TeslaConfigurator, nu contine metode \"set\" pentru toate atributele",
+      "Metoda build() din clasa builder, TeslaConfigurator, este implementata gresit"
+    ],
+    "correct_indices": [3, 4, 5]
+  },
+  {
+    "id": 152,
+    "text": "Din implementarea carui Design Pattern poate face parte urmatoarea clasa?\npublic class History { private Stack<String> messages = new Stack<>(); public void saveLastMessage(String message) { messages.push(message); } public String getLastMessage() { return messages.pop(); } }",
+    "options": [
+      "Mediator",
+      "Interpreter",
+      "Prototype",
+      "State",
+      "Memento",
+      "Proxy",
+      "Bridge",
+      "Template method"
+    ],
+    "correct_indices": [4]
+  },
+  {
+    "id": 153,
+    "text": "Se ia in considerare urmatorul scenariu: O persoana poate depune cererea pentru preschimbarea permisului de conducere doar la ghiseul special dedicat. De aici cererea va fi analizata de ofiterul de serviciu ce va cere tipografiei printarea unui nou permis daca acest lucru este legal. De la tipografie permisul va ajunge la ghiseul ridicari de unde va putea fi ridicat de solicitant. Modalitatea de evaluare a posibilitatii elibararii unui nou permis precum si toate etapele prin care trece acesta de la depunerea cererii si pana la eliberare nu sunt transparente pentru solicitant. Ce combinatie de Design Pattern puteti utiliza pentru implementarea acestui scenariu?",
+    "options": [
+      "Proxy",
+      "Command",
+      "Composite",
+      "Prototype",
+      "State",
+      "Chain of Responsibility",
+      "Observer",
+      "Strategy",
+      "Facade",
+      "Adapter"
+    ],
+    "correct_indices": [5, 8]
+  },
+  {
+    "id": 154,
+    "text": "Posibilitatea interceptării unor apeluri de metodă este dată de următorul DP",
+    "options": [
+      "Decorator",
+      "Facade",
+      "Adapter",
+      "Composite",
+      "Proxy"
+    ],
+    "correct_indices": [4]
+  },
+  {
+    "id": 155,
+    "text": "Ce principiu de clean code este incalcat conform diagramei din imagine: Employee { + calculatePay, + reportHours, + save }",
+    "options": [
+      "Dependency Inversion",
+      "Liskov Principle",
+      "Open-Closed",
+      "Single Responsibility",
+      "Interface Segregation"
+    ],
+    "correct_indices": [3]
+  },
+  {
+    "id": 156,
+    "text": "Trebuie sa implementezi urmatoarea clasa, Auto, si trebuie sa definesti o metoda de tip \"set\" prin care progrmatorii sa poata seta \"isElectric\" ca fiind true. Dintre urmatoarele variante (marcate cu #1 la #4) care este cea care este cea mai \"clean\" si va genera cele mai putine probleme in viitor ?",
+    "options": [
+      "#2 (public void setElectricEngine() { this.isElectric = true; })",
+      "#4",
+      "#3",
+      "#1"
+    ],
+    "correct_indices": [0]
+  },
+  {
+    "id": 157,
+    "text": "Testati o metoda ce depinde de o conexiunea la o baza de date specificata prin interfata IConnection. Cum procedati? Selectați unul sau mai multe:",
+    "options": [
+      "utilizati null in locul referintei respective",
+      "utilizati conexiunea aferenta aplicatiei",
+      "realizati un Stub al interfetei IConnection",
+      "realizati un Mock al interfetei IConnection",
+      "realizati un Fake al interfetei IConnection"
+    ],
+    "correct_indices": [2, 3, 4]
+  },
+  {
+    "id": 158,
+    "text": "In cadrul unei suite de teste (test suite) pot fi specificate spre a fi executate: Selectaţi unul sau mai multe:",
+    "options": [
+      "test methods",
+      "test cases",
+      "alte suite",
+      "toate testele cu exceptia unor categorii",
+      "doar anumite categorii de teste"
+    ],
+    "correct_indices": [1, 2, 3, 4]
+  },
+  {
+    "id": 159,
+    "text": "Care sunt adnotarile in JUnit4 ce pot fi folosite pentru metode prin care programatorii pot gestiona TestFixtures?",
+    "options": [
+      "@SuiteClasses",
+      "@After",
+      "@BeforeClass",
+      "@Test",
+      "@RunWith",
+      "@Before",
+      "@Ignore",
+      "@AfterClass"
+    ],
+    "correct_indices": [1, 2, 5, 7]
+  },
+  {
+    "id": 160,
+    "text": "Trebuie realizat un test de Right pentru metoda din imagine. public int cmmdc(int param1, int param2) { while(param1!=param2){ if(param1 > param2) param1 = param1 - param2; else param2 = param2 - param1; } return param1; } Daca metoda este apelata pentru numerele 120 si 90, rezultatul este comparat cu:",
+    "options": [
+      "10",
+      "120",
+      "40",
+      "30",
+      "90"
+    ],
+    "correct_indices": [3]
+  },
+  {
+    "id": 161,
+    "text": "Doresti să reduci costurile de dezvoltare prin reutilizarea metodelor implementate in componente din alte proiecte. Ce design pattern iti va permite sa faci asta fara sa le modifici ?",
+    "options": [
+      "Facade",
+      "Delegation",
+      "Singleton",
+      "State",
+      "Adapter",
+      "Decorator",
+      "Strategy",
+      "Command"
+    ],
+    "correct_indices": [4]
+  },
+  {
+    "id": 162,
+    "text": "In aplicatia pe care o editati aveti o interfata denumita KeyConverter si mai multe clase ce implementeaza acesta interfata, implementari ce sunt utilizate pentru a converti obiecte de tip Key in alte formate. Tocmai ati adaugat o noua dependenta (biblioteca) care are o clasa existenta ce stie cum sa converteasca obiecte de tip Key. Noua clasa se numeste StateKeyToStringConverter, dar nu implementeaza interfata KeyConverter. Ce ati schimba in aceasta aplicatie astfel incat sa puteti utiliza noua clasa cu minimul de modificari necesare?",
+    "options": [
+      "Utilizati Proxy",
+      "Creati o noua interfata ce deriveaza ambele interfete existente",
+      "Utilizati Adapter",
+      "Utilizati Strategy"
+    ],
+    "correct_indices": [2]
+  },
+  {
+    "id": 163,
+    "text": "Dezvolti un joc video ce contine multe caractere 3D. Jocul contine multe instante ale aceluiasi caracter ce pot avea si caracteristici diferite. Daca urmariti cresterea performantei jocului (viteza rulare si memorie necesara) ce design pattern-uri puteti folosi (unul sau mai multe) pentru a atinge aceste obiective (viteza rulare si memorie necesara), din prisma instantierii si gestionarii caracterelor 3D.",
+    "options": [
+      "Adapter",
+      "Singleton",
+      "Decorator",
+      "Flyweight",
+      "Factory",
+      "Builder",
+      "State",
+      "Prototype"
+    ],
+    "correct_indices": [3, 7]
+  },
+  {
+    "id": 164,
+    "text": "Se doreste implementarea unui modul in scopul filtrarii continutului paginilor Web vizualizate. In acest scop, sunt aplicate reguli in cascada care sa elimine reclamele, sa asigure protectia indentitatii utilizatorului, sa asigure control parental, etc. Design pattern-ul care modeleaza cel mai bine acest modul este:",
+    "options": [
+      "Chain of Responsability",
+      "Factory",
+      "Composite",
+      "Singleton",
+      "Decorator"
+    ],
+    "correct_indices": [0]
+  },
+  {
+    "id": 165,
+    "text": "Asociati fiecarui Design Pattern din lista de mai jos problema pe care o rezolva (Alegeți setul corect din următoarele perechi)",
+    "options": [
+      "Flyweight - Obiectele partajeaza zone comune si spatiul total de memorie ocupat poate fi redus, Factory - Creare de obiecte ce apartin aceleiasi familii de obiecte",
+      "Composite - Obiectul trebuie sa primeasca metode sau atribute noi la runtime",
+      "Decorator - Modelarea unei structuri ierarhice",
+      "Prototype - Obiectele partajeaza zone comune"
+    ],
+    "correct_indices": [0]
+  },
+  {
+    "id": 166,
+    "text": "Următoarea implementare de Singleton este greşită deoarece: public class Singleton { private int atribut; private static Singleton instanta = null; private Singleton(int parametru) { this.atribut = parametru; } public static Singleton getInstanta(int parametru) { if (instanta==null){ return new Singleton(parametru); } else{ return instanta; } } }",
+    "options": [
+      "instanța nu este inițializată niciodată prin apelul constructorului",
+      "funcția getInstanta() trebuie să fie privată",
+      "instanta nu este retinuta intern (trebuie instanta = new Singleton)",
+      "constructorul este public"
+    ],
+    "correct_indices": [2]
+  },
+  {
+    "id": 167,
+    "text": "Ce design pattern defineşte o familie de algoritmi, încapsulează fiecare algoritm si permite interschimbarea acestora.",
+    "options": [
+      "Decorator",
+      "Composite",
+      "Strategy",
+      "Proxy",
+      "Factory Method",
+      "Adapter",
+      "Abstract Factory",
+      "Template"
+    ],
+    "correct_indices": [2]
+  },
+  {
+    "id": 168,
+    "text": "Care este categoria de design pattern Singleton implementata in cadrul clasei urmatoare? public class Clasa { private static Clasa instance; private Clasa() { } static { try { instance=new Clasa(); } catch (Exception e) { throw new RuntimeException(\"Exceptie\"); } } public static Clasa getInstance() { return instance; } }",
+    "options": [
+      "Eager initialization",
+      "Lazy initialization",
+      "Inner static helper",
+      "Singleton Collection",
+      "Singleton Static Block"
+    ],
+    "correct_indices": [4]
+  },
+  {
+    "id": 169,
+    "text": "Cele cinci principii SOLID conduc la scrierea codului într-un mod:",
+    "options": [
+      "util",
+      "distinct",
+      "usor de modificat",
+      "independent",
+      "autonom"
+    ],
+    "correct_indices": [2]
+  },
+  {
+    "id": 170,
+    "text": "Ce principiu de clean code a fost aplicat in imaginea urmatoare (o clasa Application ce depinde de o interfata Service, care este implementata de ServiceImpl):",
+    "options": [
+      "Interface Segregation",
+      "Dependency Inversion",
+      "Single Responsability",
+      "Open-Closed",
+      "Liskov Principle"
+    ],
+    "correct_indices": [1]
+  },
+  {
+    "id": 171,
+    "text": "Dandu-se urmatoarea metoda public int getCodRandom(List<Integer> listaCoduri) { int lg = listaCoduri.size(); int randomCod = (int) Math.floor(Math.random()*(lg-1)); return listaCoduri.get(randomCod); } Care din urmatoarele categorii de teste se pot implementa?",
+    "options": [
+      "exception",
+      "cross check",
+      "conformance",
+      "inverse relationship",
+      "right"
+    ],
+    "correct_indices": [0, 4]
+  },
+  {
+    "id": 172,
+    "text": "Pentru metoda din figura urmatoare sunt realizate trei teste. public double teoremaluiPitagora(int cat1, int cat2) { return Math.sqrt(cat1*cat1 + cat2*cat2); } Testele acoperă următoarele principii:",
+    "options": [
+      "Ordering",
+      "Time",
+      "Performance",
+      "Range",
+      "Right",
+      "Inverse Relationships",
+      "Reference",
+      "Cross-check",
+      "Error Conditions"
+    ],
+    "correct_indices": [4, 5, 7, 3]
+  },
+  {
+    "id": 173,
+    "text": "Pentru functia urmatoare, selectati combinatia de valori ce pot fi utilizate pentru a testa metoda si pentru a asigura un code coverage de 100% public int oMetodaSimpla (int valoare) throws Exception { int rezultat = 0; switch (valoare) { case 10: rezultat = 10; break; case 50: rezultat = 20; break; case 100: rezultat = 30; break; default: throw new Exception (\"Valoare gresita\"); } return rezultat; }",
+    "options": [
+      "10, 50",
+      "50, 100, 101",
+      "10, 100, 101",
+      "10, 50, 100, 101",
+      "10, 50, 100"
+    ],
+    "correct_indices": [3]
+  },
+  {
+    "id": 174,
+    "text": "Ce model permite subclaselor să decidă cum să implementeze paşii într-un algoritm ?",
+    "options": [
+      "Strategy",
+      "Memento",
+      "Decorator",
+      "Adapter",
+      "Proxy",
+      "Nici unul dintre cele enumerate",
+      "Observer",
+      "State",
+      "Command",
+      "Template"
+    ],
+    "correct_indices": [9]
+  },
+  {
+    "id": 175,
+    "text": "JUnit lucreaza cu ajutorul a doua Design Pattern-uri din GoF. Care sunt cele doua?",
+    "options": [
+      "Flyweight",
+      "Singleton",
+      "Template",
+      "Command",
+      "Factory (simple sau method)",
+      "State",
+      "Observer",
+      "Proxy",
+      "Prototype",
+      "Builder",
+      "Adapter",
+      "Chain of Responsability",
+      "Memento",
+      "Strategy",
+      "Composite",
+      "Decorator"
+    ],
+    "correct_indices": [3, 14]
+  },
+  {
+    "id": 176,
+    "text": "Ce design pattern este implementat correct in urmatorul fragment de cod: public class Clasa implements Cloneable{ private int valoare; private static Clasa instanta = null; private Clasa() { this.valoare = 10; } private Clasa (int valoare) { this.valoare = valoare; } public static Clasa getInstanta() { if(instanta == null) { instanta=new Clasa(); } return instanta; } @Override public Object clone() throws CloneNotSupportedException { return new Clasa(this.valoare); } }",
+    "options": [
+      "Cloneable",
+      "Filter",
+      "Factory",
+      "Proxy",
+      "Prototype",
+      "Builder",
+      "Adapter",
+      "Singleton"
+    ],
+    "correct_indices": [4, 7]
+  },
+  {
+    "id": 177,
+    "text": "Dezvolți o soluție software care să permită profesorilor și studenților să comunice prin intermediul mesajelor în cadrul unor grupuri de discuţii. În momentul înregistrării, utilizatorii trebuie să îşi definească un profil definit de o serie de atribute (nume, prenume, varsta, gen, etc.). Găsiți o soluție care să le permită programatorilor să gestioneze eficient crearea acestor obiecte complexe. Soluția permite participanților să comunice prin mesaje text ce sunt transmise pe diferite grupuri. Mesajele sunt gestionate la nivel de grup și transmiterea unui nou mesaj va genera afişarea acestuia pe interfața tuturor clienților abonați la acel grup. Clienții au posibilitatea să se aboneze la diferite grupuri și de asemenea să iasă când doresc. Care sunt cele 2 design pattern-uri care rezolva optim aceste probleme?",
+    "options": [
+      "Factory",
+      "Adapter",
+      "Template",
+      "Observer",
+      "State",
+      "Memento",
+      "Singleton",
+      "Flyweight",
+      "Strategy",
+      "Composite",
+      "Prototype",
+      "Builder",
+      "Chain of Responsibility",
+      "Proxy",
+      "Command",
+      "Decorator"
+    ],
+    "correct_indices": [3, 11]
+  },
+  {
+    "id": 178,
+    "text": "Urmatorul constructor al clasei Car impune utilizarea carui design pattern? public Car(CarType carType, int seats, Engine engine, Transmission transmission, TripComputer tripComputer, GPSNavigator gpsNavigator) { this.carType = carType; this.seats = seats; this.engine = engine; this.transmission = transmission; this.tripComputer = tripComputer; ... }",
+    "options": [
+      "Builder",
+      "Decorator",
+      "Factory",
+      "Prototype",
+      "Facade"
+    ],
+    "correct_indices": [0]
+  },
+  {
+    "id": 179,
+    "text": "Dezvolți o aplicație software pentru un restaurant. În cadrul restaurantului există o echipă de Chefi care gătesc toate felurile de mâncare. Trebuie implementat modulul care să permită trimiterea tipurilor de preparate ce urmează a fi gătite. În cazul în care sunt mai mulți clienți la un moment dat în restaurant, toate felurile de mâncare pe care trebuie să le gătească echipa de Chefi, vor fi ordonate într-o coadă de așteptare. Bucătăria trebuie sa anunțe toți ospătarii în momentul în care livrează un fel de mâncare pregătit, astfel încât ospătarii sa știe să se duca să îl ia. Bucătăria anunță doar ospătarii care lucrează în acel moment. Care sunt cele 2 design patternuri care rezolvă optim aceste probleme?",
+    "options": [
+      "Observer",
+      "Memento",
+      "Singleton",
+      "State",
+      "Template",
+      "Strategy",
+      "Chain of Responsability",
+      "Prototype",
+      "Proxy",
+      "Composite",
+      "Command"
+    ],
+    "correct_indices": [0, 10]
+  },
+  {
+    "id": 180,
+    "text": "Care dintre urmatoarele DP gestionează realizarea întârziată a unei acțiuni?",
+    "options": [
+      "Strategy",
+      "Chain of Responsibility",
+      "State",
+      "Observer",
+      "Command"
+    ],
+    "correct_indices": [4]
+  },
+  {
+    "id": 181,
+    "text": "Care dintre următoarele enunțuri descrie modelul Composite corect?",
+    "options": [
+      "Acest model ascunde complexitatea sistemului/modulului și oferă clientului o interfață pe care o poate folosi pentru a accesa/utiliza sistemul",
+      "Acest model este utilizat acolo unde trebuie să tratăm un grup de obiecte în mod similar ca un singur obiect",
+      "Nici una dintre aceste afirmaţii",
+      "Acest model este utilizat în principal pentru a reduce numărul de obiecte create şi pentru a reduce amprenta de memorie",
+      "Acest model permite utilizatorului să adauge funcţionalități noi la un obiect existent fără a-i modifica structura",
+      "Acest model permite definirea unei familii de algoritmi, fiecare fiind încapsulat într-un obiect. Clientul poate folosi orice algoritm fără sa fie afectat de variaţia acestora."
+    ],
+    "correct_indices": [1]
+  },
+  {
+    "id": 182,
+    "text": "Actualizati (refactorizati) o aplicatie web. Realizati faptul ca de fiecare data cand un nou tip de utilizator este necesar trebuie sa mai adaugati un caz intr-o instructiune de selectie multipla (switch). Ce principiu SOLID este incalcat?",
+    "options": [
+      "DIP",
+      "LSP",
+      "SRP",
+      "ISP",
+      "OCP"
+    ],
+    "correct_indices": [4]
+  },
+  {
+    "id": 183,
+    "text": "Al de implementat o solutie software care sa controleze deplasarea unui aspirator inteligent. Solutia trebuie sa permita aspiratorului sa se deplaseze in 2 moduri: autonom, el avand senzori de miscare si proximitate, si controlat in totalitate de utilizator folosind o aplicatie mobila. In cazul in care robotul este controlat de utilizator atunci el reactioneaza Imediat la comenzi, acestea fiind executate instant. Ce design pattern-uri (din GoF) trebuie sa folosesti pentru a respecta principiul Dependency Inversion (DIP) cand vei implementa actiunile de miscare ale robotului ?",
+    "options": [
+      "Strategy",
+      "Decorator",
+      "Command",
+      "Template",
+      "Proxy",
+      "Observer",
+      "Interface Segregation",
+      "State"
+    ],
+    "correct_indices": [0, 7]
+  },
+  {
+    "id": 184,
+    "text": "Dandu-se urmatoarea clasa care din urmatoarele afirmatii este corecta? public class Clasa { private static Clasa instance; private Clasa() { } static { instance = new Clasa(); } public static Clasa getInstance() { return instance; } }",
+    "options": [
+      "clasa nu respecta principiile Singleton intrucat nu se apeleaza constructorul clasei in cadrul metodei getInstance pentru a gestiona unicul obiect de tipul Clasa",
+      "clasa respecta principiile Singleton intrucat detine o metoda publica getInstance ce returneaza unica instanta",
+      "clasa respecta principiile Singleton intrucat constructorul este apelat o singura data pentru a construi unicul obiect, instance",
+      "clasa respecta principiile Singleton intrucat detine o instanta statica instance"
+    ],
+    "correct_indices": [2]
+  },
+  {
+    "id": 185,
+    "text": "In cadrul proiectului european Culture All primaria municipiului Bucuresti doreste implementarea unei aplicatii software pentru gestiunea obiectivelor turistice din cadrul orasului. Obiectivele turistice sunt grupate la nivel de primării de sector, urmând ca sectoarele să aparțină primăriei generale. Se doreste implementarea unei modalitati de stocare a obiectivelor turistice si a primăriilor din cadrul cărora acestea aparţin in scopul reprezentării generale gestionate de primaria municipiului. Ce design pattern-uri trebuie utilizate pentru crearea si gestiunea obiectivelor turistice?",
+    "options": [
+      "State",
+      "Decorator",
+      "Prototype",
+      "Command",
+      "Adapter",
+      "Composite",
+      "Factory"
+    ],
+    "correct_indices": [5, 6]
+  },
+  {
+    "id": 186,
+    "text": "Dezvolti o solutie software pentru asociatiile de proprietari dintr-un cartier de locuri. In cadrul cartierului sunt mai multe meseriasi instalatori, electricieni etc. care repara / indreapta lucrurile din tot cartierul. Atunci cand apare o problema locatarii solicita interventia, solicitarea lor este salvată într-o coadă de așteptare, iar atunci când unul dintre meseriașii cartierului e liber, va prelua această problemă si o va rezolva. De asemenea, se dorește implementarea unei soluții care să permită locatarilor unui bloc să aleagă modul în care sunt publicate anunțurile din bloc (printate, email, sms). Care sunt cele 2 design patternuri ce vor rezolva aceste 2 probleme?",
+    "options": [
+      "Flyweight",
+      "Command",
+      "Template",
+      "Prototype",
+      "Decorator",
+      "Singleton",
+      "Composite",
+      "Proxy",
+      "Factory (simple sau method)",
+      "Strategy"
+    ],
+    "correct_indices": [1, 9]
+  },
+  {
+    "id": 187,
+    "text": "Dandu-se urmatoarea metoda, pentru care din urmatoarele valori metoda nu genereaza rezultatul scontat? public boolean estePrim(int a) { for(int i=2;i<=a;i++) if (a%i==0) return false; return true; }",
+    "options": [
+      "12",
+      "2",
+      "1",
+      "5"
+    ],
+    "correct_indices": [1]
+  },
+  {
+    "id": 188,
+    "text": "Cunoscandu-se faptul ca metoda getCodRandom returneaza un element random dintr-o lista primita ca parametru, care dintre urmatoarele teste se pot incadra in definitiile Right / BICEP?",
+    "options": [
+      "@Test public void test1() { List<Integer> listaCoduri = new ArrayList<>(Arrays.asList(10,20,30,40)); assertEquals(10,v.getCodRandom(listaCoduri)); }",
+      "@Test public void test2() { assertTrue(listaCoduri.contains(v.getCodRandom(listaCoduri))); }",
+      "@Test public void test3() { assertNotNull(v.getCodRandom(listaCoduri)); }",
+      "@Test public void test4() { int cod = v.getCodRandom(listaCoduri); assertTrue(cod > Collections.min(listaCoduri) && cod < Collections.max(listaCoduri)); }",
+      "@Test public void test5() { assertNotNull(v.getCodRandom(null)); }"
+    ],
+    "correct_indices": [1, 2, 3]
+  },
+  {
+    "id": 189,
+    "text": "Ce principii SOLID sunt incalcate de metoda de mai jos? public long calcul(int flag, int valuel, int value2) { if(flag == 1) { return valuel + value2; } else if(flag == 2) { return valuel - value2; } else { return valuel * value2; } }",
+    "options": [
+      "DIP",
+      "LSP",
+      "ISP",
+      "OCP",
+      "SRP"
+    ],
+    "correct_indices": [3, 4]
+  },
+  {
+    "id": 190,
+    "text": "Conform carui principiu de Clean Code o diagrama in care Clasa Zoo depinde atat de Animal (cu metoda setCaine) cat si de Caine (cu metoda setCaine) trebuie transformata intr-o diagrama in care Zoo depinde de IAnimal, si IAnimal este implementata de Caine si Animal?",
+    "options": [
+      "Single responsibility",
+      "Open-closed",
+      "Liskov substitution",
+      "Interface segregation",
+      "Dependency inversion"
+    ],
+    "correct_indices": [4]
+  },
+  {
+    "id": 191,
+    "text": "Dezvolti o solutie software ce are 2 module/componente ce comunica intre ele prin tipuri de mesaje standard. Fiecare modul apartine unei librarii vechi ce nu mai poate fi modificata dar care expune o interfata la care ai acces. Clientul iti solicita modificarea sistemului astfel incat sa fie generate log-uri de fiecare data cand modulul destinatie proceseaza un mesaj. Modificarea nu trebuie sa modifice modul in care functioneaza sistemul si trebuie sa se faca transparent, fara a modifica modulele existente. Modulele trebuie sa comunice folosind aceeasi logica initiala. Ce Design Pattern din GoF poti folosi pentru a adauga aceasta noua functie?",
+    "options": [
+      "Observer",
+      "Chain of Responsibility",
+      "Proxy",
+      "Adapter",
+      "Strategy",
+      "Command"
+    ],
+    "correct_indices": [2]
+  },
+  {
+    "id": 192,
+    "text": "O companie doreste realizarea unui editor de texte online asemanator Google Documents/Microsoft Word online. Ce Design Patterns (unul sau mai multe) sugerati sa fie implementate pentru a da utilizatorilor posibilitatea sa revina la versiunile anterioare ale documentelor si la fiecare modificare locala sa se transmita automat si asincron un mesaj catre server pentru a face salvarea documentului?",
+    "options": [
+      "Template",
+      "Strategy",
+      "Proxy",
+      "Memento",
+      "Chain of Responsibility",
+      "Command",
+      "Decorator",
+      "State",
+      "Observer"
+    ],
+    "correct_indices": [3, 5]
+  },
+  {
+    "id": 193,
+    "text": "Urmatoarea metoda carui design pattern trebuie asignata tinand cont de problematica principala pe care o abordeaza fiecare design pattern? \npublic void transmiteComenzile() { for (IComanda c: this.listaComenzi) c.prelucreaza(); this.listaComenzi.clear(); }",
+    "options": [
+      "Observer",
+      "Command",
+      "Memento",
+      "Chain of resposability",
+      "Composite"
+    ],
+    "correct_indices": [1]
+  },
+  {
+    "id": 194,
+    "text": "În cadrul unei aplicații web de tip comerţ electronic, utilizatorul are opțiunea de a selecta tehnica de vizualizare a produselor din cadrul magazinului. Astfel, acesta poate opta între: afişare produse în ordine crescătoare pret, descrescătoare preţ, afişare doar a produselor care au cel puțin o recenzie. Care este design pattern-ul care modeleaza cel mai bine scenariul enuntat?",
+    "options": [
+      "Command",
+      "Strategy",
+      "Template",
+      "Observer",
+      "State"
+    ],
+    "correct_indices": [1]
+  },
+  {
+    "id": 195,
+    "text": "Design pattern-ul Singleton este utilizat atunci cand:",
+    "options": [
+      "este creat un obiect de verificare a obiectului original",
+      "este creat un obiect complex",
+      "este creat un obiect dintr-o familie de clase",
+      "este creat un obiect intermediar fata de obiectul original",
+      "se doreste o singura instanta a unei clase",
+      "este creat un obiect pe baza unui alt obiect",
+      "este creat un obiect unic dintr-o clasa"
+    ],
+    "correct_indices": [4, 6]
+  },
+  {
+    "id": 196,
+    "text": "Trebuie sa adaugi cateva teste de tip Performance (mai putin de 5) intr-un Test Case existent care are deja peste 200 de teste. Acesta este scris folosind JUnit4. Testele ce trebuie adaugate au nevoie de un vector cu 10000 de elemente generate random. Generarea lor necesita 10 secunde. Unde vei adauga generarea vectorului astfel incat testele sa fie \"clean\" si sa respecte FIRST.",
+    "options": [
+      "Rutina ce genereaza vectorul va fi copiata in fiecare metoda @Test ce trebuie implementata",
+      "Rutina ce genereaza vectorul va fi implementata intr-o metoda privata din TestCase urmand ca aceasta sa fie apelata de fiecare data in metoda @Test ce trebuie scrisa",
+      "Rutina ce genereaza vectorul va fi implementata in metoda marcata @BeforeClass a TestCase-ului",
+      "Rutina ce genereaza vectorul va fi implementata in metoda marcata @Before a TestCase-ului",
+      "Rutina ce genereaza vectorul va fi implementata in metoda marcata @AfterClass a TestCase-ului",
+      "Rutina ce genereaza vectorul va fi implementata in metoda marcata @After a TestCase-ului"
+    ],
+    "correct_indices": [2]
   }
 ]
