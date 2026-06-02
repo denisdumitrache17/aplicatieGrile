@@ -670,5 +670,362 @@
     "text": "Ce pattern permite încapsularea unui obiect in vederea controlării accesului la acesta?",
     "options": ["Template", "State", "proxy", "adapter", "momento", "strategy", "decorator", "niciunul dintre cele enumerate", "command", "observer"],
     "correct_indices": [2]
+  },
+  {
+    "id": 113,
+    "text": "Ce design pattern trebuie sa folosesti pentru a gestiona actiuni care se vor executa asincron?",
+    "options": [
+      "Flyweight",
+      "Strategy",
+      "Memento",
+      "Command",
+      "State",
+      "Observer"
+    ],
+    "correct_indices": [3]
+  },
+  {
+    "id": 114,
+    "text": "Se doreste implementarea unui modul in scopul filtrarii continutului paginilor Web vizualizate. In acest scop, sunt aplicate reguli in cascada care sa elimine reclamele, sa asigure protectia indentitatii utilizatorului, sa asigure control parental, etc. Design pattern-ul care modeleaza cel mai bine acest modul este:",
+    "options": [
+      "Factory",
+      "Composite",
+      "Chain of Responsability",
+      "Singleton",
+      "Decorator"
+    ],
+    "correct_indices": [2]
+  },
+  {
+    "id": 115,
+    "text": "Realizati o aplicatie ce permite completarea de chestionare online. Indiferent de tipul chestionarului (Google Forms, Microsoft Forms, etc) este nevoie ca datele sa fie colectate intr-o anumita ordine: mai intai se colecteaza datele personale, mai apoi datele legate de chestionarul efectiv si la final datele legate de platforma utilizata. Ce Design Pattern puteti utiliza pentru a va asigura ca indiferent de tipul chestionarului regulile de mai sus sunt respectate?",
+    "options": [
+      "Facade",
+      "Proxy",
+      "State",
+      "Template method",
+      "Decorator",
+      "Composite",
+      "Prototype",
+      "Command",
+      "Strategy"
+    ],
+    "correct_indices": [3]
+  },
+  {
+    "id": 116,
+    "text": "Conform GoF design patern-urile pot face parte din categoria: (doua sau mai multe raspunsuri)",
+    "options": [
+      "Structural Patterns",
+      "Ethical patterns",
+      "Java Patterns",
+      "Behavioral patterns",
+      "Web patterns",
+      "Creational patterns",
+      "Testing patterns"
+    ],
+    "correct_indices": [0, 3, 5]
+  },
+  {
+    "id": 117,
+    "text": "O colecţie de teste unitare se numeşte:",
+    "options": [
+      "Suite",
+      "Setup",
+      "JUnit",
+      "Fixture",
+      "Test Case",
+      "Test",
+      "Unit Test"
+    ],
+    "correct_indices": [0]
+  },
+  {
+    "id": 118,
+    "text": "Ce design pattern defineşte o familie de algoritmi, încapsulează fiecare algoritm si permite interschimbarea acestora?",
+    "options": [
+      "Abstract Factory",
+      "Factory Method",
+      "Template",
+      "Composite",
+      "Adapter",
+      "Strategy",
+      "Decorator",
+      "Proxy"
+    ],
+    "correct_indices": [5]
+  },
+  {
+    "id": 119,
+    "text": "Care dintre următoarele enunțuri descrie modelul Composite corect?",
+    "options": [
+      "Acest model ascunde complexitatea sistemului/modulului și oferă clientului o interfață pe care o poate folosi pentru a accesa/utiliza sistemul",
+      "Acest model este utilizat în principal pentru a reduce numărul de obiecte create și pentru a reduce amprenta de memorie",
+      "Acest model permite utilizatorului să adauge funcționalități noi la un obiect existent fără a-i modifica structura",
+      "Nici una dintre aceste afirmaţii",
+      "Acest model este utilizat acolo unde trebuie să tratăm un grup de obiecte în mod similar ca un singur obiect",
+      "Acest model permite definirea unei familii de algoritmi, fiecare fiind încapsulat într-un obiect. Clientul poate folosi orice algoritm fără sa fie afectat de variaţia acestora."
+    ],
+    "correct_indices": [4]
+  },
+  {
+    "id": 120,
+    "text": "O metoda ce realizeaza un back-up al bazei de date trebuie executata in fiecare noapte la ora 02:00. Doriti sa scrieti un test unitar ce verifica daca metoda chiar este apelata la acea ora. Acest test este de tip:",
+    "options": [
+      "Cardinality",
+      "Error condition",
+      "Performance",
+      "Time",
+      "Right"
+    ],
+    "correct_indices": [3]
+  },
+  {
+    "id": 121,
+    "text": "Care din urmatoarele clase reprezinta un ansamblu de mai multe cazuri de testare in JUnit?",
+    "options": [
+      "AssertEquals",
+      "TestResult",
+      "Asserts",
+      "TestSuite",
+      "TestAssert",
+      "TestRunner",
+      "TestCase"
+    ],
+    "correct_indices": [3]
+  },
+  {
+    "id": 122,
+    "text": "Actualizati (refactorizati) o aplicatie web. Realizati faptul ca de fiecare data cand un nou tip de utilizator este necesar trebuie sa mai adaugati un caz intr-o instructiune de selectie multipla (switch). Ce principiu SOLID este incalcat?",
+    "options": [
+      "DIP",
+      "LSP",
+      "ISP",
+      "SRP",
+      "OCP"
+    ],
+    "correct_indices": [4]
+  },
+  {
+    "id": 123,
+    "text": "Care dintre urmatoarele forme de testare sunt considerate de tip white-box testing (glassbox testing)?",
+    "options": [
+      "testarea unitara",
+      "unit testing",
+      "UI testing",
+      "acceptance testing",
+      "QA testing"
+    ],
+    "correct_indices": [0, 1]
+  },
+  {
+    "id": 124,
+    "text": "Care dintre următoarele enunturi sunt corecte (unul sau mai multe) despre pattern-ul de tip Factory?",
+    "options": [
+      "Pattern-ul se referă la obiectul nou creat folosind o interfață comună.",
+      "Creează obiecte fără a expune clientului logica si detaliile procesului de creație.",
+      "Acest tip de pattern face parte din categoria creaţionale.",
+      "Pattern-ul decupleaza clientul de detaliile specifice crearii de obiecte."
+    ],
+    "correct_indices": [0, 1, 2, 3]
+  },
+  {
+    "id": 125,
+    "text": "Care dintre urmatoarele Design Patterns incalca Dependency Inversion Principle?",
+    "options": [
+      "Decorator",
+      "Command",
+      "Strategy",
+      "Observer",
+      "Factory Method",
+      "State",
+      "Simple Factory"
+    ],
+    "correct_indices": [6]
+  },
+  {
+    "id": 126,
+    "text": "Utilizarea intrebarii \"can be a substitute of\" in loc de \"is a\" este legata de urmatorul principiu:",
+    "options": [
+      "DIP",
+      "OCP",
+      "SRP",
+      "ISP",
+      "LSP"
+    ],
+    "correct_indices": [4]
+  },
+  {
+    "id": 127,
+    "text": "Cele cinci principii SOLID conduc la scrierea codului într-un mod:",
+    "options": [
+      "usor de modificat",
+      "independent",
+      "distinct",
+      "util",
+      "autonom"
+    ],
+    "correct_indices": [0]
+  },
+  {
+    "id": 128,
+    "text": "Ce reprezinta dezvoltarea de tip test-driven (TDD)?",
+    "options": [
+      "Codul este implementat și apoi sunt scrise testele.",
+      "TDD nu necesită scrierea testelor unitare",
+      "Testerii dezvolta software folosind TDD",
+      "Testele sunt scrise în mod normal înainte de implementarea codului"
+    ],
+    "correct_indices": [3]
+  },
+  {
+    "id": 129,
+    "text": "În principiile SOLID, „O” înseamnă:",
+    "options": [
+      "Obviously",
+      "Ordering",
+      "Open-Closed",
+      "Observer"
+    ],
+    "correct_indices": [2]
+  },
+  {
+    "id": 130,
+    "text": "Pattern-ul Facade promovează decuplarea (\"weak coupling\") între subsistem şi clienții săi.",
+    "options": [
+      "Adevărat",
+      "Fals"
+    ],
+    "correct_indices": [0]
+  },
+  {
+    "id": 131,
+    "text": "Dezvolti un joc video ce contine multe caractere 3D. Jocul contine multe instante ale aceluiasi caracter ce pot avea si caracteristici diferite. Daca urmariti cresterea performantei jocului (viteza rulare si memorie necesara) ce design pattern-uri puteti folosi (unul sau mai multe) pentru a atinge aceste obiective (viteza rulare si memorie necesara), din prisma instantierii si gestionarii caracterelor 3D.",
+    "options": [
+      "Adapter",
+      "Prototype",
+      "Flyweight",
+      "Builder",
+      "Decorator",
+      "Singleton",
+      "State",
+      "Factory"
+    ],
+    "correct_indices": [1, 2]
+  },
+  {
+    "id": 132,
+    "text": "In cadrul unei suite de teste (test suite) pot fi specificate spre a fi executate:",
+    "options": [
+      "test cases",
+      "alte suite",
+      "doar anumite categorii de teste",
+      "toate testele cu exceptia unor categorii",
+      "test methods"
+    ],
+    "correct_indices": [0, 1, 2, 3]
+  },
+  {
+    "id": 133,
+    "text": "Posibilitatea interceptării unor apeluri de metodă este dată de următorul DP:",
+    "options": [
+      "Adapter",
+      "Facade",
+      "Composite",
+      "Proxy",
+      "Decorator"
+    ],
+    "correct_indices": [3]
+  },
+  {
+    "id": 134,
+    "text": "Care asertie este folosita in JUnit pentru a verifica daca doua referinte pointeaza catre acelasi obiect?",
+    "options": [
+      "assertSameReference(Object expected, Object actual)",
+      "assertSame(Object expected, Object actual)",
+      "assertEquals(Object expected, Object actual)",
+      "assertSameObject(Object expected, Object actual)",
+      "assertReference(Object expected, Object actual)",
+      "assertFalse(Object expected, Object actual)",
+      "assertTrue(Object expected, Object actual)"
+    ],
+    "correct_indices": [1]
+  },
+  {
+    "id": 135,
+    "text": "O clasa cu numele \"AlteFunctionalitati\" care contine functii care nu au fost incluse in alte clase specifice incalca principiul:",
+    "options": [
+      "All functions",
+      "Dependecy Inversion",
+      "Single Responsibility",
+      "Interface segregation",
+      "Liskov substitution",
+      "Open Closed",
+      "Other Things"
+    ],
+    "correct_indices": [2]
+  },
+  {
+    "id": 136,
+    "text": "Metoda assertSame verifica daca:",
+    "options": [
+      "cele doua valori sunt egale",
+      "cele doua primitive sunt egale",
+      "cele doua valori nu sunt salvate la aceeasi adresa de memorie",
+      "cele doua valori sunt salvate la aceeasi adresa de memorie",
+      "cele doua valori au campuri egale"
+    ],
+    "correct_indices": [3]
+  },
+  {
+    "id": 137,
+    "text": "Doresti să reduci costurile de dezvoltare prin reutilizarea metodelor implementate in componente din alte proiecte. Ce design pattern iti va permite sa faci asta fara sa le modifici?",
+    "options": [
+      "Delegation",
+      "Decorator",
+      "Adapter",
+      "Singleton",
+      "Command",
+      "State",
+      "Strategy",
+      "Facade"
+    ],
+    "correct_indices": [2]
+  },
+  {
+    "id": 138,
+    "text": "Testati o metoda ce depinde de o conexiunea la o baza de date specificata prin interfata IConnection. Cum procedati?",
+    "options": [
+      "utilizati null in locul referintei respective",
+      "realizati un Stub al interfetei IConnection",
+      "realizati un Mock al interfetei IConnection",
+      "realizati un Fake al interfetei IConnection",
+      "utilizati conexiunea aferenta aplicatiei"
+    ],
+    "correct_indices": [1, 2]
+  },
+  {
+    "id": 139,
+    "text": "Care dintre urmatoarele relatii de derivare (exprimate sub forma baza-derivat) incalca LSP?",
+    "options": [
+      "Dreptunghi-Patrat",
+      "Persoana-Student",
+      "FormaGeometrica-Triunghi",
+      "NumarNatural-NumarIntreg",
+      "Vehicul-Masina"
+    ],
+    "correct_indices": [0]
+  },
+  {
+    "id": 140,
+    "text": "Următoarea implementare de Singleton este greşită deoarece instanța nu este salvată intern: `if(instanta==null){ return new Singleton(parametru); } else{ return instanta; }`",
+    "options": [
+      "constructorul este privat şi trebuia sa fie public, astfel încât să poată fi apelat",
+      "funcția getInstanta() trebuie să fie privată",
+      "instanţa este inițializată cu NULL atunci când este declarată",
+      "instanța nu este inițializată niciodată prin apelul constructorului",
+      "instanţa este statică"
+    ],
+    "correct_indices": [3]
   }
 ]
