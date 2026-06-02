@@ -1,882 +1,674 @@
 [
   {
     "id": 1,
-    "text": "Ce formulă aplică funcția `standardize(X)` din `util.py`?",
-    "options": [
-      "X / mean",
-      "X - mean",
-      "(X - mean) / std",
-      "(X - min) / (max - min)"
-    ],
-    "correct_indices": [2]
+    "text": "Care este sintagma cheie pentru utilizarea design pattern-ului Singleton?",
+    "options": ["clasa abstracta", "instanta abstracta", "familie de obiecte", "instanta statica", "instanta unica"],
+    "correct_indices": [4]
   },
   {
     "id": 2,
-    "text": "În `util.py`, parametrul `axis=0` folosit în `np.mean` și `np.std` indică faptul că se calculează:",
-    "options": [
-      "Media pe fiecare coloană (variabilă)",
-      "Media pe fiecare rând (observație)",
-      "Media ponderată",
-      "Media pe întregul tabel"
-    ],
-    "correct_indices": [0]
+    "text": "Care varianta de Singleton, dintre cele enumerate, este recomandata sa fie implementat?",
+    "options": ["Static block initialization", "Enum", "Lazy initialization", "Eager initialization", "Thread Safe"],
+    "correct_indices": [4]
   },
   {
     "id": 3,
-    "text": "În constructorul `PCA`, ce funcție este apelată imediat pentru a popula `self.X_std`?",
-    "options": [
-      "np.corrcoef",
-      "self.get_scores()",
-      "np.linalg.eig",
-      "util.standardize(X)"
-    ],
+    "text": "Ce sunt Design Patterns?",
+    "options": ["Imagini vectoriale asemanatoare", "Serii de probleme", "Sabloane de probleme", "Sabloane de proiectare"],
     "correct_indices": [3]
   },
   {
     "id": 4,
-    "text": "În `PCA.py`, matricea de corelație `self.R` este calculată folosind:",
-    "options": [
-      "np.dot(X, X.T)",
-      "np.var(X)",
-      "np.corrcoef(self.X_std, rowvar=False)",
-      "np.cov(self.X_std)"
-    ],
-    "correct_indices": [2]
+    "text": "Design pattern-ul Factory presupune utilizarea:",
+    "options": ["unei singure instante dintr-o clasa", "unei metode de copiere a obiectului intr-un alt obiect", "apelurilor in cascada pentru metodele de modificare ale valorilor atributelor", "unei interfete comune pentru toate clasele de obiecte dintr-o familie"],
+    "correct_indices": [3]
   },
   {
     "id": 5,
-    "text": "Variabila `k_desc` din `PCA.py` este folosită pentru:",
-    "options": [
-      "A selecta doar primele 2 componente",
-      "A sorta indicii valorilor proprii în ordine descrescătoare",
-      "A șterge valorile negative",
-      "A calcula media"
-    ],
-    "correct_indices": [1]
+    "text": "Design pattern-ul Singleton presupune utilizarea:",
+    "options": ["apelurilor in cascada pentru metodele de modificare ale valorilor atributelor", "unei metode de copiere a obiectului curent intr-un alt obiect", "unei singure instante dintr-o clasa", "unei interfete comune pentru toate clasele de obiecte dintr-o familie"],
+    "correct_indices": [2]
   },
   {
     "id": 6,
-    "text": "Formula folosită pentru calculul scorurilor (`get_scores`) în `PCA.py` este:",
-    "options": [
-      "self.X_std / self.Val",
-      "np.dot(self.R, self.Vec)",
-      "np.matmul(self.X_std, self.Vec)",
-      "self.Val * self.Vec"
-    ],
-    "correct_indices": [2]
+    "text": "Design pattern-urile creationale ajuta la:",
+    "options": ["extinderea claselor abstracte", "initializarea atributelor statice", "implementarea interfetelor", "initializarea obiectelor", "implementarea functiilor statice"],
+    "correct_indices": [3]
   },
   {
     "id": 7,
-    "text": "Metoda `get_qualities` (Cosinusuri) din `PCA.py` împarte pătratul scorurilor (`C2`) la:",
-    "options": [
-      "Suma totală a valorilor proprii",
-      "Numărul de variabile",
-      "Vectorii proprii",
-      "Pătratul distanței observațiilor față de origine (suma pătratelor pe linii a X_std)"
-    ],
-    "correct_indices": [3]
-  },
-  {
-    "id": 8,
-    "text": "Contribuțiile (`get_contributions`) în `PCA.py` sunt scalate împărțind scorurile la:",
-    "options": [
-      "Doar self.n",
-      "self.n * self.Val (n * valori proprii)",
-      "100",
-      "Doar self.Val"
-    ],
+    "text": "Este recomandat sa folosim Singleton atunci cand:",
+    "options": ["Avem un singur atribut", "Avem o instanta unica a clasei", "Avem o familie de clase", "Avem o singura interfata si mai multe clase", "Avem o singura clasa"],
     "correct_indices": [1]
   },
   {
+    "id": 8,
+    "text": "In cate categorii sunt impartite design pattern-urile orientate obiect conform GoF?",
+    "options": ["5", "4", "2", "3", "1"],
+    "correct_indices": [3]
+  },
+  {
     "id": 9,
-    "text": "În `PCA.py`, `self.Val` reprezintă:",
-    "options": [
-      "Valorile proprii (varianța explicată)",
-      "Vectorii proprii",
-      "Matricea de date",
-      "Corelațiile factoriale"
-    ],
-    "correct_indices": [0]
+    "text": "Simple Factory este folosit pentru:",
+    "options": ["familii de clase", "clase complexe", "obiecte complexe", "clase concrete", "clase abstracte"],
+    "correct_indices": [3]
   },
   {
     "id": 10,
-    "text": "Comunalitățile în `PCA.py` se calculează ca:",
-    "options": [
-      "Suma simplă a scorurilor",
-      "Rădăcina pătrată a valorilor proprii",
-      "Suma cumulativă a pătratelor corelațiilor factoriale",
-      "Diferența dintre 1 și varianța specifică"
-    ],
-    "correct_indices": [2]
+    "text": "Singleton si Simple Factory sunt design pattern-uri:",
+    "options": ["structurale", "creationale", "de stare", "comportamentale"],
+    "correct_indices": [1]
   },
   {
     "id": 11,
-    "text": "În `EFA.py`, \"Factor Loadings\" sunt calculate prin:",
-    "options": [
-      "self.Vec * self.Val",
-      "self.Vec / self.Val",
-      "np.corrcoef(X)",
-      "self.Vec * np.sqrt(self.Val)"
-    ],
-    "correct_indices": [3]
-  },
-  {
-    "id": 12,
-    "text": "Ce returnează metoda `get_eigenvalues` din `EFA.py`?",
-    "options": [
-      "Vectorii proprii",
-      "Scorurile factoriale",
-      "Valorile proprii (self.Val)",
-      "Matricea de corelație"
-    ],
+    "text": "Care dintre urmatoarele design pattern-uri sunt structurale?",
+    "options": ["Adapter, Singleton, Facade", "Proxy, Builder, Decorator, Facade", "Adapter, Decorator, Facade", "Factory, Facade, Adapter"],
     "correct_indices": [2]
   },
   {
-    "id": 13,
-    "text": "Varianța specifică (`get_specific_variance`) în `EFA.py` este:",
-    "options": [
-      "Egală cu comunalitatea",
-      "1 + communalities",
-      "Calculată folosind regresia liniară",
-      "1 - communalities"
-    ],
+    "id": 12,
+    "text": "Care sunt participantii (sau elementele) design pattern-ului Adapter?",
+    "options": ["Adapterul compus, adapterul frunza si adapterul concret", "Adapterul abstract, adapterul concret si fabrica", "Clasa utilizata, fabrica si adapter-ul", "Clasa utilizata, clasa noua si adapter-ul"],
     "correct_indices": [3]
   },
   {
+    "id": 13,
+    "text": "Design pattern-ul Builder este folosit atunci cand:",
+    "options": ["se construiesc obiecte complexe cu foarte multe atribute", "se construiesc obiecte unice", "se construiesc obiecte cu ajutorul unei metode statice", "se construiesc obiecte complexe cu foarte multe metode", "se construiesc obiecte asemanatoare"],
+    "correct_indices": [0]
+  },
+  {
     "id": 14,
-    "text": "Clasa `CCA` din `CCA.py` primește în constructor:",
-    "options": [
-      "O singură matrice X",
-      "Etichetele grupurilor",
-      "Două matrici, X și Y",
-      "O matrice de distanțe"
-    ],
+    "text": "Design Pattern-ul Prototype face parte din categoria:",
+    "options": ["Structurale", "Comportamentale", "Creationale", "De stare"],
     "correct_indices": [2]
   },
   {
     "id": 15,
-    "text": "În `CCA.py`, variabilele `p` și `q` reprezintă:",
-    "options": [
-      "Numărul de observații din X și Y",
-      "Media și deviația standard",
-      "Minimul și maximul",
-      "Numărul de variabile din X, respectiv Y"
-    ],
+    "text": "Design pattern-ul Prototype presupune utilizarea:",
+    "options": ["unei singure instante dintr-o clasa", "unei interfete comune pentru toate clasele de obiecte dintr-o familie", "apelurilor in cascada pentru metodele de modificare ale valorilor atributelor", "unei metode de copiere a obiectului curent intr-un alt obiect"],
     "correct_indices": [3]
   },
   {
     "id": 16,
-    "text": "Matricea bloc folosită în `CCA.py` este compusă din sub-matricile:",
-    "options": [
-      "Rxx, Rxy, Ryx, Ryy",
-      "Doar Rxx și Ryy",
-      "Doar Rxy",
-      "Matricea identitate"
-    ],
+    "text": "Design pattern-urile creationale ajuta la:",
+    "options": ["initializarea obiectelor", "initializarea atributelor statice", "implementarea interfetelor", "implementarea functiilor statice"],
     "correct_indices": [0]
   },
   {
     "id": 17,
-    "text": "În `CCA.py`, cum se asigură stabilitatea numerică a valorilor proprii?",
-    "options": [
-      "Se înmulțesc cu 100",
-      "Se transformă în numere întregi",
-      "Se setează un prag minim (val[val < 1e-5] = 1e-5)",
-      "Nu se face nicio verificare"
-    ],
-    "correct_indices": [2]
+    "text": "Din categoria de Design Pattern-uri Creationale fac parte urmatoarele:",
+    "options": ["Builder, Factory, Prototype", "Singleton, Factory, Facade", "Singleton, Command, Builder", "Prototype, Template Method, Builder", "Template, Decorator, Prototype"],
+    "correct_indices": [0]
   },
   {
     "id": 18,
-    "text": "Corelațiile canonice (`calc_corr`) în `CCA.py` sunt:",
-    "options": [
-      "Pătratul valorilor proprii",
-      "Egale cu valorile proprii",
-      "Rădăcina pătrată a valorilor proprii (np.sqrt(val))",
-      "Suma valorilor proprii"
-    ],
+    "text": "Utilizarea design pattern-ului Facade presupune:",
+    "options": ["realizarea unui modul de creare de obiecte complexe", "realizarea unui wrapper pentru adaptarea claselor existente", "realizarea unui wrapper pentru a ascunde complexitatea unei librarii", "realizarea unei metode de gestiune a tuturor obiectelor dintr-o familie"],
     "correct_indices": [2]
   },
   {
     "id": 19,
-    "text": "Scorurile canonice pentru setul X (`z`) în `CCA.py` se calculează:",
-    "options": [
-      "self.X_std + self.Y_std",
-      "np.dot(self.X_std, self.Vx)",
-      "np.dot(self.X_std, self.Vy)",
-      "self.X_std / 2"
-    ],
+    "text": "Care dintre urmatoarele design pattern-uri sunt structurale?",
+    "options": ["Adapter, Singleton, Facade", "Adapter, Decorator, Facade", "Factory, Facade, Adapter", "Proxy, Builder, Decorator, Facade"],
     "correct_indices": [1]
   },
   {
     "id": 20,
-    "text": "Metoda `fit_model` din `CCA.py` returnează:",
-    "options": [
-      "Doar valorile proprii",
-      "Matricea de corelație",
-      "Dendrograma",
-      "Cele două seturi de scoruri canonice, z și u"
-    ],
-    "correct_indices": [3]
-  },
-  {
-    "id": 21,
-    "text": "Constructorul `LDA` din `LDA.py` necesită:",
-    "options": [
-      "Matricea X și vectorul de etichete y",
-      "Doar matricea X",
-      "Două matrici X și Y de dimensiuni diferite",
-      "Numărul de clustere"
-    ],
+    "text": "Facade este util cand:",
+    "options": ["Se doreste simplificarea unui proces", "Se doreste adaugarea de functionalitati", "Niciuna dintre variantele de mai sus", "Se doreste crearea de obiecte cu multe proprietati optionale"],
     "correct_indices": [0]
   },
   {
+    "id": 21,
+    "text": "La ce se utilizeaza Facade?",
+    "options": ["Pentru a adapta o clasa la o alta clasa", "Pentru a elimina din functionalitatile framework-ului", "Pentru framework-urile open-source disponibile", "Pentru a ascunde complexitatea framework-urilor"],
+    "correct_indices": [3]
+  },
+  {
     "id": 22,
-    "text": "În `LDA.py`, `groups` este calculat ca:",
-    "options": [
-      "len(y) (numărul total de observații)",
-      "list(set(y)) (lista claselor unice)",
-      "np.mean(y)",
-      "np.sum(y)"
-    ],
-    "correct_indices": [1]
+    "text": "Ce tip de design pattern este Facade?",
+    "options": ["Structural", "Comportamental", "Creational"],
+    "correct_indices": [0]
   },
   {
     "id": 23,
-    "text": "Matricea `Sw` în `LDA.py` reprezintă:",
-    "options": [
-      "Between-class scatter matrix",
-      "Matricea de corelație totală",
-      "Within-class scatter matrix (suma covarianțelor pe grupuri)",
-      "Matricea inversă"
-    ],
-    "correct_indices": [2]
+    "text": "Ce reprezinta numele Facade?",
+    "options": ["Pentru a utiliza framework-urile, se poate folosi aceasta fatada, fara a fi necesara cunoasterea tuturor claselor, a metodelor si a atributelor", "Realizeaza o fatada pentru framework-urile foarte complexe", "Toate variantele", "Usureaza lucrul cu framework-uri foarte complexe"],
+    "correct_indices": [1]
   },
   {
     "id": 24,
-    "text": "Matricea `Sb` în `LDA.py` se calculează folosind:",
-    "options": [
-      "Diferența dintre observații individuale și media grupului",
-      "Diferența dintre media grupului și media generală",
-      "Suma tuturor observațiilor",
-      "Produsul scalar"
-    ],
-    "correct_indices": [1]
+    "text": "Care este deosebirea dintre Decorator si Adapter?",
+    "options": ["Decorator adauga si functionalitati noi", "Adapter adauga si functionalitati noi", "Nu este nicio deosebire", "Adapter defineste metoda build()"],
+    "correct_indices": [0]
   },
   {
     "id": 25,
-    "text": "Ecuația vectorilor proprii în `LDA.py` implică produsul:",
-    "options": [
-      "np.dot(Sw, Sb)",
-      "np.dot(Sb, Sw)",
-      "Sw + Sb",
-      "np.dot(np.linalg.inv(Sw), Sb)"
-    ],
-    "correct_indices": [3]
-  },
-  {
-    "id": 26,
-    "text": "Metoda `predict` din `LDA.py` clasifică o nouă observație:",
-    "options": [
-      "Random",
-      "Folosind regresie logistică",
-      "Calculând distanța Euclidiană față de media fiecărui grup în spațiul discriminant",
-      "Folosind un arbore de decizie"
-    ],
-    "correct_indices": [2]
-  },
-  {
-    "id": 27,
-    "text": "În `LDA.py`, câte axe discriminante sunt calculate?",
-    "options": [
-      "Egal cu numărul de variabile m",
-      "Fix 2",
-      "Infinit",
-      "q - 1, unde q este numărul de clase/grupuri"
-    ],
-    "correct_indices": [3]
-  },
-  {
-    "id": 28,
-    "text": "În `HCA.py`, funcția `h_clustering` primește parametrul `n_clusters`. Acesta determină:",
-    "options": [
-      "Numărul de variabile",
-      "Pragul de tăiere a dendrogramei",
-      "Numărul maxim de clustere în care se vor împărți datele",
-      "Numărul de iterații"
-    ],
-    "correct_indices": [2]
-  },
-  {
-    "id": 29,
-    "text": "Funcția de linkage în `HCA.py` folosește metoda:",
-    "options": [
-      "method='single'",
-      "method='average'",
-      "method='centroid'",
-      "method='ward'"
-    ],
-    "correct_indices": [3]
-  },
-  {
-    "id": 30,
-    "text": "Pentru a obține etichetele clusterelor, `HCA.py` folosește funcția:",
-    "options": [
-      "kmeans.predict",
-      "scipy.cluster.hierarchy.fcluster",
-      "pca.transform",
-      "np.digitize"
-    ],
+    "text": "Ce tip de design pattern este Decorator?",
+    "options": ["Creational", "Structural", "Comportamental"],
     "correct_indices": [1]
   },
   {
+    "id": 26,
+    "text": "Care sunt participantii dintr-un Adapter?",
+    "options": ["Clasa existenta, adapterul", "Clasa existenta, clasa utilizata, adapterul", "Clasa existenta, clasa adaugata, adapterul"],
+    "correct_indices": [1]
+  },
+  {
+    "id": 27,
+    "text": "In ce situatii se foloseste Adapter?",
+    "options": ["Ori de cate ori nu se doreste modificarea codului existent", "Ori de cate ori este necesara conlucrarea mai multor framework-uri", "Ambele variante"],
+    "correct_indices": [1]
+  },
+  {
+    "id": 28,
+    "text": "Cum este implementat Adapter-ul de obiecte?",
+    "options": ["Clasa Adapter contine o instanta a clasei existente si implementeaza interfata la care trebuie sa faca adaptarea", "Clasa Adapter mosteneste clasa existenta si implementeaza interfata la care trebuie sa faca adaptarea", "Clasa Adapter contine instante ale celor doua clase existente"],
+    "correct_indices": [0]
+  },
+  {
+    "id": 29,
+    "text": "Care sunt cele doua tipuri de Adapter?",
+    "options": ["Adapter de clase si Adapter de obiecte"],
+    "correct_indices": [0]
+  },
+  {
+    "id": 30,
+    "text": "Care sunt participantii (sau elementele) design pattern-ului Adapter?",
+    "options": ["Adapterul compus, adapterul frunza si adapterul concret", "Adapterul abstract, adapterul concret si fabrica", "Clasa utilizata, fabrica si adapter-ul", "Clasa utilizata, clasa noua si adapter-ul"],
+    "correct_indices": [3]
+  },
+  {
     "id": 31,
-    "text": "Dacă se specifică un `threshold` (prag) în `get_clusters` din `HCA.py`, criteriul folosit este:",
-    "options": [
-      "criterion='distance'",
-      "criterion='maxclust'",
-      "criterion='inconsistent'",
-      "Nu se folosește niciun criteriu"
-    ],
+    "text": "Ce design pattern trebuie sa folosim pentru adaugarea de noi functionalitati unei clase existente deja, fara a modifica in codul existent",
+    "options": ["Decorator", "Facade", "Builder", "Adapter"],
     "correct_indices": [0]
   },
   {
     "id": 32,
-    "text": "Dacă se specifică `n_clusters` în `get_clusters` din `HCA.py`, criteriul folosit este:",
-    "options": [
-      "criterion='distance'",
-      "criterion='monocrit'",
-      "criterion='maxclust'",
-      "criterion='elbow'"
-    ],
-    "correct_indices": [2]
+    "text": "Din ce categorie fac parte design pattern-urile: Facade, Adapter si Decorator?",
+    "options": ["Structurale", "Creationale", "Comportamentale"],
+    "correct_indices": [0]
   },
   {
     "id": 33,
-    "text": "Funcția `eigenvalues_plot` din `plots.py` desenează o linie orizontală roșie la valoarea:",
-    "options": [
-      "0",
-      "0.8",
-      "Media valorilor proprii",
-      "1 (Pragul Kaiser)"
-    ],
-    "correct_indices": [3]
+    "text": "Utilizarea design pattern-ului Facade presupune:",
+    "options": ["realizarea unui wrapper pentru a ascunde complexitatea unei librarii", "realizarea unui modul de creare de obiecte complexe", "realizarea unui wrapper pentru adaptarea claselor existente", "realizarea unei metode de gestiune a tuturor obiectelor dintr-o familie"],
+    "correct_indices": [0]
   },
   {
     "id": 34,
-    "text": "În `plots.py`, `correlation_circle` desenează un cerc folosind coordonate parametrice cu:",
-    "options": [
-      "Tangentă",
-      "Sinus și Cosinus",
-      "Logaritm",
-      "Funcție exponențială"
-    ],
-    "correct_indices": [1]
+    "text": "Care dintre urmatoarele afirmatii nu este adevarata?",
+    "options": ["Clasele NodFrunza nu implementeaza metodele de adaugare si stergere a unui nod", "Clasele composite contin o lista cu elemente de tip ComponentaAbstracta", "In lista de obiecte de tip ComponentaAbstracta se pot adauga si sterge noduri", "Composite este utilizat la crearea meniurilor aplicatiilor"],
+    "correct_indices": [0]
   },
   {
     "id": 35,
-    "text": "Graficul `score_plot` din `plots.py` este un:",
-    "options": [
-      "Bar chart",
-      "Pie chart",
-      "Scatter plot (diagramă de dispersie)",
-      "Heatmap"
-    ],
-    "correct_indices": [2]
-  },
-  {
-    "id": 36,
-    "text": "În `plots.py`, funcția `dendrogram_plot` setează `leaf_rotation` la:",
-    "options": [
-      "0 grade",
-      "90 grade",
-      "180 grade",
-      "30 grade"
-    ],
+    "text": "Cand este folosit design pattern-ul Composite?",
+    "options": ["Atunci cand doreste adaugarea de noi functionalitati claselor existente", "Atunci cand se doreste modificarea functionalitatii unui obiect la runtime", "Atunci cand este nevoie sa se utilizeze clase din doua framework-uri diferite", "Atunci cand este necesara crearea unei structuri ierarhice prin compunerea de obiecte"],
     "correct_indices": [3]
   },
   {
+    "id": 36,
+    "text": "Ce tip de design pattern este Composite?",
+    "options": ["Creational", "Structural", "Comportamental"],
+    "correct_indices": [1]
+  },
+  {
     "id": 37,
-    "text": "Funcția `dendrogram_plot` primește ca input:",
-    "options": [
-      "Matricea de date brută",
-      "Valorile proprii",
-      "Matricea de legături (h)",
-      "Scorurile PCA"
-    ],
+    "text": "Care este corelatia dintre Composite si Decorator?",
+    "options": ["Ambele ascund, intr-un fel, clasa existenta", "Construirea de obiecte este gestionata de o clasa", "Nodurile Composite pot fi privite ca Noduri Frunza decorate", "Legaturile dintre clase"],
     "correct_indices": [2]
   },
   {
     "id": 38,
-    "text": "Etichetele (`labels`) afișate în `score_plot` (`plots.py`) reprezintă:",
-    "options": [
-      "Numele variabilelor",
-      "Valorile proprii",
-      "Titlul graficului",
-      "Numele observațiilor (rândurilor)"
-    ],
-    "correct_indices": [3]
+    "text": "Composite este util atunci cand:",
+    "options": ["Se doreste construirea unei singure instante", "Se doreste construirea de obiecte cu multe proprietati ce nu sunt obligatorii", "Se doreste crearea unei structuri ierarhice sau arborescente", "Se doreste crearea de obiecte din aceeasi familie de clase"],
+    "correct_indices": [2]
   },
   {
     "id": 39,
-    "text": "Ce parametru controlează titlul graficului în `eigenvalues_plot`?",
-    "options": [
-      "header",
-      "title",
-      "name",
-      "Nu se poate pune titlu"
-    ],
+    "text": "Care este avantajul folosirii design pattern-ului Flyweight?",
+    "options": ["Se pot crea structuri ierarhice", "Se reduce consumul de memorie", "Se pot aduce modificari obiectelor la runtime"],
     "correct_indices": [1]
   },
   {
     "id": 40,
-    "text": "În `correlation_circle`, axele sunt etichetate implicit ca:",
-    "options": [
-      "'X' și 'Y'",
-      "'Componenta 1' și 'Componenta 2'",
-      "'Var 1' și 'Var 2'",
-      "Nu au etichete"
-    ],
+    "text": "Cand este folosit design pattern-ul Flyweight?",
+    "options": ["Atunci cand se doreste modificarea functionalitatii unui obiect la runtime", "Atunci cand trebuie sa construim foarte multe instante ale unei clase, obiecte ce au o parte comuna", "Atunci cand este necesara crearea unei structuri ierarhice prin compunerea de obiecte", "Atunci cand se doreste adaugarea de noi functionalitati claselor existente"],
     "correct_indices": [1]
   },
   {
     "id": 41,
-    "text": "Pentru a rula LDA, trebuie să importăm clasa `LDA` din fișierul:",
-    "options": [
-      "PCA.py",
-      "HCA.py",
-      "LDA.py",
-      "util.py"
-    ],
+    "text": "Flyweight este util atunci cand:",
+    "options": ["Se doreste construirea unei singure instante", "Se doreste construirea unei structuri ierarhice", "Se doreste construirea a foarte multe obiecte ale unei clase, obiecte ce au o parte comuna"],
     "correct_indices": [2]
   },
   {
     "id": 42,
-    "text": "Dacă avem datele în `X`, comanda `util.standardize(X)` returnează:",
-    "options": [
-      "None",
-      "Media și deviația standard",
-      "Matricea standardizată Z",
-      "Matricea de corelație"
-    ],
+    "text": "Care este asemanarea dintre Flyweight si Factory?",
+    "options": ["Nodurile Composite pot fi privite ca Noduri frunza decorate", "Legaturile dintre clase", "Construirea de obiecte este gestionata de o clasa", "Nodurile Frunza pot reprezenta aceeasi instanta"],
     "correct_indices": [2]
   },
   {
     "id": 43,
-    "text": "Metoda `fit_model` din `HCA.py` returnează:",
-    "options": [
-      "Etichetele clusterelor",
-      "Dendrograma",
-      "Matricea de legături (ierarhia)",
-      "Nimic"
-    ],
+    "text": "Care dintre urmatoarele afirmatii despre Flyweight este adevarata?",
+    "options": ["Implementarea lui este mare consumatoare de memorie", "Toate afirmatiile sunt adevarate", "Una din clase (FlyweightFactory) contine un HashMap pentru retinerea obiectelor asemanatoare", "Obiectele create sunt identice"],
     "correct_indices": [2]
   },
   {
     "id": 44,
-    "text": "În `EFA.py`, metoda `get_loadings` folosește:",
-    "options": [
-      "np.dot",
-      "np.linalg.solve",
-      "np.cross",
-      "Înmulțirea element cu element (broadcasting) între vectori și radical din valori proprii"
-    ],
-    "correct_indices": [3]
+    "text": "Ce tip de design pattern este Proxy?",
+    "options": ["Comportamental", "Structural", "Creational"],
+    "correct_indices": [1]
   },
   {
     "id": 45,
-    "text": "Când `LDA.py` calculează mediile pe grupuri, iterează prin:",
-    "options": [
-      "Indicii variabilelor",
-      "Toate rândurile matricei",
-      "Etichetele unice din `groups`",
-      "Valorile proprii"
-    ],
-    "correct_indices": [2]
+    "text": "Care este deosebirea dintre Proxy si Decorator?",
+    "options": ["Proxy permite accesul la anumite functionalitati, iar Decorator adauga noi functionalitati", "Cele doua sunt identice", "Proxy modifica intreaga clasa, iar Decorator modifica comportamentul"],
+    "correct_indices": [0]
   },
   {
     "id": 46,
-    "text": "Care fișier conține implementarea pentru \"Scree Plot\"?",
-    "options": [
-      "PCA.py",
-      "util.py",
-      "plots.py",
-      "LDA.py"
-    ],
-    "correct_indices": [2]
+    "text": "Care este diferenta dintre Proxy si Adapter?",
+    "options": ["Cele doua sunt complet diferite", "Ambele ascund, intr-un fel, clasa existenta", "Construirea de obiecte este gestionata de o clasa", "Legaturile dintre clase"],
+    "correct_indices": [1]
   },
   {
     "id": 47,
-    "text": "În `CCA.py`, dacă `p > q`, atunci numărul de componente canonice calculate `m` este:",
-    "options": [
-      "p",
-      "p + q",
-      "q (minimul dintre p și q)",
-      "0"
-    ],
-    "correct_indices": [2]
+    "text": "Proxy este util atunci cand:",
+    "options": ["Crearea de obiecte consuma multe resure", "Se doreste pastrarea functionalitatii unei clase ce se va realiza doar in anumite conditii", "Se doreste construirea de obiecte cu multe proprietati ce nu sunt obligatorii"],
+    "correct_indices": [1]
   },
   {
     "id": 48,
-    "text": "Validarea dimensiunilor matricelor `Rxz` și `Ryu` în `CCA.py` se face prin:",
-    "options": [
-      "Nu se face validare",
-      "Returnarea unui scalar",
-      "Afișarea unei erori",
-      "Returnarea unor matrici de dimensiuni (p, m) și (q, m)"
-    ],
+    "text": "Cand se utilizeaza Proxy?",
+    "options": ["De fiecare data cand se doreste realizarea de permisiuni pentru toate obiectele", "De fiecare data cand se doreste realizarea de permisiuni pentru accesul la toate obiectele", "Nu folosim Proxy, deoarece nu este eficient", "De fiecare data cand se doreste realizarea de permisiuni pentru anumite obiecte sau pentru accesul la anumite functionalitati ale obiectelor"],
     "correct_indices": [3]
   },
   {
     "id": 49,
-    "text": "În `PCA.py`, variabilele `alpha` sunt stocate în membrul:",
-    "options": [
-      "self.Val",
-      "self.Vec",
-      "self.R",
-      "self.C"
-    ],
+    "text": "Participantii din cadrul State:",
+    "options": ["O interfata + Clase concrete ce definesc starile obiectului + Clasa concreta ce defineste obiectul", "O interfata + Clasele concrete ce definesc obiecte in diferite stari", "Niciuna", "O interfata + Clase abstracte"],
     "correct_indices": [0]
   },
   {
     "id": 50,
-    "text": "Funcția `get_clusters` din `HCA.py` returnează:",
-    "options": [
-      "Centrul clusterelor",
-      "Un array cu etichetele clusterelor pentru fiecare observație",
-      "Distanțele dintre clustere",
-      "Graficul dendrogramei"
-    ],
+    "text": "Cand este folosit design pattern-ul Strategy?",
+    "options": ["Atunci cand doreste adaugarea de noi functionalitati claselor existente", "Atunci cand avem mai multi algoritmi pentru rezolvarea unei probleme, iar alegerea implementarii se face la runtime", "Atunci cand este nevoie sa se utilizeze clase din framework-uri diferite", "Atunci cand se doreste modificarea functionalitatii unui obiect la runtime"],
     "correct_indices": [1]
   },
   {
     "id": 51,
-    "text": "Primești un dataset cu indicatori economici (PIB, Șomaj, Inflație) pentru 40 de județe. Nu ai nicio variabilă țintă (etichetă). Vrei să vezi care județe seamănă între ele. Ce metodă folosești?",
-    "options": [
-      "LDA",
-      "CCA",
-      "Regresie Liniară",
-      "PCA sau HCA (Clustering)"
-    ],
-    "correct_indices": [3]
-  },
-  {
-    "id": 52,
-    "text": "Ai rezultatele analizelor medicale (X) și date despre dieta alimentară (Y) pentru aceiași pacienți. Vrei să afli dacă există o legătură între dietă și sănătate. Ce aplici?",
-    "options": [
-      "LDA",
-      "CCA (Corelație Canonică)",
-      "PCA pe tot tabelul",
-      "HCA"
-    ],
+    "text": "Cand este folosit design pattern-ul State?",
+    "options": ["Atunci cand este necesara crearea unei structuri ierarhice prin compunerea de obiecte", "Atunci cand un obiect isi schimba comportamentul pe baza starii in care se afla", "Atunci cand este nevoie sa se utilizeze clase din doua framework-uri diferite", "Atunci cand se doreste modificarea functionalitatii unui obiect la runtime"],
     "correct_indices": [1]
   },
   {
+    "id": 52,
+    "text": "Participantii din cadrul Observer:",
+    "options": ["interfate pentru observer si observabil + Clase concrete pentru observer si observabil", "O interfata pentru observer + O clasa concreta pentru observabil", "O interfata pentru observabil + O clasa concreta pentru observer", "Niciuna"],
+    "correct_indices": [0]
+  },
+  {
     "id": 53,
-    "text": "Ai date despre clienți și o coloană care spune dacă au returnat creditul (\"DA\"/\"NU\"). Vrei să înțelegi ce caracteristici disting bun-platnicii de rău-platnici. Ce folosești?",
-    "options": [
-      "PCA",
-      "HCA",
-      "EFA",
-      "LDA (Discriminantă)"
-    ],
-    "correct_indices": [3]
+    "text": "Care este asemanarea dintre Proxy si Adapter?",
+    "options": ["Ambele ascund, intr-un fel, clasa existenta", "Legaturile dintre clase", "Construirea de obiecte este gestionata de o clasa", "Cele doua sunt complet diferite"],
+    "correct_indices": [0]
   },
   {
     "id": 54,
-    "text": "Vrei să construiești un indice sintetic al \"Calității Vieții\" pornind de la 20 de variabile corelate. Ce metodă e cea mai potrivită?",
-    "options": [
-      "HCA",
-      "CCA",
-      "PCA (prima componentă principală)",
-      "LDA"
-    ],
-    "correct_indices": [2]
+    "text": "Participantii din cadrul Strategy:",
+    "options": ["O interfata + Clase concrete ce implementeaza interfata + Clasa concreta ce contine o referinta de tipul interfetei", "O interfata + Clase concrete ce contin o referinta de tipul interfetei + Clasa concreta ce implementeaza interfata", "O interfata + Clase concrete ce contin o referinta de tipul interfetei", "Niciuna"],
+    "correct_indices": [0]
   },
   {
     "id": 55,
-    "text": "Diferența principală dintre PCA și EFA este:",
-    "options": [
-      "PCA este pentru predicție, EFA pentru clasificare",
-      "PCA folosește matricea de covarianță, EFA nu",
-      "PCA rezumă informația (reducere date), EFA caută cauze latente (factori)",
-      "Nu există diferență"
-    ],
+    "text": "Ce tip de design pattern este Observer?",
+    "options": ["Structural", "Creational", "Comportamental"],
     "correct_indices": [2]
   },
   {
     "id": 56,
-    "text": "Pe un Cerc al Corelațiilor (PCA), o variabilă are o săgeată foarte scurtă, aproape de origine. Ce înseamnă asta?",
-    "options": [
-      "Variabila este slab reprezentată pe acele axe (trebuie căutată pe alte componente)",
-      "Variabila este foarte importantă",
-      "Variabila este corelată negativ cu toate celelalte",
-      "Este o eroare de calcul"
-    ],
-    "correct_indices": [0]
-  },
-  {
-    "id": 57,
-    "text": "Pe un Plot al Scorurilor (PCA), observi un punct izolat, foarte departe de restul norului. Ce faci?",
-    "options": [
-      "Îl ignori",
-      "Ștergi axa",
-      "Consideri că modelul e greșit",
-      "Verifici Contribuția acelei observații; probabil este un outlier care distorsionează axele"
-    ],
-    "correct_indices": [3]
-  },
-  {
-    "id": 58,
-    "text": "Într-o dendrogramă, axa verticală reprezintă:",
-    "options": [
-      "Numărul de clustere",
-      "Variabilele",
-      "Distanța (disimilaritatea) la care s-au unit clusterele",
-      "Timpul de execuție"
-    ],
-    "correct_indices": [2]
-  },
-  {
-    "id": 59,
-    "text": "Dacă Scree Plot-ul arată o scădere lină, fără un \"cot\" evident, și prima valoare proprie e mică:",
-    "options": [
-      "Datele sunt foarte corelate",
-      "Ai greșit codul",
-      "Datele sunt slab corelate; PCA nu este eficientă (nu se poate reduce dimensiunea fără a pierde multă informație)",
-      "Trebuie să folosești LDA"
-    ],
-    "correct_indices": [2]
-  },
-  {
-    "id": 60,
-    "text": "Într-un Biplot CCA, dacă punctele roșii (X) și cele albastre (Y) sunt complet amestecate și suprapuse:",
-    "options": [
-      "Modelul este slab",
-      "Trebuie să separi datele",
-      "Există o corelație puternică între structurile celor două seturi de date",
-      "Nu se poate interpreta"
-    ],
-    "correct_indices": [2]
-  },
-  {
-    "id": 61,
-    "text": "Cum identifici variabila `y` (eticheta) pentru LDA într-un fișier CSV?",
-    "options": [
-      "Este întotdeauna prima coloană",
-      "Este coloana cu cea mai mare varianță",
-      "Este coloana cu cele mai multe valori lipsă",
-      "Este coloana cu valori categorice (text sau numere discrete puține, ex: 0/1, A/B/C) care definește grupurile"
-    ],
-    "correct_indices": [3]
-  },
-  {
-    "id": 62,
-    "text": "Dacă o coloană din CSV conține numele țărilor (String), ce faci cu ea înainte de a rula `PCA(X)`?",
-    "options": [
-      "O incluzi în matricea X",
-      "O ștergi de tot",
-      "O transformi în index (etichete pentru rânduri) și o excluzi din calculele numerice",
-      "O înlocuiești cu 0"
-    ],
-    "correct_indices": [2]
-  },
-  {
-    "id": 63,
-    "text": "De ce este obligatorie standardizarea înainte de PCA/HCA/CCA?",
-    "options": [
-      "Pentru a elimina valorile negative",
-      "Pentru a face calculul mai rapid",
-      "Nu este obligatorie",
-      "Pentru a evita ca variabilele cu valori mari (mii/milioane) să domine analiza doar din cauza scării lor"
-    ],
-    "correct_indices": [3]
-  },
-  {
-    "id": 64,
-    "text": "Dacă cerința spune \"Analizați structura a două seturi de variabile: Demografice (col 1-5) și Economice (col 6-10)\", cum construiești X și Y?",
-    "options": [
-      "X = tot tabelul, Y = tot tabelul",
-      "Faci două analize PCA separate",
-      "X = df.iloc[:, 0], Y = df.iloc[:, 1]",
-      "X = df.iloc[:, 0:5], Y = df.iloc[:, 5:10]"
-    ],
-    "correct_indices": [3]
-  },
-  {
-    "id": 65,
-    "text": "Ce verifici prima dată după ce ai citit datele cu `pd.read_csv`?",
-    "options": [
-      "Dacă am culori frumoase la grafice",
-      "Calculezi direct vectorii proprii",
-      "Tipurile de date (`dtypes`), valorile lipsă (`isna`) și dacă indexul este setat corect",
-      "Salvezi fișierul"
-    ],
-    "correct_indices": [2]
-  },
-  {
-    "id": 66,
-    "text": "Inerția explicată de o axă în PCA este:",
-    "options": [
-      "Valoarea proprie lambda",
-      "Media scorurilor",
-      "Valoarea proprie împărțită la suma totală a valorilor proprii",
-      "Lungimea vectorului propriu"
-    ],
-    "correct_indices": [2]
-  },
-  {
-    "id": 67,
-    "text": "Dacă aplici HCA pe scorurile rezultate din PCA (în loc de datele brute):",
-    "options": [
-      "Este greșit",
-      "Rezultatul va fi identic",
-      "Este o practică bună (HCPC) pentru a elimina zgomotul și a simplifica calculele",
-      "Nu se poate face"
-    ],
-    "correct_indices": [2]
-  },
-  {
-    "id": 68,
-    "text": "În LDA, ce înseamnă dacă acuratețea clasificării este 100% pe datele de antrenare?",
-    "options": [
-      "Modelul este perfect",
-      "Datele sunt greșite",
-      "Avem prea puține variabile",
-      "Este posibil să avem overfitting, dar matematic LDA găsește separatorul optim liniar"
-    ],
-    "correct_indices": [3]
-  },
-  {
-    "id": 69,
-    "text": "Într-o analiză CCA, câte perechi canonice sunt semnificative?",
-    "options": [
-      "Toate",
-      "Doar ultima",
-      "Doar cele care au corelația canonică mare și sunt semnificative statistic",
-      "Niciuna"
-    ],
-    "correct_indices": [2]
-  },
-  {
-    "id": 70,
-    "text": "Când interpretezi axele în PCA, te uiți la:",
-    "options": [
-      "Scoruri",
-      "Valorile medii",
-      "Corelațiile factoriale (Loadings) extreme",
-      "Numărul de rânduri"
-    ],
-    "correct_indices": [2]
-  },
-  {
-    "id": 71,
-    "text": "Dacă în cercul corelațiilor toate variabilele sunt grupate într-un singur cadran (ex: dreapta):",
-    "options": [
-      "Datele sunt greșite",
-      "Avem \"Size Effect\" (efect de dimensiune) - toate variabilele sunt corelate pozitiv între ele",
-      "Componenta 2 este mai importantă decât Componenta 1",
-      "Trebuie să inversăm semnele"
-    ],
+    "text": "Care dintre urmatoarele afirmatii este adevarata?",
+    "options": ["Observer permite instantierea unui singur obiect dintr-o clasa", "Observer defineste o relatie de 1:n", "Observer defineste o relatie de 1:1", "Toate"],
     "correct_indices": [1]
   },
   {
-    "id": 72,
-    "text": "Ce metodă alegi dacă variabilele tale sunt amestecate (numerice și categorice)?",
-    "options": [
-      "PCA standard",
-      "LDA",
-      "Analiza Factorială a Datelor Mixte (FAMD)",
-      "HCA cu distanța Gower"
-    ],
+    "id": 57,
+    "text": "Prin ce se caracterizeaza design pattern-urile comportamentale?",
+    "options": ["Controleaza relatiile complexe dintre clase", "Permit distributia responsabilitatilor pe clase si descrie interactiunea intre clase si obiecte", "Furnizeaza solutii pentru o mai buna interactiune intre obiecte si clase", "Toate"],
     "correct_indices": [2]
   },
   {
+    "id": 58,
+    "text": "Care varianta de implementare a Singleton-ului presupune initializarea instantei la runtime, fara a intampina probleme la folosirea multithreading-ului?",
+    "options": ["Thread Safe Singleton", "Lazy Initialization", "Eager Initialization", "Niciuna"],
+    "correct_indices": [0]
+  },
+  {
+    "id": 59,
+    "text": "Care dintre urmatoarele sunt design pattern-uri creationale?",
+    "options": ["Singleton, Proxy, Facade", "Singleton, Prototype, Factory", "Adapter, Proxy, Facade", "Singleton, Proxy, Factory"],
+    "correct_indices": [1]
+  },
+  {
+    "id": 60,
+    "text": "Cu ce scop folosim design pattern-ul creational Prototype?",
+    "options": ["pentru a crea o singura instanta a unei clase", "pentru gesiuntea unei familii de obiecte", "pentru a construi obiecte", "pentru a crea clone pentru obiectele a caror construire dureaza foarte mult sau consuma multe resurse"],
+    "correct_indices": [3]
+  },
+  {
+    "id": 61,
+    "text": "Este tip Singleton:",
+    "options": ["Thread Safe Singleton", "Chain of Responsability", "Virtual Constructor", "Template Method"],
+    "correct_indices": [0]
+  },
+  {
+    "id": 62,
+    "text": "Builder poate fi corelat cu:",
+    "options": ["Adapter", "Factory", "Singleton", "Prototype"],
+    "correct_indices": [1]
+  },
+  {
+    "id": 63,
+    "text": "Factory este util atunci cand:",
+    "options": ["Se doreste construirea unei structuri ierarhice", "Este existenta o familie de obiecte intr-o aplicatie", "De fiecare data cand se doreste realizarea de permisiuni pentru toate obiectele"],
+    "correct_indices": [1]
+  },
+  {
+    "id": 64,
+    "text": "Care este relatia dintre Prototype si Decorator?",
+    "options": ["Construirea unui obiect este centralizata", "Se pot stoca o serie de obiecte", "Se cloneaza obiectele si apoi se modifica", "Elementele de pe acelasi nivel pot fi clonate"],
+    "correct_indices": [2]
+  },
+  {
+    "id": 65,
+    "text": "Care dintre urmatoarele afirmatii este adevarata despre Builder?",
+    "options": ["Presupune crearea unor obiecte complexe prin specificarea anumitor proprietati dorite din multitudinea existenta", "Are o singura varianta posibila de implementare", "Acest design pattern este folosit atunci cand crearea unui obiect dureaza foarte mult sau consuma resurse foarte multe", "Toate"],
+    "correct_indices": [0]
+  },
+  {
+    "id": 66,
+    "text": "Care dintre urmatoarele design pattern-uri creationale ajuta la crearea obiectelor complexe cu foarte multe atribute?",
+    "options": ["Prototype", "Builder", "Factory", "Singleton"],
+    "correct_indices": [1]
+  },
+  {
+    "id": 67,
+    "text": "Cum se implementeaza Abstract Factory?",
+    "options": ["Se creeaza un obiect iar pentru fiecare obiect exista cate o metoda", "Trebuie create noduri container si noduri frunza", "Trebuie sa fie unica metoda pentru a putea fi implementat", "Folosim abstractizare ci nu obiecte concrete pentru a implementa"],
+    "correct_indices": [3]
+  },
+  {
+    "id": 68,
+    "text": "Cati participanti sunt in design pattern-ul Prototype?",
+    "options": ["2", "3", "4", "5"],
+    "correct_indices": [0]
+  },
+  {
+    "id": 69,
+    "text": "Care dintre urmatoarele reprezinta tipuri de implementare pentru Singleton?",
+    "options": ["Eager initialization, Lazy Initialization, Thread Safe Singleton", "Eager initialization, Static initialization, Enum initialization", "Enum initialization, Inner class initialization", "Eager initialization, Lazy initialization, Static Singleton"],
+    "correct_indices": [0]
+  },
+  {
+    "id": 70,
+    "text": "Ce tip de design pattern ajuta la crearea unor obiecte concrete?",
+    "options": ["Abstract Factory", "Factory Method", "Prototype", "Builder"],
+    "correct_indices": [1]
+  },
+  {
+    "id": 71,
+    "text": "Care design pattern ofera posibilitatea crearii de obiecte concrete dintr-o familie de obiecte?",
+    "options": ["Factory", "Builder", "Singleton", "Niciuna"],
+    "correct_indices": [0]
+  },
+  {
+    "id": 72,
+    "text": "Reprezinta utilizare a design patternului Singleton:",
+    "options": ["Existenta unei familii de obiecte intr-o aplicatie", "Crearea de view-uri pentru GUI", "Atunci cand obiectele create seamana intre ele, iar crearea unui obiect dureaza foarte mult", "Deschiderea unei singure instanta ale unei aplicatii"],
+    "correct_indices": [3]
+  },
+  {
     "id": 73,
-    "text": "Care este legătura dintre K-Means și HCA?",
-    "options": [
-      "Sunt identice",
-      "HCA este mai rapid",
-      "K-Means cere numărul de clustere k de la început, HCA îl deduce din dendrogramă",
-      "K-Means construiește un arbore"
-    ],
+    "text": "Care sunt participantii din cadrul design patternului Prototype?",
+    "options": ["Prototype Factory, Prototype", "Prototype, Virtual Prototype, Concrete Prototype", "Prototype, Concrete Prototype", "Prototype, Abstract Prototype, Concrete Prototype"],
     "correct_indices": [2]
   },
   {
     "id": 74,
-    "text": "Dacă `det(R)` (determinantul matricei de corelație) este aproape 0:",
-    "options": [
-      "Variabilele sunt independente",
-      "Nu se poate face analiza",
-      "Datele sunt lipsă",
-      "Există multicoliniaritate perfectă (variabile redundante)"
-    ],
-    "correct_indices": [3]
+    "text": "Care sunt participantii din Design pattern-ul Factory?",
+    "options": ["interfata/clasa abstracta, fabrica ce va crea obiectele concrete", "interfata/clasa abstracta, clasele concrete", "clasele concrete, fabrica ce va crea obiectele noastre", "interfata/clasa abstracta, clasele concrete, fabrica ce va crea obiectele concrete"],
+    "correct_indices": [0]
   },
   {
     "id": 75,
-    "text": "Contribuția unei variabile la inerția totală a unui nor de puncte:",
-    "options": [
-      "Nu se poate calcula",
-      "Este egală cu 1",
-      "Este proporțională cu varianța sa (care e 1 după standardizare)",
-      "Este dată de comunalitatea sa"
-    ],
-    "correct_indices": [2]
+    "text": "Prototype este util atunci cand:",
+    "options": ["Doar in cazul in care nu exista clonare", "Ori de cate ori folosim clone()", "Atunci cand obiectele create nu se aseamana deloc"],
+    "correct_indices": [1]
   },
   {
     "id": 76,
-    "text": "De ce tăiem dendrograma acolo unde saltul (distanța verticală) este cel mai mare?",
-    "options": [
-      "Acolo e eroarea cea mai mică",
-      "Așa arată mai bine graficul",
-      "Acolo diferența dintre grupurile unite este maximă",
-      "Este o regulă arbitrară"
-    ],
-    "correct_indices": [2]
+    "text": "Care dintre urmatoarele afirmatii este adevarata despre design patternul Factory Method?",
+    "options": ["Pentru apel se folosesc obiectele concrete", "Nu se foloseste enum, ci abstractizeaza nivelul de creare", "Sunt folosite structuri de tipul switch sau if-else pentru a alege ce obiecte vor fi create", "Are aceeasi participanti ca Simple Factory"],
+    "correct_indices": [1]
   },
   {
     "id": 77,
-    "text": "Ce reprezintă R_yx în CCA?",
-    "options": [
-      "Corelația inversă",
-      "O matrice nulă",
-      "Transpusa matricei R_xy",
-      "Corelația dintre Y și Y"
-    ],
-    "correct_indices": [2]
+    "text": "Care este asemanarea dintre Prototype si Composite?",
+    "options": ["Elementele de pe acelasi nivel nu pot fi clonate", "Elementele de pe acelasi nivel pot fi clonate", "Nu exista clonare", "Niciun element nu poate fi clonat"],
+    "correct_indices": [1]
   },
   {
     "id": 78,
-    "text": "În ce situație scorurile factoriale PCA sunt necorelate (ortogonale)?",
-    "options": [
-      "Doar dacă datele originale sunt necorelate",
-      "Întotdeauna (prin definiție)",
-      "Niciodată",
-      "Doar dacă rotim factorii"
-    ],
+    "text": "Ce reprezinta tipul de Singleton-Eager initialization?",
+    "options": ["presupune faptul ca metoda nu o sa fie apelata de un alt fir de executie pana nu se termina metoda", "initializarea instantei chiar daca aceasta nu e folosita", "cea mai implementata varianta Singleton", "contine o clasa imbricata in clasa Singleton"],
     "correct_indices": [1]
   },
   {
     "id": 79,
-    "text": "Dacă ai un set de date cu 1000 de variabile și 50 de observații:",
-    "options": [
-      "Trebuie să colectezi mai multe variabile",
-      "Folosești CCA",
-      "LDA nu va funcționa bine, PCA este recomandată pentru reducere",
-      "Faci media"
-    ],
-    "correct_indices": [2]
+    "text": "Ce reprezinta tipul de Singleton-Thread safe Singleton?",
+    "options": ["cea mai implementata varianta Singleton", "initializarea instantei chiar daca aceasta nu e folosita", "contine o clasa imbricata in clasa Singleton", "presupune faptul ca metoda nu o sa fie apelata de un alt fir de executie pana nu se termina metoda apelata deja pe un fir de executie"],
+    "correct_indices": [3]
   },
   {
     "id": 80,
-    "text": "La examen, dacă ți se cere \"Evidențiați structura latentă a datelor\", te gândești la:",
-    "options": [
-      "Histograme",
-      "Calculul mediei",
-      "Standardizare",
-      "EFA (Analiza Factorială) sau PCA"
-    ],
+    "text": "Care sunt participantii in design pattern-ul Prototype?",
+    "options": ["Prototype, ConcretePrototype", "Prototype, AbstractBuilder, AbstractPrototype", "Prototype, AbstractPrototype, ConcretePrototype", "Singleton, Prototype, AbstractPrototype"],
+    "correct_indices": [0]
+  },
+  {
+    "id": 81,
+    "text": "Care dintre urmatoarele sunt design patterns - creationale?",
+    "options": ["Singleton, Builder, Factory", "Facade, Flyweight, Proxy", "Prototype, Strategy, Factory", "Builder, Adapter, Factory"],
+    "correct_indices": [0]
+  },
+  {
+    "id": 82,
+    "text": "O aplicatie de asigurari ofera, pe langa realizarea asigurarilor obligatorii, posibilitatea realizarii unei asigurari de sanatate, unei asigurari de calatorie si unei asigurari de pensie privata. Ce design pattern se regaseste in aceasta situatie?",
+    "options": ["Factory", "Prototype", "Singleton", "Builder"],
     "correct_indices": [3]
+  },
+  {
+    "id": 83,
+    "text": "Care este corelatia dintre Factory si Composite",
+    "options": ["Se abstractizeaza nivelul de creare", "Prin intermediul fabricii sunt create nodurile container", "Fabrica este unica", "Nu exista corelatie"],
+    "correct_indices": [0]
+  },
+  {
+    "id": 84,
+    "text": "Ce rol are design patternul de tip Abstract Factory?",
+    "options": ["Poate crea doar o familie de obiecte", "Se construieste cu ajutorul acestuia o structura ierarhica", "Nu poate fi clonat", "Introduce un nou nivel de abstractizare"],
+    "correct_indices": [3]
+  },
+  {
+    "id": 85,
+    "text": "Ce presupune Thread safe Singleton?",
+    "options": ["Se poate apela metoda de pe un alt fir de executie chiar daca nu se termina metoda apelata deja", "Asigura faptul ca metoda nu o sa fie apelata de un alt fir de executie pana nu se termina metoda apelata deja pe un fir de executie", "Niciuna", "Toate"],
+    "correct_indices": [1]
+  },
+  {
+    "id": 86,
+    "text": "Cand poate fi implementat AbstractFactory?",
+    "options": ["Introduce un nou nivel de simplificare", "Cand se creaza doua sau mai multe tipuri de obiecte fiecare avand o metoda", "Cand se doreste sa se adauge doar un obiect intr-o familie", "Toate"],
+    "correct_indices": [1]
+  },
+  {
+    "id": 87,
+    "text": "Care este diferenta dintre Factory Method si Simple Factory?",
+    "options": ["In Factory Method nu se mai foloseste enum, ci abstractizeaza nivelul de creare", "In Factory Method se foloseste enum, nu se introduce un nou nivel de abstractizare", "Niciuna", "Nu exista diferente intre cele doua"],
+    "correct_indices": [0]
+  },
+  {
+    "id": 88,
+    "text": "Participantii design pattern-ului Prototype sunt:",
+    "options": ["Interfata Prototype, Clase concrete, ConcretePrototype", "Concrete Product, AbstractProduct", "Interfata Prototype, Concrete Prototype", "AbstractProduct, Concrete Product, AbstractDecorator"],
+    "correct_indices": [2]
+  },
+  {
+    "id": 89,
+    "text": "Care dintre urmatoarele este considerat cel mai corect tip de Singleton?",
+    "options": ["Thread Safe Singleton", "Eager initialization", "Lazy initialization", "Inner static helper class"],
+    "correct_indices": [0]
+  },
+  {
+    "id": 90,
+    "text": "Care este corelatia dintre Factory si Singleton?",
+    "options": ["Fabrica poate fi unica", "Legaturile dintre clase", "Elementele se cloneaza", "Nu exista corelatie"],
+    "correct_indices": [0]
+  },
+  {
+    "id": 91,
+    "text": "Care design pattern asigura crearea unui singur obiect al unei anumite clase?",
+    "options": ["Singleton", "Builder", "Proxy", "Prototype"],
+    "correct_indices": [0]
+  },
+  {
+    "id": 92,
+    "text": "Care dintre afirmatiile referitoare la Eager Initialization este corecta?",
+    "options": ["Presupune initializarea instantei chiar daca aceasta nu este folosita", "Initializarea instantei se realizeaza doara daca aceasta este folosita", "Nu se initializeaza instanta niciodata", "Niciuna"],
+    "correct_indices": [0]
+  },
+  {
+    "id": 93,
+    "text": "Cum sunt definite design pattern-urile creationale?",
+    "options": ["ajuta la initializarea si configurarea claselor si obiectelor", "ajuta la crearea familiilor de obiecte", "ajuta la compunerea si configurarea claselor si obiectelor", "controleaza relatiile complexe dintre clase"],
+    "correct_indices": [0]
+  },
+  {
+    "id": 94,
+    "text": "Care dintre urmatoarele este un tip de Singleton?",
+    "options": ["Unic Initialization", "Thread Safe Initialization", "Singular Initialization", "List of Singleton"],
+    "correct_indices": [1]
+  },
+  {
+    "id": 95,
+    "text": "Care sunt participantii design patternului Prototype?",
+    "options": ["Interfata si metoda de copiere si clonare", "Clasa concreta si interfata", "Clasele concrete", "Interfata si clasele de clonare"],
+    "correct_indices": [0]
+  },
+  {
+    "id": 96,
+    "text": "Factory este recunoscut dupa sintagma:",
+    "options": ["O singura instanta", "Crearea de obiecte concrete", "Obiecte din aceeasi familie", "Crearea de clone pentru obiecte"],
+    "correct_indices": [2]
+  },
+  {
+    "id": 97,
+    "text": "Cum se poate corela design pattern-ul Factory cu design pattern-ul Singleton?",
+    "options": ["obiectul poate fi unic", "clasa poate fi unica", "instanta poate fi unica", "fabrica poate fi unica"],
+    "correct_indices": [3]
+  },
+  {
+    "id": 98,
+    "text": "Care sunt participantii din cadrul design patternului Singleton?",
+    "options": ["Concrete Singleton", "Abstract Singleton", "Singleton Factory", "Singleton"],
+    "correct_indices": [3]
+  },
+  {
+    "id": 99,
+    "text": "Care dintre afirmatii este adevarata in legatura cu Singleton?",
+    "options": ["Nu presupune extinderea unei clase", "Singleton respecta principiile de programare orientata obiect", "Singleton este folosit pentru a implementa o clasa abstracta", "Un obiect Singleton nu poate fi trimis ca un parametru unei functii"],
+    "correct_indices": [1]
+  },
+  {
+    "id": 100,
+    "text": "Care dintre urmatoarele afirmatii este adevarata despre Factory?",
+    "options": ["Obiectele sunt create folosind o interfata comuna", "Este un design pattern creational", "Clientul are posibilitatea crearii de obiecte concrete dintr-o familie de obiecte, fara sa stie exact tipul concret al obiectului", "Toate"],
+    "correct_indices": [3]
+  },
+  {
+    "id": 101,
+    "text": "Care afirmatie referitoare la Abstract Factory este adevarata?",
+    "options": ["Abstract Factory introduce un nou nivel de abstractizare", "Se construieste o structura ierarhica", "Implementarea lui este mare consumatoare de memorie", "Toate"],
+    "correct_indices": [0]
+  },
+  {
+    "id": 102,
+    "text": "Factory este folosit:",
+    "options": ["pentru a crea obiecte dintr-o familie de clase", "atunci cand crearea unui obiect consuma foarte multe resurse. Se creeaza un prototip si este folosit pentru clonare", "pentru a crea o singura instanta pentru o clasa si are constructorul privat", "pentru a ajuta la crearea obiectelor complexe cu foarte multe atribute"],
+    "correct_indices": [0]
+  },
+  {
+    "id": 103,
+    "text": "Cand se utilizeaza Builder?",
+    "options": ["Pentru construirea de obiecte simple fara atribute", "Pentru construirea de obiecte simple cu putine atribute", "Pentru construirea de obiecte complexe cu foarte multe atribute", "Toate"],
+    "correct_indices": [2]
+  },
+  {
+    "id": 104,
+    "text": "Care este rolul design pattern-lor creationale?",
+    "options": ["Sunt concentrate pe cum sunt compuse clasele si obiectele pentru formarea de structuri complexe", "Ajuta la compunerea si configurarea claselor si obiectelor", "Furnizeaza solutii pentru o mai buna interactiune intre obiecte si clase", "Ajuta la initializarea si configurarea claselor si obiectelor"],
+    "correct_indices": [3]
+  },
+  {
+    "id": 105,
+    "text": "Ce presupune Enum Singleton?",
+    "options": ["Asigura faptul ca metoda nu o sa fie apelata de o alta metoda", "Presupune utilizarea unei enumerari pentru crearea unica a instantei", "Este folosit pentru a usura workflow", "Contine o clasa imbricata in clasa Singleton"],
+    "correct_indices": [1]
+  },
+  {
+    "id": 106,
+    "text": "Care dintre urmatoarele afirmatii este adevarata despre Abstract Factory?",
+    "options": ["Are ca participanti fabrica concreta si clasele concrete", "Simplifica interfata unei familii de clase", "Introduce un nou nivel de abstractizare fata de Factory Method", "Fiecare factory va crea un singur tip de obiect"],
+    "correct_indices": [2]
+  },
+  {
+    "id": 107,
+    "text": "Care dintre urmatoarele reprezinta un exemplu de utilizare pentru Singleton?",
+    "options": ["Accesarea resurselor dispozitivelor mobile", "Conexiune unica la baza de date", "DocumentBuilderFactory din Android", "Toate"],
+    "correct_indices": [3]
+  },
+  {
+    "id": 108,
+    "text": "Care dintre urmatoarele design patternuri poate fi folosit atunci cand se doreste crearea de noi obiecte prin copierea unui obiect existent?",
+    "options": ["Factory Method", "Builder", "Prototype", "Abstract Factory"],
+    "correct_indices": [2]
+  },
+  {
+    "id": 109,
+    "text": "Ce reprezinta Unit Testing?",
+    "options": ["Este o metoda utilizata pentru a verifica daca aplicatia functioneaza conform cerintelor clientului", "Se refera la testarea individuala a unei componente, parti de cod, clasa sau metoda", "Toate", "Niciuna"],
+    "correct_indices": [1]
+  },
+  {
+    "id": 110,
+    "text": "Care dintre afirmatii este corecta?",
+    "options": ["Fixture reprezinta un set de obiecte utilizate in test", "Unit Testing se realizeaza intr-un context bine definit in specificatiile de testare", "JUnit reprezinta o adaptare de la xUnit", "Toate"],
+    "correct_indices": [3]
+  },
+  {
+    "id": 111,
+    "text": "Care dintre urmatoarele metode de tip Assert nu se regaseste in JUnit?",
+    "options": ["assertEquals", "assertSame", "Assert.IsNotNull", "assertTrue"],
+    "correct_indices": [2]
+  },
+  {
+    "id": 112,
+    "text": "Ce pattern permite încapsularea unui obiect in vederea controlării accesului la acesta?",
+    "options": ["Template", "State", "proxy", "adapter", "momento", "strategy", "decorator", "niciunul dintre cele enumerate", "command", "observer"],
+    "correct_indices": [2]
   }
 ]
