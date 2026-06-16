@@ -2,12 +2,628 @@
   {
     "id": 1,
     "text": "Care afirmație este adevărată cu privire la secvența de cod sursă următoare?\n\nint x = 10;\nint* p = &x;\n(*p)++;",
+    "image": null,
     "options": [
       "Creează un vector alocat dinamic.",
       "Inițializează variabila x cu valoarea 0.",
       "Incrementează adresa variabilei x cu 4 bytes.",
       "Creează un pointer nul.",
       "Incrementează valoarea lui x cu 1."
+    ],
+    "correct_indices": [
+      4
+    ]
+  },
+  {
+    "id": 2,
+    "text": "Se dă o matrice - tablou bidimensional alocat dinamic ca vector de pointeri. Ce se întâmplă dacă se omite eliberarea pentru fiecare rând/vector individual (free(mat[i])) și se apelează doar free(mat)?",
+    "image": null,
+    "options": [
+      "Este eliberată doar memoria alocată pentru vectorul de pointeri, iar memoria alocată pentru date rămâne, cauzând memory leaks",
+      "Matricea alocată dinamic nu trebuie dezalocată",
+      "Programul se va opri cu eroare de execuție la apelul free(mat)",
+      "Toată memoria asociată matricei este eliberată corect",
+      "Se produce eroare de compilare"
+    ],
+    "correct_indices": [
+      0
+    ]
+  },
+  {
+    "id": 3,
+    "text": "Care dintre afirmatiile urmatoare este adevarata?\n\nstruct Student {\n    char* nume;\n    char* fac;\n    float avg;\n};\nstruct NodD {\n    struct Student st;\n    struct NodD* next, * prev;\n};\nstruct LD {\n    struct NodD* p, * u;\n};\n\ntypedef struct Student Student;\ntypedef struct NodD NodD;\ntypedef struct LD LD;\n\nLD insert(LD ld, Student s) {\n    NodD* nou = (NodD*)malloc(sizeof(NodD*));\n    nou->st = s;\n    nou->next = ld.p;\n    nou->prev = NULL;\n    if (ld.p == NULL) {\n        ld.u = nou;\n    }\n    else {\n        ld.p->prev = nou;\n    }\n    ld.p = nou;\n\n    return ld;\n}",
+    "image": null,
+    "options": [
+      "Functia insert(LD, Student) genereaza erori de compilare.",
+      "Functia insert(LD, Student) aloca spatiu de memorie heap peste necesarul de stocare a unui nod in lista dubla.",
+      "Functia insert(LD, Student) insereaza cu succes un nod la inceputul unei liste duble cu alocarea spatiului de memorie heap exact pe necesarul de stocare a unui nod.",
+      "Functia insert(LD, Student) nu aloca suficient spatiu de memorie heap pentru stocarea unui nod in lista dubla.",
+      "Functia insert(LD, Student) insereaza cu succes un nod la sfarsitul unei liste duble cu alocarea spatiului de memorie heap exact pe necesarul de stocare a unui nod."
+    ],
+    "correct_indices": [
+      3
+    ]
+  },
+  {
+    "id": 4,
+    "text": "Pentru un vector cu valori reale, declarat astfel: float valori[10]. Care expresie referă în mod corect al patrulea element?",
+    "image": null,
+    "options": [
+      "*(valori+3)",
+      "(*valori*3)",
+      "valori[3]",
+      "3[valori]",
+      "valori[4]"
+    ],
+    "correct_indices": [
+      0,
+      2,
+      3
+    ]
+  },
+  {
+    "id": 5,
+    "text": "#include <stdio.h>\n#include <malloc.h>\n\nint f(int** x)\n{\n    **x += 2;\n    return **x;\n}\n\nint main()\n{\n    int b = 1, * c;\n    c = &b;\n    int a = f(&c);\n\n    printf(\"a = %d, b = %d\\n\", a, b);\n\n    return 0;\n}\n\nPrecizati rezultatul executiei aplicatiei de mai sus:",
+    "image": null,
+    "options": [
+      "a = 1, b = 1",
+      "a = 3, b = 1",
+      "a = 3, b = 3",
+      "a = 1, b = 3",
+      "a = 2, b = 2"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 6,
+    "text": "#include <stdio.h>\n#include <malloc.h>\n\nint f(int** x)\n{\n    **x += 2;\n    return **x;\n}\n\nint main()\n{\n    int b = 1, * c;\n    c = &b;\n    int a = f(&c);\n\n    printf(\"a = %d, b = %d\\n\", a, b);\n\n    return 0;\n}\n\nPrecizati rezultatul executiei aplicatiei de mai sus:",
+    "image": null,
+    "options": [
+      "a = 1, b = 1",
+      "a = 3, b = 1",
+      "a = 3, b = 3",
+      "a = 1, b = 3",
+      "a = 2, b = 2"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 7,
+    "text": "Ce afiseaza urmatoarea secventa de cod?\nfloat s=0;\nfor (int i=0;i<nrlin;i++)\n    for (int j=0;j<nrcol;j++) if (mat[i][j]!=0) s++;\nif (s/(float)(nrlin*nrcol)<0.3) return s;",
+    "image": null,
+    "options": [
+      "gradul de umplere al unei matrice;",
+      "numarul de elemente nenule dintr-o matrice;",
+      "densitatea unei matrice;",
+      "gradul de raritate al unei matrice."
+    ],
+    "correct_indices": [
+      1
+    ]
+  },
+  {
+    "id": 8,
+    "text": "Se considera urmatoarea secventa de cod sursa C pentru o tabela de dispersie implementata cu linear probing:\n\n#include <stdio.h>\n#include <malloc.h>\n#include <string.h>\n#include <stdlib.h>\n\n#define ARRAY_SIZE 100\n\nstruct Student {\n    int id;\n    char* name;\n    float avg;\n};\n\nint functieStudent(struct Student* ht, int size, char* studName)\n{\n    char found = 0, i;\n    for (i = 0; i < size && !found; i++)\n    {\n        if ((ht[i].name != 0) && (strcmp(ht[i].name, studName) == 0))\n        {\n            found = 1;\n        }\n    }\n\n    if (found == 1)\n        return i;\n    else\n        return -1;\n}\n\n// ... \nstruct Student* HTable;\nint size = ARRAY_SIZE;\nHTable = (struct Student*)malloc(size * sizeof(struct Student));\nfor (int i = 0; i < size; i++) {\n    HTable[i].name = NULL;\n}\n\nCare dintre urmatoarele afirmatii este adevarata?",
+    "image": null,
+    "options": [
+      "Functia identifica toate elementele de tip Student stocate in tabela de dispersie.",
+      "Functia implementeaza incorect operatia de cautare pentru parametrul studName daca nu este cheie pentru tabela de dispersie.",
+      "Parametrii functiei insertStudent(struct Student*, int, struct Student) sunt declarati eronat in raport cu modul lor de utilizare.",
+      "Functia implementeaza corect operatia de cautare pentru parametrul studName daca nu este cheie pentru tabela de dispersie.",
+      "Functia implementeaza corect operatia de cautare pentru parametrul studName daca acesta este cheie pentru tabela de dispersie."
+    ],
+    "correct_indices": [
+      3
+    ]
+  },
+  {
+    "id": 9,
+    "text": "In cazul implementarii unei structuri de tip stiva, pe baza unei liste simple inlantuite alocate dinamic, la care operatia de inserare/push se face la inceputul structurii:",
+    "image": null,
+    "options": [
+      "operatia push este de complexitate O(N)",
+      "operatia de stergere/pop se va face intotdeauna la sfarsitul structurii pentru a respecta principiul LIFO",
+      "operatia de stergere/pop se va face de la inceputul structurii avand complexitatea O(1)",
+      "operatiile push si pop vor avea complexitate O(1), in timp ce operatia peek are intotdeauna complexitatea O(N)",
+      "o structura LIFO nu se poate implementa in mod eficient decat utilizand vectori"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 10,
+    "text": "Reprezentarea memoriei alocate proceselor C include:",
+    "image": null,
+    "options": [
+      "code, data, BSS, call stack, buffer space",
+      "code, data, BSS, heap, memory limit",
+      "code, data, BSS, call stack, memory page",
+      "code, data, BSS, heap, call stack",
+      "code, data, object, heap, call stack"
+    ],
+    "correct_indices": [
+      3
+    ]
+  },
+  {
+    "id": 11,
+    "text": "Se considera o lista liniara simplu inlantuita in care fiecare nod memoreaza informatii specifice entitatii Avion(serie, producator, numar_locuri) si pointer-ul catre nodul urmator. In cod, entitatea se numeste Avion si structura care descrie nodul se numeste Nod. Care dintre instructiunile de mai jos adauga un nou Nod x, creat si populat cu valori prin functie de creare cu parametri, in structura lista descrisa de pointer-ul prim si pastreaza legatura catre restul nodurilor (adaugare nod x la sfarsit de lista cu mai multe noduri)?",
+    "image": null,
+    "options": [
+      "x->urmator = prim->urmator; prim->urmator = x;",
+      "Nod* aux = prim; while(aux->urmator != NULL) { aux = aux->urmator; } aux->urmator = x;",
+      "x->urmator = prim; prim = x;",
+      "Nod* aux = prim; while(aux != NULL) { aux = aux->urmator; } aux = x;",
+      "prim->urmator = x;"
+    ],
+    "correct_indices": [
+      1
+    ]
+  },
+  {
+    "id": 12,
+    "text": "Se considera subprogramul de mai jos in care parametrul a este un vector care memoreaza numere intregi, si n - un numar intreg ce reprezinta un numar de elemente. Ce complexitate timp in notatia BigO (worst case) are subprogramul de mai jos:\n\nint calcul(int a[], int n)\n{\n  int k = 0;\n  for (int i=0; i<n; i++)\n    for (int j=1; j<n; j++)\n       if(a[i] == a[j]) k++;\n  return k;\n}",
+    "image": null,
+    "options": [
+      "O(logN)",
+      "O(N*N*N)",
+      "O(N)",
+      "O(N*logN)",
+      "O(N*N)"
+    ],
+    "correct_indices": [
+      4
+    ]
+  },
+  {
+    "id": 13,
+    "text": "Care este rolul instructiunii realloc utilizata in cazul sirurilor de caractere din limbajul C/C++?",
+    "image": null,
+    "options": [
+      "niciuna dintre afirmatiile mentionate",
+      "reduce spatiul de memorie ocupat prin inlaturarea caracterului terminator '\\0'",
+      "redefineste tipul de structurare din punct de vedere a datelor si stocheaza noile seturi prelucrate",
+      "realoca o cantitate de memorie heap peste structura indicata care e gestionata in stack",
+      "redimensioneaza o zona de memorie in timp ce pastreaza datele din zona preexistenta"
+    ],
+    "correct_indices": [
+      4
+    ]
+  },
+  {
+    "id": 14,
+    "text": "Structura de date in care operatiile de stergere si de adaugare a elementelor sunt realizate numai la unul dintre cele doua capete se numeste:",
+    "image": null,
+    "options": [
+      "Lista Liniara Dublu Inlantuita Circulara",
+      "Tabela de dispersie (hash table)",
+      "Stiva (LIFO)",
+      "Coada (FIFO)",
+      "Vector"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 15,
+    "text": "In urma parcurgerii arborelui alaturat in SRD (In-ordine), elementele vor fi identificate conform variantei: (Arborele: Rădăcina 30; Stânga 25; Dreapta 40. Fiul stânga al lui 25 este 15, fiul dreapta este 28. Fiul stânga al lui 40 este 35, fiul dreapta este 50)",
+    "image": null,
+    "options": [
+      "30, 25, 15, 28, 40, 35, 50",
+      "15, 25, 28, 30, 35, 40, 50",
+      "30, 25, 40, 15, 28, 35, 50",
+      "15, 28, 25, 35, 50, 40, 30",
+      "15, 30, 28, 25, 35, 50, 40"
+    ],
+    "correct_indices": [
+      1
+    ]
+  },
+  {
+    "id": 16,
+    "text": "Se considera o lista circulara simplu inlantuita. In cod, structura care descrie nodul se numeste Nod. Care dintre variantele de mai jos realizeaza adaugarea corecta a unui nod (referit prin 'nou') inaintea primului nod al listei (referit prin variabila globala de tip pointer 'prim') astfel incat lista sa-si pastreze toate proprietatile dupa operatia de inserare (se considera in afara acestei structuri functiile definite mai jos)?",
+    "image": null,
+    "options": [
+      "if(prim == NULL) { creareLista(&prim, 5); } else { Nod* nou = (Nod*)malloc(sizeof(Nod)); nou->valoare = 5; nou->urmator = prim->urmator; prim->urmator = nou; prim = nou; }",
+      "if(prim == NULL) { creareLista(&prim, 5); } else { adaugareDupaNod(prim, 5); }",
+      "if(prim == NULL) { creareLista(&prim, 5); } else { Nod* aux = prim; while(aux->urmator != prim) aux = aux->urmator; Nod* nou = (Nod*)malloc(sizeof(Nod)); nou->valoare = 5; nou->urmator = prim; aux->urmator = nou; prim = nou; }",
+      "if(prim == NULL) { creareLista(&prim, 5); } else { Nod* nou = (Nod*)malloc(sizeof(Nod)); nou->valoare = 5; nou->urmator = prim; prim = nou; }"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 17,
+    "text": "Consideram subprogramul alaturat:\nvoid Cautare(int* x, int st, int dr, int k) {\n    if(st <= dr) {\n        int mijloc = st + (dr - st) / 2;\n        if(x[mijloc] == k) printf(\"Gasit!\");\n        else if(x[mijloc] < k) Cautare(x, mijloc + 1, dr, k);\n        else Cautare(x, st, mijloc - 1, k);\n    } else printf(\"Negasit!\");\n}\nPrecizati cate apeluri recursive ale subprogramului Cautare se realizeaza daca este apelat ca mai jos:\nCautare(x, 0, 7, 25); unde vectorul x este {2, 4, 8, 12, 17, 20, 25, 30}?",
+    "image": null,
+    "options": [
+      "3",
+      "5",
+      "2",
+      "4",
+      "1"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 18,
+    "text": "Care este tipul de alocare a memoriei in exemplul dat?\nint i, j;\nint a[10][10];",
+    "image": null,
+    "options": [
+      "alocare dinamica a unui vector pe heap",
+      "alocare statica pe heap pentru pointer cu alocare dinamica pe heap pentru variabile si liniile/coloanele aferente structurii",
+      "nu exista varianta corecta conform structurii date",
+      "alocare dinamica in stack (o singura variabila) si in heap (vectorii alocati per variabila/celula)",
+      "alocare in stack (pe stiva) la momentul compilarii (in compilator)"
+    ],
+    "correct_indices": [
+      4
+    ]
+  },
+  {
+    "id": 19,
+    "text": "Parcurgerile unui arbore binar de cautare (BST) sunt in inordine, preordine, postordine. Complexitatea timp pentru toate acestora este:",
+    "image": null,
+    "options": [
+      "O(1) pe caz mediu",
+      "O(N) pe orice caz deoarece trebuie parcurs fiecare nod din structura",
+      "O(logN) pe caz mediu - datorita injumatatirii setului de cautare",
+      "O(logN) pe the worst case",
+      "O(N^2) pe the worst case deoarece este vorba despre arbori, structuri ierarhice/pe mai multe dimensiuni"
+    ],
+    "correct_indices": [
+      1
+    ]
+  },
+  {
+    "id": 20,
+    "text": "Precizati valoarea elementului adaugat la parcurgerea unei stive dupa urmatorul set de instructiuni. Daca initial stiva arata astfel: 21, 5, 89 (21 fiind nodul de la baza, 89 fiind nodul aflat in varful stivei) si apelam Pop, Pop, Push 10, Push 4, Pop, Push 66, Top. Ce valoare vom obtine in final la nivelul nodului/in cadrul apelului?",
+    "image": null,
+    "options": [
+      "10",
+      "66",
+      "89",
+      "21",
+      "4"
+    ],
+    "correct_indices": [
+      1
+    ]
+  },
+  {
+    "id": 21,
+    "text": "La momentul utilizarii de vectori pot exista dezavantaje multiple in raport cu o implementare dinamica. Doua dintre dezavantaje sunt precizate cu exactitate la nivelul variantei:",
+    "image": null,
+    "options": [
+      "nu pot contine elemente neomogene sub nivel de format / tip de data primit la intrare; au in principiu dimensiuni statice/fixe;",
+      "pot stoca doar date primitive; nu se pot prelua elemente referite prin pointeri",
+      "nu are niciun dezavantaj / structura tip vector este cea mai flexibila",
+      "elementele pot fi accesate doar secvential ceea ce afecteaza performanta sistemului general; elementele nu isi pot modifica valoarea",
+      "elementele memoreaza adrese contigue / adiacente fiind stocate in RAM in zone consecutive, deci sistemul este mai rapid, insa un vector poate stoca doar valori de acelasi fel"
+    ],
+    "correct_indices": [
+      0
+    ]
+  },
+  {
+    "id": 22,
+    "text": "In cazul in care exista o retea de socializare ce contine un grup fix cu o multitudine de utilizatori logati (N). Din moment ce la fiecare postare se doreste determinarea celei mai vechi / primei inserari a unui continut si preluarea catre afisare utilizatorului (doar preluare fara afisare sau alte operatii/functionalitati pe langa - complexitate preluare), sistemul are nevoie de o complexitate O(1) in medie. In acest caz se va alege o structura din urmatoarele cu restrictiile de functionare aferente:",
+    "image": null,
+    "options": [
+      "un graf conex si ciclic cu un numar mare de legaturi parcurs BFS",
+      "o stiva si este extras primul element din baza cu operatia peek/top ce intoarce acea valoare in O(1)",
+      "o structura tip vector nesortata",
+      "un arbore oarecare parcurs postordine",
+      "o coada si este preluat elementul cu operatia peek"
+    ],
+    "correct_indices": [
+      4
+    ]
+  },
+  {
+    "id": 23,
+    "text": "Care este outputul in terminal pentru secventa urmatoare?\n\n#include <stdio.h>\n#include <stdlib.h>\n\nvoid fun(int *a){\n    a = (int*)malloc(sizeof(int));\n    *a = 20;\n}\n\nint main(){\n    int *p;\n    p = (int*)malloc(sizeof(int));\n    *p = 10;\n    fun(p);\n    printf(\"%d\", *p);\n    return 0;\n}",
+    "image": null,
+    "options": [
+      "30",
+      "O eroare / Error",
+      "Garbage Value",
+      "10",
+      "20"
+    ],
+    "correct_indices": [
+      3
+    ]
+  },
+  {
+    "id": 24,
+    "text": "Sunt specificate o serie de proprietati:\n1. Nodurile pot avea mai multe legaturi ce se interconecteaza;\n2. Fiecare nod adaugat intr-o structura detine doua legaturi (pe langa informatia utila): o legatura ce referentiaza urmatorul element ce urmeaza in flux si o legatura catre elementul ce preceda elementul in lista/flux;\n3. Primul element al structurii si ultimul trebuie sa fie pre-salvate in elemente/variabile separate pentru a mentine integritatea structurii de date.\nSistemul definit de cele trei proprietati se regaseste sub numele de:",
+    "image": null,
+    "options": [
+      "Arbore binar",
+      "Lista circulara dublu inlantuita",
+      "Lista liniara dublu inlantuita",
+      "Graf oarecare",
+      "Stiva cu functionalitate de inserare la mijloc de array"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 25,
+    "text": "Care este valoarea returnata de secventa de cod C urmatoare?\n\nint functie(){\n    int f = 0, i = 1, k = 1;\n    while(i <= 5) {\n        f = f + k;\n        k = k + i;\n        i++;\n    }\n    return f;\n}",
+    "image": null,
+    "options": [
+      "30",
+      "25",
+      "12",
+      "19",
+      "21"
+    ],
+    "correct_indices": [
+      1
+    ]
+  },
+  {
+    "id": 26,
+    "text": "Complexitatea de tip Big O, pentru the worst case la inserarea elementelor (n elemente/total in structura curenta) folosind structura de tip stiva, este:",
+    "image": null,
+    "options": [
+      "O(N*logN)",
+      "O(N^2)",
+      "O(1)",
+      "O(N)",
+      "O(logN)"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 27,
+    "text": "Este prezentat un tip de arbore ce contine valorile: 5, 2, 7, 1, 9 in parcurgerea / modul de afisare de tip Inordine. Sunt date doua seturi de pasi P1 - inserare valoarea 44 la dreapta elementului radacina ; P2 - preluare/returnare cu operatia top (fara parcurgere, top direct). Precizati ce se intampla cu valorile rezultate pe masura ce pasii au loc:",
+    "image": null,
+    "options": [
+      "niciuna dintre afirmatiile mentionate",
+      "pentru primul pas arborele nu este alterat, devine invalid la pasul 2 deoarece nodul cu valoarea 44 a fost adaugat cu o relatie ciclica pe partea stanga",
+      "pentru a indeplini pasul 1 arborele trebuie sa fie in format Max-Heap dar pasul 2 nu se poate indeplini deoarece nu se poate folosi top intr-o astfel de structura",
+      "la pasul 1 structura ramane arbore binar simplu doar in situatia in care noul nod ia locul elementului 7 (acesta urmand a fi sters) avand dupa pasul 2 elementul 7 - returnat, iar in caz contrar da exceptie pentru toata secventa si se invalideaza",
+      "structura se transforma intr-o coada pe o prelucrare secventiala a elementelor din cauza parcurgerii stanga"
+    ],
+    "correct_indices": [
+      0
+    ]
+  },
+  {
+    "id": 28,
+    "text": "Se construieste un arbore binar de cautare (BST) inserand valorile: 5, 2, 8, 1, 3, 9, 7. Care va fi nodul radacina dupa aceste inserari?",
+    "image": null,
+    "options": [
+      "3",
+      "7",
+      "5",
+      "Nu poate fi determinat pe baza valorilor introduse",
+      "1"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 29,
+    "text": "Fie o structura de date de tip AVL care gestioneaza un volum mare de date. Care dintre urmatoarele afirmatii despre un arbore de tip AVL este FALSA?",
+    "image": null,
+    "options": [
+      "Echilibrarea este automata si este refacuta la fiecare operatie de inserare sau de stergere",
+      "Toate nodurile au maxim 2 descendenti si diferenta de inaltime dintre subarborele stang si cel drept este de cel mult 1",
+      "Operatiile de inserare, stergere si cautare au, in cel mai rau caz, un timp de executie de O(log N)",
+      "Gradul de echilibrare se calculeaza ca diferenta intre inaltimea subarborelui drept si inaltimea subarborelui stang (sau invers)",
+      "Este un arbore binar de cautare in care timpul minim de executie pentru o operatie pe cel mai bun caz este O(1)"
+    ],
+    "correct_indices": [
+      0
+    ]
+  },
+  {
+    "id": 30,
+    "text": "Intr-o organizare a fisierelor un director poate contine atat alte directoare cat si fisiere obisnuite. Daca dorim sa determinam spatiul ocupat de toate fisierele continute intr-un director X dat cat si in toate subdirectoarele acestuia (la orice nivel de adancime), structura de date ce corespunde cel mai bine acestui model logic este:",
+    "image": null,
+    "options": [
+      "Arborele binar",
+      "Heap-ul",
+      "Graful Eulerian",
+      "Arborele multicai / oarecare",
+      "Stiva"
+    ],
+    "correct_indices": [
+      3
+    ]
+  },
+  {
+    "id": 31,
+    "text": "In conditiile utilizarii tehnicii de chaining (inlantuire) pentru rezolvarea coliziunilor intr-o tabela de dispersie, determinarea factorului de incarcare al tabelei se poate face in mod corect prin (unde n - numar inregistrari, m - dimensiune vector, ki - chei unice, r - rata de cautare cu succes):",
+    "image": null,
+    "options": [
+      "m/r",
+      "n/m",
+      "ki / n",
+      "ki / m",
+      "n/r"
+    ],
+    "correct_indices": [
+      1
+    ]
+  },
+  {
+    "id": 32,
+    "text": "Se da o tabela de dispersie gestionata printr-un vector de pointeri la structura de tip nod, implementata utilizand functia de hash h(x) = (x) % dimensiune si chaining ca metoda de rezolvare a coliziunilor. Se insereaza cheile (numere intregi pozitive): 10, 22, 31, 4, 15, 28, 17, 88, 59 intr-o tabela de dimensiune = 10, elementele colizionate fiind introduse la finalul listelor (dupa cum e implementata).\nElementele din listele (chain-urile) de pe pozitiile 0, 5, si 8 din tabela, dupa realizarea tuturor inserarilor, vor fi (in ordine):",
+    "image": null,
+    "options": [
+      "{10, 22}, {15}, {88, 28}",
+      "{10}, {15, 31}, {88}",
+      "{10}, {15}, {28, 88}",
+      "niciuna din variante",
+      "{28, 88}, {15}, {10}"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 33,
+    "text": "Se da arborele binar cu urmatoarea structura: [a b c d e f g h i j k], unde literele reprezinta nodurile. Parcurgerea in PostOrdine a unui arbore binar produce urmatorul rezultat: D, G, J, H, E, B, K, I, F, C, A. Cunoastem faptul ca A este radacina si parcurgerea in InOrdine produce rezultatul: D, B, G, E, J, H, A, C, K, F, I. Sa se precizeze care este inaltimea arborelui.",
+    "image": null,
+    "options": [
+      "4",
+      "2",
+      "5",
+      "Nu poate fi calculata pe baza acestor informatii",
+      "3"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 34,
+    "text": "Intr-o structura de tip Max-Heap de dimensiune N:",
+    "image": null,
+    "options": [
+      "nodul radacina si in mod recursiv toate sub-radacinile trebuie sa fie mereu mai mari decat copiii lor",
+      "cautarea unui element este garantata la complexitatea O(logN)",
+      "se poate folosi functia push fara a strica structura de tip Heap in complexitate O(N)",
+      "operatia pop este efectuata la cel mai mic element al Heap-ului",
+      "cel mai mic element in tot Heap-ul se afla cu un nivel deasupra frunzelor"
+    ],
+    "correct_indices": [
+      0
+    ]
+  },
+  {
+    "id": 35,
+    "text": "Se da un arbore binar de cautare avand urmatoarea ordine de inserare a nodurilor: 8, 3, 10, 1, 6, 14, 4, 7, 13. Care este valoarea nodului care se afla pe ultimul nivel si pe pozitia cea mai din stanga?",
+    "image": null,
+    "options": [
+      "13",
+      "1",
+      "4",
+      "7",
+      "6"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 36,
+    "text": "Care va fi rezultatul executiei urmatorului cod sursa?\n\n#include <stdio.h>\nint functie(int a, int b) {\n    if (b == 0) return 0;\n    if (b % 2 == 0) return functie(a + a, b / 2);\n    return functie(a + a, b / 2) + a;\n}\nint main() {\n    printf(\"%d\", functie(4, 3));\n    return 0;\n}",
+    "image": null,
+    "options": [
+      "Codul va produce eroare de compilare",
+      "12",
+      "7",
+      "16",
+      "0"
+    ],
+    "correct_indices": [
+      1
+    ]
+  },
+  {
+    "id": 37,
+    "text": "In cazul arborelui binar de cautare (BST), ce trebuie sa se intample in urma operatiei de stergere a unui nod parinte cu doua radacini/copii ca structura sa ramana valida dupa operatie conform conditiilor de formare a unui BST?",
+    "image": null,
+    "options": [
+      "arborele se echilibreaza singur prin rotirea la stanga urmat de o inserare in complexitate logN",
+      "copiii se vor sterge la randul lor recursiv iar stergerea nodului principal se va face doar la finalul recursivitatii",
+      "se inlocuieste nodul respectiv cu elementul cel mai mare de pe ramura stanga (maximul de pe ramura stanga) SAU elementul cel mai mic de pe ramura dreapta (minimul de pe ramura dreapta) dupa stergere, preluand eventualele legaturi",
+      "se muta copiii in mod recursiv cu un nivel mai sus iar radacina capata statusul de nul/pointer vid pentru a fi golita la urmatorul garbage collection cycle",
+      "stergerea unui parinte cu mai multi descendenti nu este permisa pentru a nu afecta referintele deja existente. Orice operatie de modificare intr-o structura de tip arbore va invalida structura, elementele trebuind copiate intr-o entitate noua."
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 38,
+    "text": "La o functie hash implementata conform conceptului diviziunii (modulo), de tip h(k) = k mod m, unde dimensiunea m = 11, daca se doresc a fi stocate numerele 43, 23, 75 si 32 in aceeasi structura. Ce se va intampla dupa prelucrarea indicilor corespunzatori fiecarui numar introdus:",
+    "image": null,
+    "options": [
+      "Toate numerele vor fi in sloturi unice/separate si nu vor face coliziune",
+      "Numarul 75 si 43 vor face coliziune la intrarea pe pozitia de memorie / indexul 9",
+      "Numarul 43 va intra pe aceeasi pozitie ca numarul 32, ambele avand ca factor rezidual indexul 10 in urma calculelor (coliziune)",
+      "Va da o eroare de segmentare deoarece pozitiile/indicii rezultati in urma operatiilor elementare nu pot fi acoperiti de tabela la o alocare generala",
+      "Numarul 32 va intra in coliziune cu 23"
+    ],
+    "correct_indices": [
+      2
+    ]
+  },
+  {
+    "id": 39,
+    "text": "Un element dintr-un arbore AVL are o inaltime care reprezinta/determina numarul maxim de noduri care se afla pe:",
+    "image": null,
+    "options": [
+      "O ramura ce incepe de la respectivul element/nod si se duce in jos pana la cea mai apropiata frunza aferenta ei",
+      "Niciuna dintre variantele precizate nu este definitorie pentru inaltimea unui element intr-un AVL",
+      "Calea ce uneste varful respectivului subarbore cu parintele radacinii",
+      "O ramura ce incepe de la respectivul element/nod si se duce in jos pana la cea mai indepartata frunza in mod direct de pe ramura acestuia",
+      "O cale de referinta preluata din parcurgerea frunzelor de pe ambele ramuri ale radacinii"
+    ],
+    "correct_indices": [
+      3
+    ]
+  },
+  {
+    "id": 40,
+    "text": "In parcurgerea SRD, ce element/valoare va fi returnat al 3-lea pentru un AVL care contine elementele 15, 6, 25, 4, 9, 21, 33 inserate fix in aceasta ordine?",
+    "image": null,
+    "options": [
+      "6",
+      "25",
+      "4",
+      "9",
+      "15"
+    ],
+    "correct_indices": [
+      3
+    ]
+  },
+  {
+    "id": 41,
+    "text": "Se da o matrice asociata unui graf neorientat si cu muchii de lungime 1 astfel:\n0 1 1 0 0\n1 0 0 1 1\n1 0 0 1 0\n0 1 1 0 1\n0 1 0 1 0\nPrin parcurgerea BFS a grafului incepand cu nodul/varful 0 se obtine:",
+    "image": null,
+    "options": [
+      "0, 1, 2, 3, 4",
+      "0, 1, 2, 4, 3",
+      "0, 1, 3, 2, 4",
+      "0, 2, 1, 3, 4",
+      "0, 1, 3, 4, 2"
+    ],
+    "correct_indices": [
+      0
+    ]
+  },
+  {
+    "id": 42,
+    "text": "Pentru eliberarea totala (dez-alocare) din memoria Heap a unei liste circulare dublu inlantuita definita in interiorul unui anumit subprogram se pot folosi in C urmatoarele comenzi / apeluri:",
+    "image": null,
+    "options": [
+      "se preia elementul root si se apeleaza secvential un algoritm ce preia referintele fiecarui nod in parte si opereaza doar un free pe referinta sa, lasand nodul sa intre in garbage collector",
+      "structura nu se poate dez-aloca din memoria heap din cauza complexitatii de referinte ce pot cauza memory-leaks majore la nivelul executiei",
+      "lista circulara se va sterge automat la incheierea ciclului/apelului subprogramului deoarece are elementele contigue in heap",
+      "o secventa de pasi repetitiva care preia elementele rand pe rand de la prim pana la ultim si sterge informatia utila cu apel direct pe fiecare urmat de un free pe toata lista",
+      "o secventa repetitiva in care este salvata adresa de la urmatorul nod intr-o referinta temporara inainte de a elibera elementul curent cu functia free(), pas ce se reia pana cand elementul curent redevine head-ul (radacina listei)"
     ],
     "correct_indices": [
       4
