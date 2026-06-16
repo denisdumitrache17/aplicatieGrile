@@ -5,8 +5,6 @@ import random
 import os
 app = Flask(__name__, static_folder='templates', static_url_path='')
 
-# Creăm folderul pentru imagini dacă nu există
-os.makedirs('images', exist_ok=True)
 
 # Load questions on startup
 with open('questions.json', 'r', encoding='utf-8') as f:
