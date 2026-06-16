@@ -2,7 +2,11 @@ from flask import Flask, jsonify, send_from_directory
 import json
 import random
 
+import os
 app = Flask(__name__, static_folder='templates', static_url_path='')
+
+# Creăm folderul pentru imagini dacă nu există
+os.makedirs('images', exist_ok=True)
 
 # Load questions on startup
 with open('questions.json', 'r', encoding='utf-8') as f:
@@ -11,6 +15,10 @@ with open('questions.json', 'r', encoding='utf-8') as f:
 @app.route('/')
 def index():
     return send_from_directory('templates', 'index.html')
+
+@app.route('/images/<path:filename>')
+def serve_image(filename):
+    return send_from_directory('images', filename)
 
 @app.route('/api/get-quiz', methods=['GET'])
 def get_quiz():
