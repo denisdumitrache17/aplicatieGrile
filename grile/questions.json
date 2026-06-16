@@ -2,7 +2,6 @@
   {
     "id": 1,
     "text": "Care afirmație este adevărată cu privire la secvența de cod sursă următoare?\n\nint x = 10;\nint* p = &x;\n(*p)++;",
-    "image": null,
     "options": [
       "Creează un vector alocat dinamic.",
       "Inițializează variabila x cu valoarea 0.",
